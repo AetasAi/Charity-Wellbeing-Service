@@ -3,362 +3,199 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Financial Guidance for Charities — Adena Street via Aetas in the Workplace</title>
+<title>Financial Guidance for Charities — Charity Wellbeing Service</title>
+<meta name="description" content="Independent financial guidance for charities. Investment benchmarking, fee transparency including OCF analysis, cash management strategy, and investment manager search. Offered by Adena Street." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://charitywellbeing.aetaspartners.com/financial-guidance.html" />
+<link rel="manifest" href="/manifest.webmanifest" />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
+/* CWS SHARED — paste into every page <style> block */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --navy:       #1a2744;
-  --navy-dark:  #111b33;
-  --gold:       #b89a5a;
-  --gold-light: #d4b97a;
-  --cream:      #f8f4ee;
-  --cream-dark: #ede8df;
-  --white:      #ffffff;
-  --text:       #2a2a2a;
-  --muted:      #5c5c5c;
-  --border:     rgba(184,154,90,0.22);
+  --forest:      #1e3d2f;
+  --forest-dark: #142a20;
+  --forest-mid:  #2a5240;
+  --gold:        #c49a45;
+  --gold-light:  #d9b56a;
+  --cream:       #f5f1ea;
+  --cream-dark:  #ece7dc;
+  --white:       #ffffff;
+  --text:        #1a2a1a;
+  --muted:       #4a6350;
+  --border:      rgba(196,154,69,0.22);
 }
 
 html { scroll-behavior: smooth; }
-body {
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-  color: var(--text);
-  background: var(--white);
-  line-height: 1.75;
-  overflow-x: hidden;
-}
+body { font-family: 'Jost', sans-serif; font-weight: 300; color: var(--text); background: var(--white); line-height: 1.75; overflow-x: hidden; }
 
 /* NAV */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  height: 64px; background: var(--navy);
-  border-bottom: 1px solid rgba(184,154,90,0.18);
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 40px;
-}
-.nav-brand {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500; font-size: 1rem; letter-spacing: 0.03em;
-  color: var(--white); text-decoration: none; white-space: nowrap;
-}
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 68px; background: var(--forest); border-bottom: 1px solid rgba(196,154,69,0.2); display: flex; align-items: center; justify-content: space-between; padding: 0 48px; }
+.nav-brand { display: flex; flex-direction: column; gap: 1px; text-decoration: none; }
+.nav-brand-name { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.05rem; letter-spacing: 0.02em; color: var(--white); white-space: nowrap; line-height: 1.1; }
+.nav-brand-sub { font-size: 0.58rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
 .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
-.nav-links a {
-  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
-  text-transform: uppercase; color: rgba(255,255,255,0.6);
-  text-decoration: none; transition: color 0.3s;
-}
-.nav-links a:hover  { color: var(--gold-light); }
-.nav-links a.active { color: var(--gold-light); }
-.nav-cta a {
-  color: var(--gold-light) !important;
-  border: 1px solid rgba(184,154,90,0.4); padding: 7px 18px;
-  transition: background 0.3s, color 0.3s, border-color 0.3s !important;
-}
-.nav-cta a:hover { background: var(--gold); color: var(--navy) !important; border-color: var(--gold); }
+.nav-links a { font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+.nav-cta a { color: var(--gold-light) !important; border: 1px solid rgba(196,154,69,0.45); padding: 7px 20px; transition: background 0.3s, color 0.3s !important; }
+.nav-cta a:hover { background: var(--gold); color: var(--forest) !important; border-color: var(--gold); }
 
 /* LAYOUT */
-.section { padding: 96px 40px; }
+.section { padding: 96px 48px; }
 .section--cream { background: var(--cream); }
-.section--navy  { background: var(--navy); }
-.container { max-width: 1080px; margin: 0 auto; }
+.section--forest { background: var(--forest); }
+.section--forest-mid { background: var(--forest-mid); }
+.container { max-width: 1100px; margin: 0 auto; }
 
 /* TYPE */
-.label {
-  display: block; font-size: 0.68rem; font-weight: 500;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 18px;
-}
-h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.2; color: var(--navy); }
+.label { display: block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.2; color: var(--forest); }
 h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
-h2 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); }
-h3 { font-size: clamp(1.25rem, 2vw, 1.65rem); }
-h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 500; }
+h2 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); }
+h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
+h4 { font-size: 1.1rem; font-weight: 500; }
 .rule { width: 44px; height: 1px; background: var(--gold); margin: 26px 0; }
 p { color: var(--muted); }
 
 /* BUTTONS */
-.btn {
-  display: inline-block; font-family: 'Jost', sans-serif;
-  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
-  text-transform: uppercase; text-decoration: none;
-  padding: 13px 30px; border: 1px solid transparent;
-  transition: background 0.3s, color 0.3s, border-color 0.3s;
-}
-.btn-primary { background: var(--gold); color: var(--navy); border-color: var(--gold); }
-.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
-.btn-ghost-white { background: transparent; color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.28); }
-.btn-ghost-white:hover { color: var(--white); border-color: rgba(255,255,255,0.65); }
-.btn-outline { background: transparent; color: var(--navy); border-color: rgba(26,39,68,0.35); }
-.btn-outline:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.btn { display: inline-block; font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; padding: 14px 32px; border: 1px solid transparent; transition: background 0.3s, color 0.3s, border-color 0.3s; cursor: pointer; }
+.btn-gold { background: var(--gold); color: var(--forest); border-color: var(--gold); }
+.btn-gold:hover { background: var(--gold-light); border-color: var(--gold-light); }
+.btn-ghost-white { background: transparent; color: rgba(255,255,255,0.75); border-color: rgba(255,255,255,0.3); }
+.btn-ghost-white:hover { color: var(--white); border-color: rgba(255,255,255,0.7); }
+.btn-outline { background: transparent; color: var(--forest); border-color: rgba(30,61,47,0.35); }
+.btn-outline:hover { background: var(--forest); color: var(--white); border-color: var(--forest); }
 
 /* BREADCRUMB */
-.breadcrumb {
-  font-size: 0.7rem; font-weight: 400; letter-spacing: 0.08em;
-  text-transform: uppercase; color: rgba(255,255,255,0.4);
-  text-decoration: none; margin-bottom: 32px; display: inline-flex;
-  align-items: center; gap: 10px; transition: color 0.3s;
-}
+.breadcrumb { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.4); text-decoration: none; margin-bottom: 32px; display: inline-flex; align-items: center; gap: 10px; transition: color 0.3s; }
 .breadcrumb::before { content: '←'; font-size: 0.85rem; }
 .breadcrumb:hover { color: rgba(255,255,255,0.75); }
 
 /* FADE */
 .fade { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
 .fade.in { opacity: 1; transform: none; }
-.d1 { transition-delay: 0.08s; }
-.d2 { transition-delay: 0.18s; }
-.d3 { transition-delay: 0.28s; }
+.d1 { transition-delay: 0.08s; } .d2 { transition-delay: 0.18s; } .d3 { transition-delay: 0.28s; }
 
 /* HERO */
-.hero {
-  padding: 140px 40px 100px;
-  background: var(--navy);
-  position: relative; overflow: hidden;
-}
-.hero::before {
-  content: ''; position: absolute; top: -80px; right: -100px;
-  width: 540px; height: 540px; border-radius: 50%;
-  border: 1px solid rgba(184,154,90,0.09); pointer-events: none;
-}
-.hero::after {
-  content: ''; position: absolute; bottom: -130px; left: -70px;
-  width: 380px; height: 380px; border-radius: 50%;
-  border: 1px solid rgba(184,154,90,0.06); pointer-events: none;
-}
+.hero { padding: 140px 48px 96px; background: var(--forest); position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: -80px; right: -100px; width: 540px; height: 540px; border-radius: 50%; border: 1px solid rgba(196,154,69,0.09); pointer-events: none; }
+.hero::after { content: ''; position: absolute; bottom: -130px; left: -70px; width: 380px; height: 380px; border-radius: 50%; border: 1px solid rgba(196,154,69,0.06); pointer-events: none; }
 .hero .container { position: relative; z-index: 1; }
 .hero .label { color: var(--gold-light); }
 .hero h1 { color: var(--white); max-width: 820px; margin-bottom: 26px; }
 .hero h1 em { font-style: italic; color: var(--gold-light); }
-.hero .hero-lead { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 580px; margin-bottom: 42px; }
+.hero .hero-lead { color: rgba(255,255,255,0.62); font-size: 1.05rem; max-width: 580px; margin-bottom: 42px; }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* PARTNER BANNER */
-.partner-banner {
-  background: var(--cream);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 32px 40px;
-}
-.partner-inner {
-  max-width: 1080px; margin: 0 auto;
-  display: flex; align-items: center; gap: 24px;
-}
-.partner-badge {
-  font-size: 0.65rem; font-weight: 500; letter-spacing: 0.13em;
-  text-transform: uppercase; color: var(--gold);
-  background: var(--navy); padding: 7px 16px; white-space: nowrap;
-}
+.partner-banner { background: var(--cream); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 48px; }
+.partner-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.partner-badge { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--gold); background: var(--forest); padding: 7px 16px; white-space: nowrap; }
 .partner-inner p { font-size: 0.85rem; color: var(--muted); max-width: 700px; }
 
 /* SERVICE CARDS */
-.service-intro { max-width: 640px; margin-bottom: 64px; }
-.service-intro p { margin-top: 16px; }
 .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
-.service-card {
-  background: var(--cream);
-  padding: 48px 44px;
-  border-top: 3px solid transparent;
-  transition: border-color 0.3s, background 0.3s;
-}
+.service-card { background: var(--cream); padding: 48px 44px; border-top: 3px solid transparent; transition: border-color 0.3s, background 0.3s; }
 .service-card:hover { border-top-color: var(--gold); background: var(--cream-dark); }
-.service-card-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem; font-weight: 300;
-  color: var(--gold); line-height: 1; margin-bottom: 20px;
-}
+.service-card-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 20px; }
 .service-card h3 { margin-bottom: 14px; }
 .service-card p { font-size: 0.9rem; line-height: 1.75; }
 .service-card-list { list-style: none; padding: 0; margin-top: 20px; }
-.service-card-list li {
-  font-size: 0.84rem; color: var(--muted);
-  padding: 7px 0 7px 18px; position: relative;
-  border-top: 1px solid var(--border);
-}
+.service-card-list li { font-size: 0.84rem; color: var(--muted); padding: 7px 0 7px 18px; position: relative; border-top: 1px solid var(--border); }
 .service-card-list li:last-child { border-bottom: 1px solid var(--border); }
 .service-card-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-size: 0.7rem; }
 
-/* CASE STUDY */
-.case-study-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; align-items: start; }
-.case-marker {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--gold);
-  margin-bottom: 20px; display: block;
-}
-.case-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 5.5rem; font-weight: 300;
-  color: var(--navy); line-height: 1;
-  margin-bottom: 12px;
-}
-.case-note { font-size: 0.8rem; color: var(--muted); line-height: 1.5; max-width: 200px; }
-.case-body h3 { margin-bottom: 16px; font-size: 1.55rem; }
-.case-body p { margin-bottom: 16px; font-size: 0.95rem; }
-.case-body p:last-child { margin-bottom: 0; }
-
-/* WHY INDEPENDENT */
-.independence-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 48px; border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
-.independence-item { padding: 40px 44px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.ind-num { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-weight: 500; color: var(--gold); display: block; margin-bottom: 12px; }
-.independence-item h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 500; color: var(--navy); margin-bottom: 10px; }
-.independence-item p { font-size: 0.88rem; line-height: 1.75; }
+/* WHY GRID */
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
+.why-item { padding: 40px 44px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.why-num { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-weight: 500; color: var(--gold); display: block; margin-bottom: 12px; }
+.why-item h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 500; color: var(--forest); margin-bottom: 10px; }
+.why-item p { font-size: 0.88rem; line-height: 1.75; }
 
 /* FAQ */
-.faq-intro { max-width: 540px; margin-bottom: 48px; }
 .faq-item { border-top: 1px solid var(--border); }
 .faq-item:last-child { border-bottom: 1px solid var(--border); }
-.faq-q {
-  width: 100%; text-align: left; background: none; border: none;
-  padding: 22px 0; cursor: pointer;
-  font-family: 'Cormorant Garamond', serif; font-size: 1.15rem;
-  font-weight: 400; color: var(--navy);
-  display: flex; justify-content: space-between; align-items: center; gap: 24px;
-}
+.faq-q { width: 100%; text-align: left; background: none; border: none; padding: 22px 0; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--forest); display: flex; justify-content: space-between; align-items: center; gap: 24px; }
 .faq-icon { color: var(--gold); font-size: 1.5rem; flex-shrink: 0; transition: transform 0.3s; }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
 .faq-a { display: none; padding: 0 0 24px; font-size: 0.88rem; color: var(--muted); max-width: 700px; line-height: 1.8; }
 .faq-item.open .faq-a { display: block; }
 
 /* CTA STRIP */
-.cta-strip { background: var(--navy); padding: 80px 40px; }
-.cta-strip .container { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
+.cta-strip { background: var(--forest); padding: 80px 48px; }
+.cta-strip-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
 .cta-strip h2 { color: var(--white); max-width: 560px; margin-bottom: 14px; }
 .cta-strip p { color: rgba(255,255,255,0.55); max-width: 520px; font-size: 0.95rem; }
-.cta-strip-actions { display: flex; flex-direction: column; gap: 16px; align-items: flex-end; white-space: nowrap; }
+.cta-strip-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-end; white-space: nowrap; }
 
 /* SERVICE NAV */
-.service-nav { background: var(--cream-dark); border-top: 1px solid var(--border); padding: 48px 40px; }
-.service-nav-inner { max-width: 1080px; margin: 0 auto; }
+.service-nav { background: var(--cream-dark); border-top: 1px solid var(--border); padding: 48px; }
+.service-nav-inner { max-width: 1100px; margin: 0 auto; }
 .service-nav-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: block; }
 .service-nav-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
 .service-nav-card { background: var(--cream); padding: 32px 36px; text-decoration: none; display: block; border-top: 2px solid transparent; transition: border-color 0.3s, background 0.3s; }
 .service-nav-card:hover { border-top-color: var(--gold); background: var(--white); }
 .service-nav-card.current { border-top-color: var(--gold); background: var(--white); pointer-events: none; }
 .service-nav-num { font-size: 0.7rem; color: var(--gold); font-weight: 500; letter-spacing: 0.1em; margin-bottom: 8px; display: block; }
-.service-nav-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--navy); }
+.service-nav-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--forest); }
 .service-nav-sub { font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
 
 /* FOOTER */
-footer { background: var(--navy-dark); padding: 56px 40px 40px; }
-.footer-inner { max-width: 1080px; margin: 0 auto; }
-.footer-brand { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+footer { background: var(--forest-dark); padding: 56px 48px 40px; }
+.footer-inner { max-width: 1100px; margin: 0 auto; }
+.footer-brand { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; color: var(--white); margin-bottom: 4px; }
+.footer-partners { font-size: 0.72rem; color: rgba(255,255,255,0.35); margin-bottom: 24px; letter-spacing: 0.06em; }
 .footer-contact { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 32px; }
 .footer-contact a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.3s; }
 .footer-contact a:hover { color: var(--gold-light); }
 hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 24px 0; }
-.footer-legal { font-size: 0.76rem; line-height: 1.7; color: rgba(255,255,255,0.32); max-width: 820px; margin-bottom: 24px; }
+.footer-legal { font-size: 0.76rem; line-height: 1.7; color: rgba(255,255,255,0.3); max-width: 820px; margin-bottom: 24px; }
 .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
-.footer-links a { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.32); text-decoration: none; transition: color 0.3s; }
+.footer-links a { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.3s; }
 .footer-links a:hover { color: var(--gold-light); }
 
 /* RESPONSIVE */
-@media (max-width: 940px) {
+@media (max-width: 960px) {
   .nav-links { display: none; }
   .section, .hero, .partner-banner, .cta-strip, .service-nav { padding-left: 24px; padding-right: 24px; }
   nav, footer { padding-left: 24px; padding-right: 24px; }
-  .service-grid, .service-nav-grid, .independence-grid { grid-template-columns: 1fr; }
-  .cta-strip .container { grid-template-columns: 1fr; }
+  .service-grid, .why-grid, .service-nav-grid { grid-template-columns: 1fr; }
+  .cta-strip-inner { grid-template-columns: 1fr; }
   .cta-strip-actions { align-items: flex-start; }
-  .partner-inner { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .case-study-grid { grid-template-columns: 1fr; gap: 32px; }
+  .partner-inner { flex-direction: column; gap: 12px; }
 }
+
 </style>
-
-<!-- ── Meta & canonical ──────────────────────────────────── -->
-<meta name="description" content="Independent financial guidance for charities. Investment benchmarking, fee transparency, OCF analysis, cash management, and manager search. Offered by Adena Street." />
-<meta name="robots" content="index, follow" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Aetas in the Workplace" />
-<meta property="og:description" content="Independent financial guidance for charities. Investment benchmarking, fee transparency, OCF analysis, cash management, and manager search. Offered by Adena Street." />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="Independent financial guidance for charities. Investment benchmarking, fee transparency, OCF analysis, cash management, and manager search. Offered by Adena Street." />
-<link rel="manifest" href="/manifest.webmanifest" />
-<link rel="canonical" href="https://charities.aetaspartners.com/financial-guidance.html" />
-
-<!-- ── Structured data: page ─────────────────────────────── -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Financial Guidance for Charities",
-    "url": "https://charities.aetaspartners.com/financial-guidance.html",
-    "description": "Independent financial guidance for charities covering investment performance benchmarking, fee transparency including OCF analysis, cash management strategy, and investment manager search. Offered by Adena Street Limited.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Adena Street Limited"
-    },
-    "serviceType": "Charity Financial Advisory",
-    "areaServed": "GB",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Financial Guidance Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment performance benchmarking against ARC Charity Indices" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fee transparency and OCF analysis" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cash management strategy" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment manager search and tender support" } }
-      ]
-    }
-  }
-</script>
-
-<!-- ── Structured data: organisation ────────────────────── -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Aetas in the Workplace",
-    "alternateName": "Aetas ITW",
-    "url": "https://charities.aetaspartners.com",
-    "description": "Consultancy-led financial wellbeing and governance service for charities and not-for-profit organisations.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+442036330579",
-      "email": "matthew.steiner@aetas-partners.com",
-      "contactType": "Sales",
-      "areaServed": "GB",
-      "availableLanguage": "English"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Matthew Steiner",
-      "jobTitle": "Founder and Lead Consultant"
-    },
-    "sameAs": [
-      "https://aetas-partners.com",
-      "https://aetas-wealth.com",
-      "https://itw.aetaspartners.com"
-    ]
-  }
-</script>
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
-  <a class="nav-brand" href="https://itw.aetaspartners.com/index.html">Aetas in the Workplace</a>
+  <a class="nav-brand" href="index.html">
+    <span class="nav-brand-name">Charity Wellbeing Service</span>
+    <span class="nav-brand-sub">Adena Street &amp; Aetas in the Workplace</span>
+  </a>
   <ul class="nav-links">
-    <li><a href="https://itw.aetaspartners.com/limited-companies.html">Limited companies</a></li>
-    <li><a href="charities-v2.html">Charities</a></li>
-    <li><a href="https://aetas-partners.com/business-events/">Events</a></li>
-    <li><a href="https://itw.aetaspartners.com/insights.html">Insights</a></li>
-    <li><a href="https://itw.aetaspartners.com/faqs.html">FAQs</a></li>
-    <li><a href="https://itw.aetaspartners.com/diagnostic.html">Diagnostic</a></li>
-    <li class="nav-cta"><a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty">Book a meeting</a></li>
+    <li><a href="governance.html">Governance</a></li>
+<li><a href="financial-guidance.html" class="active">Financial Guidance</a></li>
+<li><a href="financial-wellbeing.html">Financial Wellbeing</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="faqs.html">FAQs</a></li>
+<li><a href="diagnostic.html">Diagnostic</a></li>
+
+    <li class="nav-cta"><a href="book-a-meeting.html">Book a meeting</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <a class="breadcrumb fade" href="charities-v2.html">Back to Charities &amp; Not-for-Profits</a>
+    <a class="breadcrumb fade" href="index.html">Back to Charity Wellbeing Service</a>
     <span class="label fade d1">Service 02 — Financial Guidance</span>
-    <h1 class="fade d2">Your assets should be working as hard as <em>your people are.</em></h1>
-    <p class="hero-lead fade d2">Many charities are unaware of what their investments are actually returning, what they are truly paying in fees, or whether their financial arrangements are properly aligned to the organisation's mission. Adena Street provides independent financial guidance to change that — without bias, and without conflict.</p>
+    <h1 class="fade d2">Your assets should be working as hard <em>as your people are.</em></h1>
+    <p class="hero-lead fade d2">Many charities are unaware of what their investments are actually returning, what they are truly paying in fees, or whether their financial arrangements align to the organisation's mission. Adena Street provides independent financial guidance to change that — without bias, and without conflict.</p>
     <div class="hero-ctas fade d3">
-      <a class="btn btn-primary" href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty">Book a discovery conversation</a>
+      <a class="btn btn-gold" href="book-a-meeting.html">Book a discovery conversation</a>
       <a class="btn btn-ghost-white" href="#services">What is covered</a>
     </div>
   </div>
@@ -368,26 +205,23 @@ hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); mar
 <div class="partner-banner">
   <div class="partner-inner">
     <div class="partner-badge">Offered by Adena Street</div>
-    <p>Financial guidance services are delivered by Adena Street Limited — an independent advisory firm specialising in governance and financial guidance for charities and philanthropic organisations. Adena Street draws on the whole of the market, operates without product bias, and acts always in the interests of the client.</p>
+    <p>Financial guidance services are delivered by Adena Street Limited — independent of all investment managers, free from product bias, and acting always in the interests of the client. Adena Street draws on the whole of the market and carries no conflicts of interest.</p>
   </div>
 </div>
 
 <!-- SERVICES -->
 <section class="section" id="services">
   <div class="container">
-    <div class="service-intro fade">
+    <div class="fade" style="max-width:640px; margin-bottom:56px;">
       <span class="label">What financial guidance covers</span>
       <h2>Independent advice on assets, performance, costs, and strategy</h2>
-      <p>Adena Street's financial guidance is designed to help charities manage and optimise their financial position — with clarity, independence, and a focus on cost efficiency. The emphasis is always on enabling better financial decisions, so your organisation can concentrate on the mission it exists to pursue.</p>
+      <p style="margin-top:16px;">Adena Street's financial guidance helps charities manage and optimise their financial position — with clarity, independence, and a focus on cost efficiency. The emphasis is always on enabling better financial decisions so your organisation can concentrate on its mission.</p>
     </div>
-
     <div class="service-grid">
-
-      <!-- Asset returns -->
       <div class="service-card fade">
         <div class="service-card-num">01</div>
         <h3>Maximising asset returns</h3>
-        <p>Many charities are not maximising the return on all their assets — particularly cash held in low-interest accounts. A thorough analysis of your financial position, matched against your short, medium, and long-term requirements, can identify meaningful improvements with manageable risk.</p>
+        <p>Many charities are not maximising the return on all their assets — particularly cash held in low-interest accounts. A thorough analysis matched against short, medium, and long-term requirements can identify meaningful improvements with manageable risk.</p>
         <ul class="service-card-list">
           <li>Cash management strategy aligned to your cashflow and reserves</li>
           <li>Analysis of short, medium, and long-term asset allocation</li>
@@ -395,25 +229,21 @@ hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); mar
           <li>Identification of opportunities to improve return without inappropriate risk</li>
         </ul>
       </div>
-
-      <!-- Investment performance -->
       <div class="service-card fade d1">
         <div class="service-card-num">02</div>
         <h3>Investment performance review</h3>
-        <p>Understanding how your investments have performed — and against what — is a trustee responsibility. Adena Street provides independent performance analysis, benchmarked against recognised indices, so your board can assess whether the current relationship with its investment manager is delivering appropriate results.</p>
+        <p>Understanding how your investments have performed — and against what benchmark — is a trustee responsibility. Adena Street provides independent performance analysis so your board can assess whether the current manager is delivering appropriate results.</p>
         <ul class="service-card-list">
           <li>Performance benchmarking against ARC Charity Indices and peer groups</li>
           <li>Portfolio composition review and suitability assessment</li>
-          <li>Understanding of structured products, fund types, and complex instruments held</li>
+          <li>Understanding of fund types and complex instruments held</li>
           <li>Independent reporting to trustees in clear, accessible language</li>
         </ul>
       </div>
-
-      <!-- Fee transparency -->
       <div class="service-card fade">
         <div class="service-card-num">03</div>
         <h3>Fee transparency and cost analysis</h3>
-        <p>Many charities are paying more than they realise. The headline management fee is rarely the full picture — hidden Ongoing Charges Figures (OCF) and fund-level costs can significantly erode returns over time. Adena Street provides a full cost analysis so your board understands exactly what it is paying and why.</p>
+        <p>The headline management fee is rarely the full picture. Hidden Ongoing Charges Figures (OCF) embedded within funds can significantly erode returns over time. Adena Street provides a full cost analysis so your board understands exactly what it is paying.</p>
         <ul class="service-card-list">
           <li>Full fee breakdown: management, custody, administration, and hidden charges</li>
           <li>OCF analysis across all funds and investment vehicles held</li>
@@ -421,12 +251,10 @@ hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); mar
           <li>Ongoing cost monitoring as part of continued engagement</li>
         </ul>
       </div>
-
-      <!-- Manager search -->
       <div class="service-card fade d1">
         <div class="service-card-num">04</div>
         <h3>Investment manager search and review</h3>
-        <p>When a charity's investment manager is underperforming, overcharging, or no longer the right fit, the process of identifying and evaluating alternatives can feel daunting. Adena Street provides independent tender support — running a structured review of the market and presenting a clear recommendation your board can act on with confidence.</p>
+        <p>When a manager is underperforming, overcharging, or no longer the right fit, the process of identifying alternatives can feel daunting. Adena Street runs a structured review of the market and presents a clear recommendation your board can act on with confidence.</p>
         <ul class="service-card-list">
           <li>Scoping and structuring the investment manager tender process</li>
           <li>Evaluation of manager responses against defined criteria</li>
@@ -434,56 +262,56 @@ hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); mar
           <li>Transition support and ongoing oversight of the new appointment</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- CASE STUDY ANGLE -->
+<!-- THREE RECURRING PROBLEMS -->
 <section class="section section--cream">
   <div class="container">
-    <div class="case-study-grid">
+    <div style="display:grid; grid-template-columns:1fr 2fr; gap:64px; align-items:start;">
       <div class="fade">
-        <span class="case-marker">Why it matters</span>
-        <div class="case-num">3</div>
-        <div class="case-note">areas where charities most commonly find their financial arrangements are falling short</div>
+        <span class="label" style="color:var(--gold);">Why it matters</span>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:5.5rem; font-weight:300; color:var(--forest); line-height:1; margin-bottom:12px;">3</div>
+        <p style="font-size:0.8rem; color:var(--muted); line-height:1.5; max-width:200px;">areas where charities most commonly find their financial arrangements are falling short</p>
       </div>
-      <div class="case-body fade d1">
+      <div class="fade d1">
         <span class="label">The problems we find most often</span>
-        <h3>Fee opacity, outdated policy, and performance that goes unchallenged</h3>
-        <p>In a typical engagement, Adena Street identifies one or more of three recurring issues. The first is fees that are higher than they appear: a headline management rate that does not include fund-level OCF charges can mean a charity is paying significantly more than its trustees understand. The second is an Investment Policy Statement that exists in name but no longer reflects the current needs or ethical position of the organisation. The third is investment performance that has never been tested against an appropriate benchmark — leaving trustees unable to judge whether the relationship is delivering value.</p>
-        <p>In each case, the charity is not necessarily being poorly served through any deliberate failing — but the absence of independent oversight means the gaps are never surfaced. An independent review does not require confrontation. In most cases, it leads to a more productive, better-informed relationship with the existing manager, or to a transition that delivers meaningfully better outcomes.</p>
+        <h3 style="margin-bottom:16px;">Fee opacity, outdated policy, and performance that goes unchallenged</h3>
+        <p style="font-size:0.95rem; margin-bottom:16px;">In a typical engagement, Adena Street identifies one or more of three recurring issues. The first is fees that are higher than they appear: a headline management rate that excludes fund-level OCF charges means a charity may be paying significantly more than its trustees understand.</p>
+        <p style="font-size:0.95rem; margin-bottom:16px;">The second is an Investment Policy Statement that exists in name but no longer reflects the current needs or ethical position of the organisation. The third is investment performance that has never been tested against an appropriate benchmark — leaving trustees unable to judge whether the relationship is delivering value.</p>
+        <p style="font-size:0.95rem;">In most cases, an independent review does not require confrontation. It leads to a more productive, better-informed relationship with the existing manager — or to a transition that delivers meaningfully better outcomes.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY INDEPENDENCE MATTERS -->
+<!-- WHY INDEPENDENCE -->
 <section class="section">
   <div class="container">
-    <div class="fade">
+    <div class="fade" style="max-width:560px; margin-bottom:48px;">
       <span class="label">Why independence matters</span>
       <h2>The difference between advice and independent advice</h2>
-      <p style="margin-top: 14px; max-width: 560px;">Not all financial guidance is independent. Adena Street has no commercial relationships with investment managers, no in-house products to promote, and no conflicts of interest. That distinction is not a detail — it is the foundation of the value delivered.</p>
+      <p style="margin-top:14px;">Adena Street has no commercial relationships with investment managers, no in-house products to promote, and no conflicts of interest. That distinction is not a detail — it is the foundation of the value delivered.</p>
     </div>
-    <div class="independence-grid">
-      <div class="independence-item fade">
-        <span class="ind-num">01</span>
+    <div class="why-grid fade">
+      <div class="why-item">
+        <span class="why-num">01</span>
         <h4>No product bias</h4>
-        <p>Adena Street does not receive commission or referral payments from investment managers or other financial providers. Every recommendation is made entirely on the basis of what is appropriate for your organisation.</p>
+        <p>Adena Street does not receive commission or referral payments from investment managers or other providers. Every recommendation is made entirely on the basis of what is appropriate for your organisation.</p>
       </div>
-      <div class="independence-item fade d1">
-        <span class="ind-num">02</span>
+      <div class="why-item">
+        <span class="why-num">02</span>
         <h4>Whole of market access</h4>
-        <p>Where specialist expertise is required — in investment management, banking, or other areas — Adena Street draws on the whole of the market. Recommendations are based on fit, not on relationship.</p>
+        <p>Where specialist expertise is required, Adena Street draws on the whole of the market. Recommendations are based on fit, not on relationship.</p>
       </div>
-      <div class="independence-item fade">
-        <span class="ind-num">03</span>
+      <div class="why-item">
+        <span class="why-num">03</span>
         <h4>A focus on saving money</h4>
         <p>Adena Street's explicit aim is to help clients maximise their assets and minimise their costs. In most engagements, the improvements achieved generate savings that more than offset the cost of the work.</p>
       </div>
-      <div class="independence-item fade d1">
-        <span class="ind-num">04</span>
+      <div class="why-item">
+        <span class="why-num">04</span>
         <h4>Clear documentation</h4>
         <p>All advice and recommendations are documented. Trustees receive clear, written records they can use to demonstrate informed decision-making to auditors, funders, or the Charity Commission.</p>
       </div>
@@ -494,49 +322,47 @@ hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); mar
 <!-- FAQS -->
 <section class="section section--cream">
   <div class="container">
-    <div class="faq-intro fade">
+    <div class="fade" style="max-width:540px; margin-bottom:44px;">
       <span class="label">Common questions</span>
       <h2>What trustees typically ask</h2>
     </div>
     <div class="faq-list fade">
       <div class="faq-item">
         <button class="faq-q">We think our investment manager is performing well. Is a review still worthwhile?<span class="faq-icon">+</span></button>
-        <div class="faq-a">It often is. Many trustees lack the benchmarking framework to assess performance accurately. A manager that appears to be performing well may be behind its peer group on a risk-adjusted basis, or may be charging fees that reduce net returns significantly. An independent review does not require there to be a problem — it gives your board the evidence to confirm things are in good order, or to identify improvements that may not have been visible without one.</div>
+        <div class="faq-a">Often, yes. Many trustees lack the benchmarking framework to assess performance accurately. A manager that appears to be performing well may be behind its peer group on a risk-adjusted basis, or may be charging fees that reduce net returns significantly. An independent review gives your board the evidence to confirm things are in good order — or to identify improvements not otherwise visible.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">What is an OCF and why does it matter?<span class="faq-icon">+</span></button>
-        <div class="faq-a">An Ongoing Charges Figure is a hidden cost embedded within the funds your investment manager holds. It is deducted directly from fund assets rather than charged as a visible fee, which means it is frequently not disclosed or discussed in trustee meetings. Over time, OCF charges can represent a material drag on performance. Understanding the full cost of your investment arrangements — including OCF — is essential to knowing what value you are receiving.</div>
+        <div class="faq-a">An Ongoing Charges Figure is a fee embedded within the funds your investment manager holds. It is deducted directly from fund assets rather than charged as a visible fee — meaning it is frequently not disclosed or discussed in trustee meetings. Over time, OCF charges can represent a material drag on performance. Understanding the full cost of your investment arrangements is essential to knowing what value you are receiving.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How does benchmarking work and what is the ARC index?<span class="faq-icon">+</span></button>
-        <div class="faq-a">The ARC Charity Indices are sterling-denominated, risk-based benchmarks used to assess how a charity's investment portfolio has performed relative to its peer group. They are based on data from thousands of charities and provide a standardised comparison that removes some of the subjectivity from performance assessments. If your manager is below the mean figure for their risk category, their performance is effectively in the bottom half relative to peers — which should prompt questions if it persists.</div>
+        <button class="faq-q">What is the ARC benchmark?<span class="faq-icon">+</span></button>
+        <div class="faq-a">The ARC Charity Indices are sterling-denominated, risk-based benchmarks used to assess how a charity's investment portfolio has performed relative to its peer group. They are based on data from thousands of charities and provide a standardised comparison. If your manager is below the mean for their risk category, their performance is effectively in the bottom half relative to peers — which should prompt questions if it persists.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">We have no investments, only cash. Is financial guidance still relevant?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Yes. Cash management is one of the areas where charities most commonly leave value on the table. A structured review of your banking arrangements, deposit accounts, and short-term cash strategy can identify meaningful improvements — particularly in a period where interest rates have shifted significantly. Financial guidance is not limited to organisations with investment portfolios.</div>
+        <button class="faq-q">We only hold cash. Is financial guidance still relevant?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. Cash management is one of the areas where charities most commonly leave value on the table. A structured review of banking arrangements and deposit accounts can identify meaningful improvements — particularly in a period where interest rates have shifted considerably.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA STRIP -->
 <div class="cta-strip">
-  <div class="container">
+  <div class="cta-strip-inner">
     <div>
       <h2>Start with a review of your financial arrangements</h2>
       <p>A no-cost conversation to understand what you currently hold, what it is costing, and what an independent review could deliver for your organisation.</p>
     </div>
     <div class="cta-strip-actions">
-      <a class="btn btn-primary" href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty">Book a discovery conversation</a>
-      <a class="btn btn-ghost-white" href="charities-v2.html">Back to charities overview</a>
+      <a class="btn btn-gold" href="book-a-meeting.html">Book a discovery conversation</a>
+      <a class="btn btn-ghost-white" href="index.html">Back to home</a>
     </div>
   </div>
 </div>
 
-<!-- SERVICE NAV -->
 <div class="service-nav">
   <div class="service-nav-inner">
-    <span class="service-nav-label">The three services — charities and not-for-profits</span>
+    <span class="service-nav-label">The three services</span>
     <div class="service-nav-grid">
       <a class="service-nav-card" href="governance.html">
         <span class="service-nav-num">01 — Offered by Adena Street</span>
@@ -556,21 +382,25 @@ hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); mar
     </div>
   </div>
 </div>
-
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <span class="footer-brand">Aetas in the Workplace</span>
+    <span class="footer-brand">Charity Wellbeing Service</span>
+    <div class="footer-partners">A partnership between Adena Street and Aetas in the Workplace</div>
     <div class="footer-contact">
       <a href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a>
       &nbsp;·&nbsp; 020 3633 0579
     </div>
     <hr class="footer-rule" />
-    <p class="footer-legal">Aetas in the Workplace provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Governance and financial guidance services for charities are provided independently by Adena Street Limited.</p>
+    <p class="footer-legal">The Charity Wellbeing Service is delivered in partnership by Adena Street Limited and Aetas in the Workplace. Financial wellbeing education and consultancy services do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Governance and financial guidance services are provided independently by Adena Street Limited.</p>
     <div class="footer-links">
-      <a href="https://itw.aetaspartners.com/faqs.html">FAQs</a>
-      <a href="https://itw.aetaspartners.com/diagnostic.html">Take the diagnostic</a>
-      <a href="https://itw.aetaspartners.com/privacy.html">Privacy policy</a>
+      <a href="index.html">Home</a>
+      <a href="governance.html">Governance</a>
+      <a href="financial-guidance.html">Financial Guidance</a>
+      <a href="financial-wellbeing.html">Financial Wellbeing</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="insights.html">Insights</a>
+      <a href="diagnostic.html">Diagnostic</a>
+      <a href="book-a-meeting.html">Book a meeting</a>
     </div>
   </div>
 </footer>
@@ -580,6 +410,8 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+<script>
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('click', () => {
     const item = btn.closest('.faq-item');
