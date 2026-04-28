@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Insights — Aetas in the Workplace for Charities</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:       #1a2744;
+  --navy-dark:  #111b33;
+  --gold:       #b89a5a;
+  --gold-light: #d4b97a;
+  --cream:      #f8f4ee;
+  --cream-dark: #ede8df;
+  --white:      #ffffff;
+  --text:       #2a2a2a;
+  --muted:      #5c5c5c;
+  --border:     rgba(184,154,90,0.22);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 64px; background: var(--navy);
+  border-bottom: 1px solid rgba(184,154,90,0.18);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px;
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500; font-size: 1rem; letter-spacing: 0.03em;
+  color: var(--white); text-decoration: none; white-space: nowrap;
+}
+.nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+.nav-links a {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
+  text-transform: uppercase; color: rgba(255,255,255,0.6);
+  text-decoration: none; transition: color 0.3s;
+}
+.nav-links a:hover  { color: var(--gold-light); }
+.nav-links a.active { color: var(--gold-light); }
+.nav-cta a {
+  color: var(--gold-light) !important;
+  border: 1px solid rgba(184,154,90,0.4); padding: 7px 18px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s !important;
+}
+.nav-cta a:hover { background: var(--gold); color: var(--navy) !important; border-color: var(--gold); }
+
+/* LAYOUT */
+.section { padding: 96px 40px; }
+.section--cream { background: var(--cream); }
+.container { max-width: 1080px; margin: 0 auto; }
+
+/* TYPE */
+.label {
+  display: block; font-size: 0.68rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 18px;
+}
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.2; color: var(--navy); }
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); }
+.rule { width: 44px; height: 1px; background: var(--gold); margin: 26px 0; }
+p { color: var(--muted); }
+
+/* BUTTONS */
+.btn {
+  display: inline-block; font-family: 'Jost', sans-serif;
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  padding: 13px 30px; border: 1px solid transparent;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn-primary { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+.btn-ghost-white { background: transparent; color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.28); }
+.btn-ghost-white:hover { color: var(--white); border-color: rgba(255,255,255,0.65); }
+
+/* FADE */
+.fade { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade.in { opacity: 1; transform: none; }
+.d1 { transition-delay: 0.08s; }
+.d2 { transition-delay: 0.18s; }
+.d3 { transition-delay: 0.28s; }
+
+/* HERO */
+.hero {
+  padding: 140px 40px 80px;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -80px; right: -100px;
+  width: 480px; height: 480px; border-radius: 50%;
+  border: 1px solid rgba(184,154,90,0.09); pointer-events: none;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero .label { color: var(--gold-light); }
+.hero h1 { color: var(--white); max-width: 680px; margin-bottom: 20px; }
+.hero p { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 520px; }
+
+/* FEATURED ARTICLE */
+.featured {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  padding: 0 40px;
+}
+.featured-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; align-items: stretch;
+}
+.featured-content {
+  padding: 72px 72px 72px 0;
+  border-right: 1px solid var(--border);
+}
+.featured-meta {
+  display: flex; align-items: center; gap: 20px;
+  margin-bottom: 24px;
+}
+.tag {
+  font-size: 0.62rem; font-weight: 500; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--white);
+  background: var(--navy); padding: 5px 12px;
+}
+.tag--gold { background: var(--gold); color: var(--navy); }
+.tag--outline {
+  background: transparent; color: var(--gold);
+  border: 1px solid var(--gold); padding: 4px 11px;
+}
+.meta-date { font-size: 0.75rem; color: var(--muted); }
+.featured-content h2 {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  margin-bottom: 18px; line-height: 1.25;
+}
+.featured-content .summary {
+  font-size: 0.95rem; line-height: 1.75;
+  max-width: 100%; margin-bottom: 28px;
+}
+.featured-sidebar { padding: 72px 0 72px 72px; }
+.featured-sidebar .author-block { margin-bottom: 36px; }
+.author-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 500; color: var(--navy); margin-bottom: 4px;
+}
+.author-role { font-size: 0.78rem; color: var(--muted); }
+.read-time { font-size: 0.75rem; color: var(--muted); margin-top: 8px; letter-spacing: 0.04em; }
+.featured-pullquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-style: italic;
+  color: var(--navy); line-height: 1.45;
+  border-left: 2px solid var(--gold);
+  padding-left: 20px;
+  margin-top: 36px;
+}
+
+/* FILTER BAR */
+.filter-bar {
+  padding: 0 40px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+.filter-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: flex; gap: 0; align-items: center;
+}
+.filter-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--muted);
+  background: none; border: none; border-bottom: 2px solid transparent;
+  padding: 16px 24px 14px; cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+}
+.filter-btn:hover { color: var(--navy); }
+.filter-btn.active { color: var(--navy); border-bottom-color: var(--gold); font-weight: 500; }
+
+/* ARTICLES GRID */
+.articles-intro { max-width: 560px; margin-bottom: 52px; }
+.articles-intro p { margin-top: 14px; }
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.article-card {
+  background: var(--cream);
+  padding: 40px 36px 44px;
+  display: flex; flex-direction: column;
+  border-top: 3px solid transparent;
+  transition: border-color 0.35s, background 0.35s;
+  cursor: pointer;
+}
+.article-card:hover {
+  border-top-color: var(--gold);
+  background: var(--cream-dark);
+}
+.article-card-meta {
+  display: flex; align-items: center;
+  gap: 12px; margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.article-card h3 {
+  font-size: 1.35rem; line-height: 1.3;
+  margin-bottom: 14px;
+  transition: color 0.3s;
+}
+.article-card:hover h3 { color: var(--navy); }
+.article-card .summary {
+  font-size: 0.87rem; line-height: 1.7;
+  flex-grow: 1; margin-bottom: 24px;
+}
+.article-card-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between;
+  align-items: center;
+}
+.article-author { font-size: 0.75rem; color: var(--muted); }
+.article-read {
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--gold);
+  text-decoration: none; border-bottom: 1px solid var(--border);
+  padding-bottom: 2px; transition: border-color 0.3s;
+}
+.article-read:hover { border-color: var(--gold); }
+
+/* COMING SOON CARD */
+.article-card--placeholder {
+  background: var(--cream-dark);
+  border-top: 3px solid var(--border);
+  cursor: default;
+  opacity: 0.7;
+}
+.article-card--placeholder:hover {
+  background: var(--cream-dark);
+  border-top-color: var(--border);
+}
+.placeholder-label {
+  font-size: 0.65rem; font-weight: 500; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* NEWSLETTER / SUBMIT */
+.newsletter {
+  background: var(--navy);
+  padding: 80px 40px;
+}
+.newsletter-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+.newsletter h2 { color: var(--white); margin-bottom: 14px; }
+.newsletter p { color: rgba(255,255,255,0.55); font-size: 0.95rem; max-width: 100%; }
+.newsletter-form { display: flex; flex-direction: column; gap: 12px; }
+.newsletter-form input[type="email"] {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.85rem; font-weight: 300;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--white); padding: 14px 18px;
+  outline: none; transition: border-color 0.3s;
+  width: 100%;
+}
+.newsletter-form input[type="email"]::placeholder { color: rgba(255,255,255,0.35); }
+.newsletter-form input[type="email"]:focus { border-color: var(--gold); }
+.newsletter-form .btn { text-align: center; }
+.newsletter-note { font-size: 0.73rem; color: rgba(255,255,255,0.3); margin-top: 4px; }
+
+/* SERVICE NAV */
+.service-nav { background: var(--cream-dark); border-top: 1px solid var(--border); padding: 48px 40px; }
+.service-nav-inner { max-width: 1080px; margin: 0 auto; }
+.service-nav-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: block; }
+.service-nav-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+.service-nav-card { background: var(--cream); padding: 32px 36px; text-decoration: none; display: block; border-top: 2px solid transparent; transition: border-color 0.3s, background 0.3s; }
+.service-nav-card:hover { border-top-color: var(--gold); background: var(--white); }
+.service-nav-num { font-size: 0.7rem; color: var(--gold); font-weight: 500; letter-spacing: 0.1em; margin-bottom: 8px; display: block; }
+.service-nav-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--navy); }
+.service-nav-sub { font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
+
+/* FOOTER */
+footer { background: var(--navy-dark); padding: 56px 40px 40px; }
+.footer-inner { max-width: 1080px; margin: 0 auto; }
+.footer-brand { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+.footer-contact { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 32px; }
+.footer-contact a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.3s; }
+.footer-contact a:hover { color: var(--gold-light); }
+hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 24px 0; }
+.footer-legal { font-size: 0.76rem; line-height: 1.7; color: rgba(255,255,255,0.32); max-width: 820px; margin-bottom: 24px; }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+.footer-links a { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.32); text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: var(--gold-light); }
+
+/* RESPONSIVE */
+@media (max-width: 940px) {
+  .nav-links { display: none; }
+  .section, .hero, .newsletter { padding-left: 24px; padding-right: 24px; }
+  nav, footer { padding-left: 24px; padding-right: 24px; }
+  .featured, .filter-bar, .service-nav { padding-left: 24px; padding-right: 24px; }
+  .featured-inner { grid-template-columns: 1fr; }
+  .featured-content { padding: 48px 0 32px; border-right: none; border-bottom: 1px solid var(--border); }
+  .featured-sidebar { padding: 32px 0 48px; }
+  .articles-grid { grid-template-columns: 1fr; }
+  .newsletter-inner { grid-template-columns: 1fr; gap: 40px; }
+  .service-nav-grid { grid-template-columns: 1fr; }
+  .filter-inner { overflow-x: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://itw.aetaspartners.com/index.html">Aetas in the Workplace</a>
+  <ul class="nav-links">
+    <li><a href="https://itw.aetaspartners.com/limited-companies.html">Limited companies</a></li>
+    <li><a href="charities-v2.html">Charities</a></li>
+    <li><a href="https://aetas-partners.com/business-events/">Events</a></li>
+    <li><a href="#" class="active">Insights</a></li>
+    <li><a href="faqs.html">FAQs</a></li>
+    <li><a href="https://itw.aetaspartners.com/diagnostic.html">Diagnostic</a></li>
+    <li class="nav-cta"><a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty">Book a meeting</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="label fade">Insights</span>
+    <h1 class="fade d1">Thinking on governance, financial guidance, and financial wellbeing for charities</h1>
+    <p class="fade d2">Perspectives from Aetas in the Workplace and Adena Street on the issues most likely to affect your organisation — and the questions trustees and leaders are asking most often.</p>
+  </div>
+</section>
+
+<!-- FEATURED ARTICLE -->
+<div class="featured">
+  <div class="featured-inner fade">
+    <div class="featured-content">
+      <div class="featured-meta">
+        <span class="tag tag--gold">Featured</span>
+        <span class="tag">Governance</span>
+        <span class="meta-date">April 2026</span>
+      </div>
+      <h2>Does your Investment Policy Statement still reflect your charity?</h2>
+      <p class="summary">An Investment Policy Statement is a legal requirement for any charity that has delegated discretionary investment management to an external manager. It sets out investment objectives, risk appetite, ethical restrictions, and governance responsibilities. Yet the vast majority of charities that hold investments either do not have a current IPS, or are working from a document that was written years ago and has never been revisited.</p>
+      <p class="summary">The consequences of an out-of-date IPS are not merely administrative. A document that no longer reflects the charity's ethical position — or that fails to account for significant changes in reserves, cashflow, or investment objectives — exposes trustees to reputational risk and creates gaps that the Charity Commission would expect a well-governed board to have addressed. Rupert Cecil of Adena Street explores what a current, working IPS should contain, when it should be reviewed, and what trustees can do if they are not sure where to start.</p>
+      <a href="#" class="btn btn-primary">Read article</a>
+    </div>
+    <div class="featured-sidebar">
+      <div class="author-block">
+        <div class="author-name">Rupert Cecil</div>
+        <div class="author-role">Founder, Adena Street Limited</div>
+        <div class="read-time">7 min read &nbsp;·&nbsp; Governance</div>
+      </div>
+      <blockquote class="featured-pullquote">"An IPS should be a living document — not something written once and filed away. Many charities have never been told that their original document no longer meets the standard required."</blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="governance">Governance</button>
+    <button class="filter-btn" data-filter="financial-guidance">Financial Guidance</button>
+    <button class="filter-btn" data-filter="financial-wellbeing">Financial Wellbeing</button>
+    <button class="filter-btn" data-filter="income">Income &amp; Strategy</button>
+  </div>
+</div>
+
+<!-- ARTICLES GRID -->
+<section class="section">
+  <div class="container">
+    <div class="articles-intro fade">
+      <span class="label">All articles</span>
+      <h2>Recent perspectives</h2>
+      <p>Articles are added regularly. New pieces will cover emerging questions across governance, financial guidance, and staff financial wellbeing as we hear them from organisations we work with.</p>
+    </div>
+
+    <div class="articles-grid">
+
+      <!-- Article 1 -->
+      <div class="article-card fade" data-category="financial-guidance">
+        <div class="article-card-meta">
+          <span class="tag">Financial Guidance</span>
+          <span class="meta-date" style="font-size:0.72rem; color:var(--muted);">March 2026</span>
+        </div>
+        <h3>What charities are really paying in investment fees</h3>
+        <p class="summary">The headline management charge is rarely the full story. Ongoing Charges Figures embedded within underlying funds can add significantly to the total cost of investment management — and in many cases, trustees are unaware they exist. This piece explains what to look for, how to ask the right questions, and what a full cost analysis typically reveals.</p>
+        <div class="article-card-footer">
+          <span class="article-author">Rupert Cecil — Adena Street</span>
+          <a href="#" class="article-read">Read →</a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="article-card fade d1" data-category="financial-wellbeing">
+        <div class="article-card-meta">
+          <span class="tag">Financial Wellbeing</span>
+          <span class="meta-date" style="font-size:0.72rem; color:var(--muted);">March 2026</span>
+        </div>
+        <h3>The hidden cost of financial anxiety in your team</h3>
+        <p class="summary">Financial stress among employees does not show up on a balance sheet, but its effects are visible in absence rates, turnover, and the quieter performance losses that are harder to measure. For a charity or not-for-profit where every team member carries a disproportionate share of the organisation's knowledge and relationships, the stakes are higher than in a large corporate. This piece examines what the evidence says — and what a proportionate response looks like.</p>
+        <div class="article-card-footer">
+          <span class="article-author">Matthew Steiner — Aetas ITW</span>
+          <a href="#" class="article-read">Read →</a>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="article-card fade d2" data-category="governance">
+        <div class="article-card-meta">
+          <span class="tag">Governance</span>
+          <span class="meta-date" style="font-size:0.72rem; color:var(--muted);">February 2026</span>
+        </div>
+        <h3>What the Charity Commission expects from trustees on investments</h3>
+        <p class="summary">CC14 — the Charity Commission's guidance on investing charity money — sets out clear expectations for trustees. Yet many boards are operating without a current Investment Policy Statement, have never tested their manager's performance against an appropriate benchmark, and are unable to confirm that their portfolio is free from investments that conflict with their charitable objects. This piece summarises the key obligations and what it looks like to meet them in practice.</p>
+        <div class="article-card-footer">
+          <span class="article-author">Rupert Cecil — Adena Street</span>
+          <a href="#" class="article-read">Read →</a>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="article-card fade" data-category="financial-wellbeing">
+        <div class="article-card-meta">
+          <span class="tag">Financial Wellbeing</span>
+          <span class="meta-date" style="font-size:0.72rem; color:var(--muted);">February 2026</span>
+        </div>
+        <h3>Purpose isn't enough: staff retention in the not-for-profit sector</h3>
+        <p class="summary">The assumption that mission-driven people will tolerate financial insecurity indefinitely is no longer borne out by the data. Turnover in the not-for-profit sector has risen consistently, and exit interviews increasingly cite financial pressure rather than disillusionment with the cause. The organisations managing retention most effectively are those that treat financial wellbeing as a structural response — not a perk — and communicate it accordingly to their teams.</p>
+        <div class="article-card-footer">
+          <span class="article-author">Matthew Steiner — Aetas ITW</span>
+          <a href="#" class="article-read">Read →</a>
+        </div>
+      </div>
+
+      <!-- Article 5 -->
+      <div class="article-card fade d1" data-category="income">
+        <div class="article-card-meta">
+          <span class="tag">Income &amp; Strategy</span>
+          <span class="meta-date" style="font-size:0.72rem; color:var(--muted);">January 2026</span>
+        </div>
+        <h3>Legacy giving: the income stream most charities haven't structured</h3>
+        <p class="summary">Gifts in wills represent one of the most consistent sources of charitable income in the UK — yet the majority of supporters who would consider leaving a legacy have never been asked, or have not had the guidance to make it feel straightforward. A structured legacy giving programme does not require a major fundraising operation: it requires the right conversation, at the right moment, with the right support in place. This piece explores what that looks like in practice.</p>
+        <div class="article-card-footer">
+          <span class="article-author">Rupert Cecil — Adena Street</span>
+          <a href="#" class="article-read">Read →</a>
+        </div>
+      </div>
+
+      <!-- Article 6 -->
+      <div class="article-card fade d2" data-category="financial-guidance">
+        <div class="article-card-meta">
+          <span class="tag">Financial Guidance</span>
+          <span class="meta-date" style="font-size:0.72rem; color:var(--muted);">January 2026</span>
+        </div>
+        <h3>Is your cash working hard enough? A practical guide for charity treasurers</h3>
+        <p class="summary">Many charities hold substantial reserves in current accounts or low-interest deposit facilities — often because reviewing the arrangement has never made it onto the board's agenda. With interest rates having shifted considerably in recent years, the gap between what charities are earning and what they could be earning on their reserves has widened. This practical piece sets out how to approach a cash management review, what questions to ask, and how to match short, medium, and long-term needs to appropriate facilities.</p>
+        <div class="article-card-footer">
+          <span class="article-author">Rupert Cecil — Adena Street</span>
+          <a href="#" class="article-read">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER / NOTIFY -->
+<div class="newsletter">
+  <div class="newsletter-inner">
+    <div>
+      <span class="label">Stay informed</span>
+      <h2 style="color:var(--white);">New articles, as they are published</h2>
+      <p style="margin-top:14px;">We publish new insights on governance, financial guidance, and staff financial wellbeing as questions arise from the organisations we work with. Leave your email to be notified when new pieces are added — no newsletter, no marketing, just the articles.</p>
+    </div>
+    <div>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Your email address" />
+        <a class="btn btn-primary" href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty">Notify me of new articles</a>
+        <p class="newsletter-note">Or book a conversation directly — most questions are answered faster that way.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE NAV -->
+<div class="service-nav">
+  <div class="service-nav-inner">
+    <span class="service-nav-label">The three services — charities and not-for-profits</span>
+    <div class="service-nav-grid">
+      <a class="service-nav-card" href="governance.html">
+        <span class="service-nav-num">01 — Offered by Adena Street</span>
+        <div class="service-nav-title">Governance</div>
+        <div class="service-nav-sub">Oversight structures, IPS, trustee training</div>
+      </a>
+      <a class="service-nav-card" href="financial-guidance.html">
+        <span class="service-nav-num">02 — Offered by Adena Street</span>
+        <div class="service-nav-title">Financial Guidance</div>
+        <div class="service-nav-sub">Asset returns, fee transparency, investment oversight</div>
+      </a>
+      <a class="service-nav-card" href="financial-wellbeing.html">
+        <span class="service-nav-num">03 — Powered by Aetas ITW</span>
+        <div class="service-nav-title">Financial Wellbeing</div>
+        <div class="service-nav-sub">Staff benefits, workshops, resilience programmes</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">Aetas in the Workplace</span>
+    <div class="footer-contact">
+      <a href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a>
+      &nbsp;·&nbsp; 020 3633 0579
+    </div>
+    <hr class="footer-rule" />
+    <p class="footer-legal">Aetas in the Workplace provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Governance and financial guidance services for charities are provided independently by Adena Street Limited.</p>
+    <div class="footer-links">
+      <a href="faqs.html">FAQs</a>
+      <a href="https://itw.aetaspartners.com/diagnostic.html">Take the diagnostic</a>
+      <a href="https://itw.aetaspartners.com/privacy.html">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Scroll fade
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+// Category filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.article-card[data-category]');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    cards.forEach(card => {
+      const show = filter === 'all' || card.dataset.category === filter;
+      card.style.display = show ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>

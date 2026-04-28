@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FAQs — Aetas in the Workplace for Charities</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:       #1a2744;
+  --navy-dark:  #111b33;
+  --gold:       #b89a5a;
+  --gold-light: #d4b97a;
+  --cream:      #f8f4ee;
+  --cream-dark: #ede8df;
+  --white:      #ffffff;
+  --text:       #2a2a2a;
+  --muted:      #5c5c5c;
+  --border:     rgba(184,154,90,0.22);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 64px; background: var(--navy);
+  border-bottom: 1px solid rgba(184,154,90,0.18);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px;
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500; font-size: 1rem; letter-spacing: 0.03em;
+  color: var(--white); text-decoration: none; white-space: nowrap;
+}
+.nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+.nav-links a {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
+  text-transform: uppercase; color: rgba(255,255,255,0.6);
+  text-decoration: none; transition: color 0.3s;
+}
+.nav-links a:hover  { color: var(--gold-light); }
+.nav-links a.active { color: var(--gold-light); }
+.nav-cta a {
+  color: var(--gold-light) !important;
+  border: 1px solid rgba(184,154,90,0.4); padding: 7px 18px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s !important;
+}
+.nav-cta a:hover { background: var(--gold); color: var(--navy) !important; border-color: var(--gold); }
+
+/* LAYOUT */
+.section { padding: 96px 40px; }
+.section--cream { background: var(--cream); }
+.container { max-width: 1080px; margin: 0 auto; }
+
+/* TYPE */
+.label {
+  display: block; font-size: 0.68rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 18px;
+}
+h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.2; color: var(--navy); }
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); }
+h3 { font-size: 1.35rem; }
+.rule { width: 44px; height: 1px; background: var(--gold); margin: 26px 0; }
+p { color: var(--muted); }
+
+/* BUTTONS */
+.btn {
+  display: inline-block; font-family: 'Jost', sans-serif;
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  padding: 13px 30px; border: 1px solid transparent;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn-primary { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+.btn-ghost-white { background: transparent; color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.28); }
+.btn-ghost-white:hover { color: var(--white); border-color: rgba(255,255,255,0.65); }
+
+/* FADE */
+.fade { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade.in { opacity: 1; transform: none; }
+.d1 { transition-delay: 0.08s; }
+.d2 { transition-delay: 0.18s; }
+
+/* HERO */
+.hero {
+  padding: 140px 40px 80px;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -80px; right: -100px;
+  width: 480px; height: 480px; border-radius: 50%;
+  border: 1px solid rgba(184,154,90,0.09); pointer-events: none;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero .label { color: var(--gold-light); }
+.hero h1 { color: var(--white); max-width: 680px; margin-bottom: 20px; }
+.hero p { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 520px; }
+
+/* SECTION NAV (jump links) */
+.section-nav {
+  background: var(--cream-dark);
+  border-bottom: 1px solid var(--border);
+  padding: 0 40px;
+  position: sticky;
+  top: 64px;
+  z-index: 100;
+}
+.section-nav-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: flex; gap: 0;
+}
+.section-nav-link {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--muted);
+  text-decoration: none; padding: 18px 28px 16px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+  white-space: nowrap;
+}
+.section-nav-link:hover { color: var(--navy); border-bottom-color: var(--gold); }
+.section-nav-link.active { color: var(--navy); border-bottom-color: var(--gold); font-weight: 500; }
+
+/* FAQ BLOCK */
+.faq-block { margin-bottom: 80px; }
+.faq-block:last-child { margin-bottom: 0; }
+
+.faq-block-header {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+  margin-bottom: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.faq-block-meta {}
+.faq-block-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem; font-weight: 300;
+  color: var(--gold); line-height: 1; margin-bottom: 8px;
+}
+.faq-block-provider {
+  font-size: 0.63rem; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+.faq-block-intro h3 { font-size: 1.6rem; margin-bottom: 10px; }
+.faq-block-intro p { font-size: 0.9rem; max-width: 580px; }
+
+/* FAQ ITEMS */
+.faq-item { border-top: 1px solid var(--border); }
+.faq-item:last-child { border-bottom: 1px solid var(--border); }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: none;
+  padding: 20px 0; cursor: pointer;
+  font-family: 'Cormorant Garamond', serif; font-size: 1.12rem;
+  font-weight: 400; color: var(--navy);
+  display: flex; justify-content: space-between; align-items: center; gap: 24px;
+}
+.faq-icon { color: var(--gold); font-size: 1.4rem; flex-shrink: 0; transition: transform 0.3s; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-a {
+  display: none; padding: 0 0 22px;
+  font-size: 0.88rem; color: var(--muted);
+  max-width: 700px; line-height: 1.8;
+}
+.faq-item.open .faq-a { display: block; }
+
+/* GENERAL SECTION */
+.general-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-bottom: 80px; }
+.general-card {
+  background: var(--cream);
+  padding: 40px 40px 44px;
+  border-top: 3px solid var(--gold);
+}
+.general-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 500;
+  color: var(--navy); margin-bottom: 12px;
+}
+.general-card p { font-size: 0.88rem; line-height: 1.75; }
+
+/* CTA STRIP */
+.cta-strip { background: var(--navy); padding: 80px 40px; }
+.cta-strip .container {
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 48px; align-items: center;
+}
+.cta-strip h2 { color: var(--white); max-width: 560px; margin-bottom: 12px; }
+.cta-strip p { color: rgba(255,255,255,0.55); max-width: 520px; font-size: 0.95rem; }
+.cta-strip-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-end; white-space: nowrap; }
+
+/* SERVICE NAV */
+.service-nav { background: var(--cream-dark); border-top: 1px solid var(--border); padding: 48px 40px; }
+.service-nav-inner { max-width: 1080px; margin: 0 auto; }
+.service-nav-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: block; }
+.service-nav-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+.service-nav-card { background: var(--cream); padding: 32px 36px; text-decoration: none; display: block; border-top: 2px solid transparent; transition: border-color 0.3s, background 0.3s; }
+.service-nav-card:hover { border-top-color: var(--gold); background: var(--white); }
+.service-nav-num { font-size: 0.7rem; color: var(--gold); font-weight: 500; letter-spacing: 0.1em; margin-bottom: 8px; display: block; }
+.service-nav-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--navy); }
+.service-nav-sub { font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
+
+/* FOOTER */
+footer { background: var(--navy-dark); padding: 56px 40px 40px; }
+.footer-inner { max-width: 1080px; margin: 0 auto; }
+.footer-brand { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+.footer-contact { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 32px; }
+.footer-contact a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.3s; }
+.footer-contact a:hover { color: var(--gold-light); }
+hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 24px 0; }
+.footer-legal { font-size: 0.76rem; line-height: 1.7; color: rgba(255,255,255,0.32); max-width: 820px; margin-bottom: 24px; }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+.footer-links a { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.32); text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: var(--gold-light); }
+
+/* RESPONSIVE */
+@media (max-width: 940px) {
+  .nav-links { display: none; }
+  .section, .hero, .cta-strip, .service-nav { padding-left: 24px; padding-right: 24px; }
+  nav, footer { padding-left: 24px; padding-right: 24px; }
+  .section-nav { padding: 0 24px; overflow-x: auto; }
+  .faq-block-header { grid-template-columns: 1fr; gap: 16px; }
+  .general-grid { grid-template-columns: 1fr; }
+  .service-nav-grid { grid-template-columns: 1fr; }
+  .cta-strip .container { grid-template-columns: 1fr; }
+  .cta-strip-actions { align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://itw.aetaspartners.com/index.html">Aetas in the Workplace</a>
+  <ul class="nav-links">
+    <li><a href="https://itw.aetaspartners.com/limited-companies.html">Limited companies</a></li>
+    <li><a href="charities-v2.html">Charities</a></li>
+    <li><a href="https://aetas-partners.com/business-events/">Events</a></li>
+    <li><a href="insights.html">Insights</a></li>
+    <li><a href="#" class="active">FAQs</a></li>
+    <li><a href="https://itw.aetaspartners.com/diagnostic.html">Diagnostic</a></li>
+    <li class="nav-cta"><a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty">Book a meeting</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="label fade">Frequently asked questions</span>
+    <h1 class="fade d1">Questions about the Aetas ITW offering for charities</h1>
+    <p class="fade d2">Organised by service area. If you have a question that is not answered here, the quickest route is a no-cost discovery conversation with Matthew Steiner.</p>
+  </div>
+</section>
+
+<!-- SECTION NAV (sticky jump links) -->
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <a class="section-nav-link active" href="#general">Getting started</a>
+    <a class="section-nav-link" href="#governance">Governance</a>
+    <a class="section-nav-link" href="#financial-guidance">Financial Guidance</a>
+    <a class="section-nav-link" href="#financial-wellbeing">Financial Wellbeing</a>
+  </div>
+</div>
+
+<!-- MAIN FAQ CONTENT -->
+<section class="section" id="general">
+  <div class="container">
+
+    <!-- GETTING STARTED — intro cards -->
+    <div class="fade" style="max-width:640px; margin-bottom: 48px;">
+      <span class="label">Getting started</span>
+      <h2>What to expect before you commit to anything</h2>
+      <p style="margin-top:14px;">The most common questions are about cost, process, and fit. All three are answered here.</p>
+    </div>
+
+    <div class="general-grid fade">
+      <div class="general-card">
+        <h4>The discovery conversation costs nothing</h4>
+        <p>Every engagement begins with a no-cost conversation. We look at what is already in place, where pressure may be showing up, and what a proportionate response could look like. There is no obligation beyond the conversation itself.</p>
+      </div>
+      <div class="general-card">
+        <h4>Nothing is introduced before a diagnostic</h4>
+        <p>Aetas ITW takes a consultancy-led approach. Before anything is recommended — across any of the three service areas — a structured diagnostic is completed. What is delivered is built around your organisation, not applied from a template.</p>
+      </div>
+      <div class="general-card">
+        <h4>Fees are transparent and agreed in advance</h4>
+        <p>If work beyond the discovery conversation is recommended, all fees are fully transparent and agreed before anything proceeds. In many cases, the improvements and savings identified offset the cost of the engagement.</p>
+      </div>
+      <div class="general-card">
+        <h4>Designed for organisations of 10 to 200 people</h4>
+        <p>The programme scales to your size. We work with small volunteer-led charities, medium-sized not-for-profits, and organisations up to around 200 people. In every case, the approach is calibrated to fit the context.</p>
+      </div>
+    </div>
+
+    <!-- General FAQs -->
+    <div class="faq-list fade">
+      <div class="faq-item">
+        <button class="faq-q">We have looked at other providers and they did not feel relevant to us.<span class="faq-icon">+</span></button>
+        <div class="faq-a">That is a common experience. Most financial wellbeing solutions are designed for large corporate employers and do not translate well into a not-for-profit environment. The Aetas ITW approach is bespoke to each organisation — the diagnostic we complete before anything is introduced ensures that what is recommended reflects your workforce, your culture, and your constraints. Separately, the governance and financial guidance offered through Adena Street is built specifically for the charity sector.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can we engage with just one of the three services, or do we need to take all three?<span class="faq-icon">+</span></button>
+        <div class="faq-a">You can engage with any combination of the three services. Many organisations begin with one area and expand the engagement over time as confidence and familiarity grows. The discovery conversation will help clarify which services are most immediately relevant to your situation.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do we demonstrate the value of this to our trustees or funders?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Clear documentation of services introduced and outcomes achieved is provided throughout any engagement. This supports reporting to trustees, funders, and other stakeholders — and helps demonstrate a structured, evidenced approach to the organisation's financial and people responsibilities. For governance and financial guidance work, this documentation is particularly useful in demonstrating compliance with Charity Commission expectations.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Who is the right person in our organisation to have the initial conversation?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Typically a Chief Executive, Head of Finance, or a trustee with responsibility for finance or HR. The conversation covers both the organisational dimension (governance, investments, finances) and the people dimension (staff benefits and wellbeing), so the person best placed to speak to both is ideal — though it is also common for the conversation to start with one lead and widen from there.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GOVERNANCE FAQS -->
+<section class="section section--cream" id="governance">
+  <div class="container">
+    <div class="faq-block fade">
+      <div class="faq-block-header">
+        <div class="faq-block-meta">
+          <div class="faq-block-num">01</div>
+          <div class="faq-block-provider">Offered by Adena Street</div>
+        </div>
+        <div class="faq-block-intro">
+          <h3>Governance</h3>
+          <p>Questions about governance structures, Investment Policy Statements, trustee responsibilities, and the Charity Commission's expectations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What is an Investment Policy Statement and do we legally need one?<span class="faq-icon">+</span></button>
+        <div class="faq-a">An Investment Policy Statement (IPS) is a formal document that sets out your charity's investment objectives, risk appetite, ethical restrictions, and governance framework for managing investments. If your charity has delegated discretionary investment management to an external manager, an IPS is a legal requirement under Charity Commission guidance. Many charities either do not have one, or hold a document that has not been reviewed in years and no longer reflects the organisation's current position. We can help you draft or update your IPS to reflect your current needs and obligations.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How often should our IPS be reviewed?<span class="faq-icon">+</span></button>
+        <div class="faq-a">At a minimum, an IPS should be reviewed annually. It should also be reviewed whenever your circumstances change significantly — for example, if your investment manager changes, if there is a substantial change in your reserves or cashflow, or if your charitable objects or ethical position evolves. Many charities find that their IPS was written once and never revisited, which exposes trustees to risk if it no longer accurately reflects how the charity is being run.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">We are a small charity with a volunteer board. Do we really need governance support?<span class="faq-icon">+</span></button>
+        <div class="faq-a">In some respects, smaller charities are more exposed than larger ones — not because the obligations are different, but because volunteer boards frequently lack the specialist time or expertise to manage them confidently. The Charity Commission actively encourages trustees to seek independent advice when they lack the time, knowledge, or inclination to act alone. Independent governance support does not need to be extensive to make a meaningful difference to a board's confidence and effectiveness.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">We do not have investments, only cash. Does governance support still apply?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. Governance support covers far more than investment oversight — it includes board structures, trustee responsibilities, conflict of interest management, accountability frameworks, and decision-making processes. Where a charity holds cash, best practice still recommends a clear investment policy, and cash management strategy is itself an area where many charities leave value on the table.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What does trustee training cover?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Training sessions are designed around your board's specific context and the areas where confidence or knowledge is most limited. Common areas include: understanding trustee legal duties, reading and interpreting investment performance reports, assessing fees and costs, understanding the types of investments held, and the role of ethical investment restrictions. Sessions can be delivered at board meetings or as standalone training events, and the Charity Commission explicitly encourages this kind of education.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is Adena Street independent?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. Adena Street operates entirely independently, with no commercial relationships with investment managers, product providers, or other financial services firms. Where specialist expertise is required, Adena Street draws on the whole of the market. All advice is given in the interests of the client — never on the basis of any referral arrangement or commercial incentive.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIAL GUIDANCE FAQS -->
+<section class="section" id="financial-guidance">
+  <div class="container">
+    <div class="faq-block fade">
+      <div class="faq-block-header">
+        <div class="faq-block-meta">
+          <div class="faq-block-num">02</div>
+          <div class="faq-block-provider">Offered by Adena Street</div>
+        </div>
+        <div class="faq-block-intro">
+          <h3>Financial Guidance</h3>
+          <p>Questions about investment performance, fees, asset returns, and how independent financial guidance works in practice.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">We think our investment manager is performing well. Is a review still worthwhile?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Often, yes. Many trustees lack the benchmarking framework to assess performance accurately. A manager that appears to be performing well may be behind its peer group on a risk-adjusted basis, or may be charging fees — including hidden charges — that significantly reduce net returns. An independent review does not require there to be a problem. It gives your board the evidence to confirm things are in good order, or to identify improvements that would not otherwise be visible.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is an OCF and why does it matter?<span class="faq-icon">+</span></button>
+        <div class="faq-a">An Ongoing Charges Figure (OCF) is a fee embedded within the funds held in your investment portfolio. Unlike the headline management charge, OCF is deducted directly from fund assets — meaning it does not appear as a visible line on a statement, and is frequently not raised or explained in trustee meetings. Over time, OCF charges can represent a material drag on net returns. Understanding the full cost of your investment arrangements, including OCF, is essential to forming an accurate view of the value you are receiving.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is the ARC benchmark and how is it used?<span class="faq-icon">+</span></button>
+        <div class="faq-a">The ARC Charity Indices are sterling-denominated, risk-based benchmarks used to assess how a charity's investments have performed relative to peer charities. They are based on data from thousands of charities and provide a standardised comparison that removes much of the subjectivity from performance assessment. If your manager is below the mean for their risk category, their performance is effectively in the bottom half relative to peers — which should prompt questions if it persists over multiple reporting periods.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">We only hold cash, not investments. Is financial guidance still relevant?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. Cash management is one of the areas where charities most commonly leave value on the table. A structured review of your banking and deposit arrangements — matched against your short, medium, and long-term cashflow requirements — can identify meaningful improvements with manageable risk. Financial guidance is not limited to organisations with investment portfolios.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does the investment manager search process work?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Adena Street structures and runs the search process on your behalf, which reduces the burden on your trustees and ensures the evaluation is conducted on a genuinely independent basis. The process typically involves scoping the brief, approaching a shortlist of relevant managers from across the market, evaluating responses against agreed criteria, and presenting a clear recommendation. The process is designed to be thorough without being onerous for your leadership team to manage.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Our investment manager says our performance is just behind the ARC benchmark. Is that normal?<span class="faq-icon">+</span></button>
+        <div class="faq-a">If a manager is behind the mean figure for their risk category over a sustained period, they are effectively in the bottom half of their peer group — which is worth examining. Investment managers are understandably more forthcoming with performance commentary in good markets than in difficult ones. If your board is not receiving proactive updates during periods of poor performance, or does not have the framework to interpret the reporting it receives, that is itself a governance issue worth addressing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIAL WELLBEING FAQS -->
+<section class="section section--cream" id="financial-wellbeing">
+  <div class="container">
+    <div class="faq-block fade">
+      <div class="faq-block-header">
+        <div class="faq-block-meta">
+          <div class="faq-block-num">03</div>
+          <div class="faq-block-provider">Powered by Aetas in the Workplace</div>
+        </div>
+        <div class="faq-block-intro">
+          <h3>Financial Wellbeing</h3>
+          <p>Questions about staff financial wellbeing programmes, workshops, one-to-one guidance, and what the Aetas ITW approach looks like in practice for a not-for-profit.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">We already have an Employee Assistance Programme. Does that cover financial wellbeing?<span class="faq-icon">+</span></button>
+        <div class="faq-a">An EAP typically provides reactive, crisis-focused support — it is valuable, but it is not a financial wellbeing programme. An EAP does not review your benefits structure, run proactive financial resilience workshops, or provide one-to-one guidance from a regulated financial planner. Aetas ITW sits alongside an EAP rather than replacing it, addressing a different and complementary set of needs: building financial capability and confidence before a crisis develops, rather than responding to one after it has.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does the one-to-one guidance work, and what does it cost the employee?<span class="faq-icon">+</span></button>
+        <div class="faq-a">One-to-one sessions are available to all employees and are provided at no charge to the individual. They are delivered confidentially by a regulated financial planner, by video call or in person, and cover whatever the individual would like to discuss — from day-to-day money management to pension planning or protection. The employer does not receive any information about the content of individual sessions. These sessions are consistently one of the most valued parts of the programme.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What do the financial resilience workshops cover?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Workshop topics are designed around the specific profile and life stages of your workforce. Common areas include: day-to-day money management and building a financial buffer, understanding workplace benefits and pension entitlements, managing financial pressure and debt, mid-career planning around mortgages, protection, and family finances, and planning for later life. Sessions are practical and grounded in everyday reality — the aim is to replace uncertainty and anxiety with clarity and capability.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Our staff are motivated by purpose. Is financial wellbeing still relevant?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Financial anxiety does not respect purpose. People who are genuinely motivated by their work are still vulnerable to the practical pressures of financial uncertainty — and in many cases, the salary gap between the not-for-profit and private sectors creates a specific tension that is different from what private sector employees face. Supporting your people financially is not at odds with your mission. It is what makes it sustainable.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">We have a team of around twelve people. Is the programme still worth doing at that scale?<span class="faq-icon">+</span></button>
+        <div class="faq-a">In a team of twelve, the impact of one financially stressed or disengaged person is felt by everyone around them. The cost of losing them — recruitment, induction, and the time it takes to rebuild institutional knowledge — is disproportionate. Aetas ITW is designed for organisations of this size. The programme is scaled to fit, and the discovery conversation is provided at no cost so you can understand what it might look like before committing to anything.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is financial advice provided as part of the Financial Wellbeing service?<span class="faq-icon">+</span></button>
+        <div class="faq-a">The workshops and group sessions are educational in nature and do not constitute regulated financial advice. Where individual regulated advice is appropriate — for example, around pension decisions, investment choices, or protection planning — this is provided separately by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421).</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How much time does this require from our leadership team?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Aetas ITW is designed to be light on leadership time. The diagnostic conversation is typically an hour. From there, we develop the programme, coordinate delivery, manage all employee communications, and provide ongoing oversight — without requiring your leadership team to manage providers or produce materials themselves. Most leaders find the process considerably lighter than they anticipated, and are pleasantly surprised by how much is handled on their behalf.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="container">
+    <div>
+      <h2>Still have a question? The quickest route is a conversation.</h2>
+      <p>A no-cost discovery conversation with Matthew Steiner — no obligation, designed to give you as much clarity as we gain from it.</p>
+    </div>
+    <div class="cta-strip-actions">
+      <a class="btn btn-primary" href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty">Book a discovery conversation</a>
+      <a class="btn btn-ghost-white" href="charities-v2.html">Back to charities overview</a>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE NAV -->
+<div class="service-nav">
+  <div class="service-nav-inner">
+    <span class="service-nav-label">The three services — charities and not-for-profits</span>
+    <div class="service-nav-grid">
+      <a class="service-nav-card" href="governance.html">
+        <span class="service-nav-num">01 — Offered by Adena Street</span>
+        <div class="service-nav-title">Governance</div>
+        <div class="service-nav-sub">Oversight structures, IPS, trustee training</div>
+      </a>
+      <a class="service-nav-card" href="financial-guidance.html">
+        <span class="service-nav-num">02 — Offered by Adena Street</span>
+        <div class="service-nav-title">Financial Guidance</div>
+        <div class="service-nav-sub">Asset returns, fee transparency, investment oversight</div>
+      </a>
+      <a class="service-nav-card" href="financial-wellbeing.html">
+        <span class="service-nav-num">03 — Powered by Aetas ITW</span>
+        <div class="service-nav-title">Financial Wellbeing</div>
+        <div class="service-nav-sub">Staff benefits, workshops, resilience programmes</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">Aetas in the Workplace</span>
+    <div class="footer-contact">
+      <a href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a>
+      &nbsp;·&nbsp; 020 3633 0579
+    </div>
+    <hr class="footer-rule" />
+    <p class="footer-legal">Aetas in the Workplace provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Governance and financial guidance services for charities are provided independently by Adena Street Limited.</p>
+    <div class="footer-links">
+      <a href="#">FAQs</a>
+      <a href="https://itw.aetaspartners.com/diagnostic.html">Take the diagnostic</a>
+      <a href="https://itw.aetaspartners.com/privacy.html">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Sticky section nav active state on scroll
+const sections = ['general','governance','financial-guidance','financial-wellbeing'];
+const navLinks = document.querySelectorAll('.section-nav-link');
+const scrollHandler = () => {
+  let current = 'general';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 130) current = id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+};
+window.addEventListener('scroll', scrollHandler, { passive: true });
+</script>
+</body>
+</html>
