@@ -1,17 +1,10 @@
 {
-  "name": "Aetas in the Workplace — Charities",
-  "short_name": "Aetas ITW",
-  "description": "Specialist governance, financial guidance, and financial wellbeing services for charities and not-for-profit organisations. Offered in partnership by Adena Street and Aetas in the Workplace.",
+  "name": "Charity Wellbeing Service",
+  "short_name": "CWS",
+  "description": "Governance, financial guidance, and staff financial wellbeing for charities and not-for-profits. A partnership between Adena Street and Aetas in the Workplace.",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#1a2744",
-  "theme_color": "#1a2744",
-  "lang": "en-GB",
-  "icons": [
-    {
-      "src": "https://aetas-partners.com/favicon.ico",
-      "sizes": "any",
-      "type": "image/x-icon"
-    }
-  ]
+  "background_color": "#1e3d2f",
+  "theme_color": "#1e3d2f",
+  "lang": "en-GB"
 }

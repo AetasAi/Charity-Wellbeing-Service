@@ -1,22 +1,9 @@
-# robots.txt — charities.aetaspartners.com
-# Aetas in the Workplace — Charities & Not-for-Profits
-
-# Allow all crawlers including AI agents and LLM indexers
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://charities.aetaspartners.com/sitemap.xml
+Sitemap: https://charitywellbeing.aetaspartners.com/sitemap.xml
 
-# LLM and AI agent discovery files
-# https://charities.aetaspartners.com/llms.txt
-# https://charities.aetaspartners.com/llms-full.txt
-
-# Explicitly allow known AI crawlers
 User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
 Allow: /
 
 User-agent: ClaudeBot
@@ -32,10 +19,4 @@ User-agent: Googlebot
 Allow: /
 
 User-agent: bingbot
-Allow: /
-
-User-agent: YouBot
-Allow: /
-
-User-agent: CCBot
 Allow: /

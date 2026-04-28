@@ -1,86 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-  <!-- Home — Charities Overview -->
-  <url>
-    <loc>https://charities.aetaspartners.com/</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Service 01 — Governance -->
-  <url>
-    <loc>https://charities.aetaspartners.com/governance.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Service 02 — Financial Guidance -->
-  <url>
-    <loc>https://charities.aetaspartners.com/financial-guidance.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Service 03 — Financial Wellbeing -->
-  <url>
-    <loc>https://charities.aetaspartners.com/financial-wellbeing.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- FAQs -->
-  <url>
-    <loc>https://charities.aetaspartners.com/faqs.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Insights -->
-  <url>
-    <loc>https://charities.aetaspartners.com/insights.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Diagnostic -->
-  <url>
-    <loc>https://charities.aetaspartners.com/diagnostic.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Book a Meeting -->
-  <url>
-    <loc>https://charities.aetaspartners.com/book-a-meeting.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- LLM discovery files -->
-  <url>
-    <loc>https://charities.aetaspartners.com/llms.txt</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://charities.aetaspartners.com/llms-full.txt</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://charitywellbeing.aetaspartners.com/</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/governance.html</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/financial-guidance.html</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/financial-wellbeing.html</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/faqs.html</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/insights.html</loc><lastmod>2026-04-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/diagnostic.html</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/book-a-meeting.html</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://charitywellbeing.aetaspartners.com/llms.txt</loc><lastmod>2026-04-28</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
