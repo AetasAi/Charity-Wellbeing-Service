@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book a Meeting — Aetas in the Workplace for Charities</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:       #1a2744;
+  --navy-dark:  #111b33;
+  --gold:       #b89a5a;
+  --gold-light: #d4b97a;
+  --cream:      #f8f4ee;
+  --cream-dark: #ede8df;
+  --white:      #ffffff;
+  --text:       #2a2a2a;
+  --muted:      #5c5c5c;
+  --border:     rgba(184,154,90,0.22);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 64px; background: var(--navy);
+  border-bottom: 1px solid rgba(184,154,90,0.18);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px;
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500; font-size: 1rem; letter-spacing: 0.03em;
+  color: var(--white); text-decoration: none; white-space: nowrap;
+}
+.nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+.nav-links a {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
+  text-transform: uppercase; color: rgba(255,255,255,0.6);
+  text-decoration: none; transition: color 0.3s;
+}
+.nav-links a:hover  { color: var(--gold-light); }
+.nav-links a.active { color: var(--gold-light); }
+.nav-cta a {
+  color: var(--gold-light) !important;
+  border: 1px solid rgba(184,154,90,0.4); padding: 7px 18px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s !important;
+}
+.nav-cta a:hover { background: var(--gold); color: var(--navy) !important; border-color: var(--gold); }
+
+/* LAYOUT */
+.section { padding: 96px 40px; }
+.section--cream { background: var(--cream); }
+.container { max-width: 1080px; margin: 0 auto; }
+
+/* TYPE */
+.label {
+  display: block; font-size: 0.68rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 18px;
+}
+h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.2; color: var(--navy); }
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); }
+h3 { font-size: 1.55rem; }
+h4 { font-size: 1.1rem; font-weight: 500; }
+.rule { width: 44px; height: 1px; background: var(--gold); margin: 26px 0; }
+p { color: var(--muted); }
+
+/* BUTTONS */
+.btn {
+  display: inline-block; font-family: 'Jost', sans-serif;
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  padding: 13px 30px; border: 1px solid transparent;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn-primary { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+.btn-outline { background: transparent; color: var(--navy); border-color: rgba(26,39,68,0.35); }
+.btn-outline:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+/* FADE */
+.fade { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade.in { opacity: 1; transform: none; }
+.d1 { transition-delay: 0.08s; }
+.d2 { transition-delay: 0.18s; }
+.d3 { transition-delay: 0.28s; }
+
+/* HERO */
+.hero {
+  padding: 120px 40px 0;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+  min-height: 340px;
+}
+.hero::before {
+  content: ''; position: absolute; top: -80px; right: -100px;
+  width: 480px; height: 480px; border-radius: 50%;
+  border: 1px solid rgba(184,154,90,0.09); pointer-events: none;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero .label { color: var(--gold-light); }
+.hero h1 { color: var(--white); max-width: 640px; margin-bottom: 18px; }
+.hero h1 em { font-style: italic; color: var(--gold-light); }
+.hero .hero-sub { color: rgba(255,255,255,0.58); font-size: 1rem; max-width: 520px; padding-bottom: 56px; }
+
+/* MAIN BOOKING LAYOUT */
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 0;
+  align-items: start;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* LEFT — context */
+.booking-context {
+  padding: 72px 72px 72px 40px;
+  border-right: 1px solid var(--border);
+}
+
+/* PROFILE CARD */
+.profile-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 36px 40px;
+  background: var(--cream);
+  border-top: 3px solid var(--gold);
+  margin-bottom: 48px;
+}
+.profile-initials {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 400;
+  color: var(--white);
+  background: var(--navy);
+  width: 56px; height: 56px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  letter-spacing: 0.05em;
+}
+.profile-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem; font-weight: 400; color: var(--navy);
+  margin-bottom: 4px;
+}
+.profile-role { font-size: 0.78rem; color: var(--muted); margin-bottom: 2px; }
+.profile-org { font-size: 0.78rem; color: var(--gold); font-weight: 500; letter-spacing: 0.06em; }
+
+.booking-context h2 { margin-bottom: 16px; }
+.booking-context p { font-size: 0.92rem; margin-bottom: 16px; }
+.booking-context p:last-of-type { margin-bottom: 0; }
+
+.what-to-expect { margin-top: 44px; }
+.what-to-expect h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 500; color: var(--navy); margin-bottom: 20px; }
+.expect-list { list-style: none; padding: 0; }
+.expect-list li {
+  font-size: 0.88rem; color: var(--muted);
+  padding: 12px 0 12px 20px;
+  border-top: 1px solid var(--border);
+  position: relative; line-height: 1.6;
+}
+.expect-list li:last-child { border-bottom: 1px solid var(--border); }
+.expect-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-size: 0.7rem; top: 14px; }
+
+.contact-direct { margin-top: 44px; padding-top: 36px; border-top: 1px solid var(--border); }
+.contact-direct h4 { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--navy); margin-bottom: 12px; }
+.contact-direct p { font-size: 0.85rem; margin-bottom: 14px; }
+.contact-links { display: flex; flex-direction: column; gap: 8px; }
+.contact-link {
+  font-size: 0.82rem; color: var(--navy);
+  text-decoration: none; border-bottom: 1px solid var(--border);
+  padding-bottom: 2px; display: inline-block;
+  transition: color 0.3s, border-color 0.3s;
+}
+.contact-link:hover { color: var(--gold); border-color: var(--gold); }
+
+/* RIGHT — booking widget */
+.booking-widget-col {
+  padding: 64px 40px 64px 56px;
+  position: sticky;
+  top: 64px;
+}
+.widget-label {
+  font-size: 0.65rem; font-weight: 500; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 6px; display: block;
+}
+.widget-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.55rem; font-weight: 400; color: var(--navy);
+  margin-bottom: 24px; line-height: 1.25;
+}
+.widget-frame {
+  width: 100%; min-height: 560px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+}
+.widget-fallback {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 44px 36px;
+  text-align: center;
+}
+.widget-fallback p { font-size: 0.88rem; margin-bottom: 24px; }
+.widget-meta { margin-top: 20px; font-size: 0.75rem; color: var(--muted); text-align: center; }
+
+/* ALTERNATIVE — event card */
+.alt-section { padding: 80px 40px; background: var(--cream); }
+.alt-inner { max-width: 1080px; margin: 0 auto; }
+.alt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-top: 44px; }
+.alt-card { padding: 48px 44px; }
+.alt-card--event { background: var(--cream-dark); }
+.alt-card--diagnostic { background: var(--white); border: 1px solid var(--border); }
+.alt-tag { display: block; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.alt-date { font-size: 0.78rem; color: var(--muted); margin-bottom: 16px; }
+.alt-card h3 { margin-bottom: 14px; }
+.alt-card p { font-size: 0.9rem; margin-bottom: 24px; max-width: 100%; }
+.alt-card-meta { font-size: 0.78rem; color: var(--muted); margin-bottom: 20px; }
+.alt-card-meta span { display: block; padding: 4px 0; border-bottom: 1px solid var(--border); }
+.alt-card-meta span:last-child { border-bottom: none; }
+
+/* SERVICE NAV */
+.service-nav { background: var(--cream-dark); border-top: 1px solid var(--border); padding: 48px 40px; }
+.service-nav-inner { max-width: 1080px; margin: 0 auto; }
+.service-nav-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: block; }
+.service-nav-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+.service-nav-card { background: var(--cream); padding: 32px 36px; text-decoration: none; display: block; border-top: 2px solid transparent; transition: border-color 0.3s, background 0.3s; }
+.service-nav-card:hover { border-top-color: var(--gold); background: var(--white); }
+.service-nav-num { font-size: 0.7rem; color: var(--gold); font-weight: 500; letter-spacing: 0.1em; margin-bottom: 8px; display: block; }
+.service-nav-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--navy); }
+.service-nav-sub { font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
+
+/* FOOTER */
+footer { background: var(--navy-dark); padding: 56px 40px 40px; }
+.footer-inner { max-width: 1080px; margin: 0 auto; }
+.footer-brand { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+.footer-contact { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 32px; }
+.footer-contact a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.3s; }
+.footer-contact a:hover { color: var(--gold-light); }
+hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 24px 0; }
+.footer-legal { font-size: 0.76rem; line-height: 1.7; color: rgba(255,255,255,0.32); max-width: 820px; margin-bottom: 24px; }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+.footer-links a { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.32); text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: var(--gold-light); }
+
+/* RESPONSIVE */
+@media (max-width: 940px) {
+  .nav-links { display: none; }
+  nav, footer { padding-left: 24px; padding-right: 24px; }
+  .hero, .alt-section, .service-nav { padding-left: 24px; padding-right: 24px; }
+  .booking-layout { grid-template-columns: 1fr; }
+  .booking-context { padding: 48px 24px; border-right: none; border-bottom: 1px solid var(--border); }
+  .booking-widget-col { padding: 40px 24px; position: static; }
+  .alt-grid { grid-template-columns: 1fr; }
+  .service-nav-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://itw.aetaspartners.com/index.html">Aetas in the Workplace</a>
+  <ul class="nav-links">
+    <li><a href="https://itw.aetaspartners.com/limited-companies.html">Limited companies</a></li>
+    <li><a href="charities-v2.html">Charities</a></li>
+    <li><a href="https://aetas-partners.com/business-events/">Events</a></li>
+    <li><a href="insights.html">Insights</a></li>
+    <li><a href="faqs.html">FAQs</a></li>
+    <li><a href="https://itw.aetaspartners.com/diagnostic.html">Diagnostic</a></li>
+    <li class="nav-cta"><a href="#" class="active">Book a meeting</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="label fade">Book a meeting</span>
+    <h1 class="fade d1">A no-cost conversation.<br><em>No obligation beyond it.</em></h1>
+    <p class="hero-sub fade d2">Every engagement begins with a discovery conversation. Use the calendar to choose a time that suits you — or take the diagnostic first if you would like to arrive with a clearer picture of where the gaps may be.</p>
+  </div>
+</section>
+
+<!-- BOOKING LAYOUT -->
+<div style="background: var(--white); padding: 0 40px;" id="booking">
+  <div class="booking-layout">
+
+    <!-- LEFT: context -->
+    <div class="booking-context fade">
+
+      <div class="profile-card">
+        <div class="profile-initials">MS</div>
+        <div>
+          <div class="profile-name">Matthew Steiner</div>
+          <div class="profile-role">Founder &amp; Lead Consultant</div>
+          <div class="profile-org">Aetas in the Workplace</div>
+        </div>
+      </div>
+
+      <h2>What the discovery conversation covers</h2>
+      <p>This is a focused, unhurried conversation — typically around 45 minutes. It is designed to give you a clear picture of what Aetas ITW offers and whether it is the right fit for your organisation. We will look at what is currently in place, where financial pressure may be showing up, and what a proportionate response across governance, financial guidance, and staff wellbeing could look like.</p>
+      <p>There is no pitch and no follow-up pressure. The aim is to give you as much clarity from the conversation as we gain from it — so that whatever happens next is based on a genuine assessment of whether and how we can help.</p>
+
+      <div class="what-to-expect">
+        <h4>What to have to hand</h4>
+        <ul class="expect-list">
+          <li>A rough sense of your organisation's size — number of employees and approximate turnover or reserves</li>
+          <li>Any existing pension or benefits arrangements currently in place for staff</li>
+          <li>Whether your charity holds investments, and if so, whether you have a current Investment Policy Statement</li>
+          <li>A sense of what is prompting you to have the conversation — retention concerns, trustee questions, a governance review, or something else</li>
+        </ul>
+      </div>
+
+      <div class="contact-direct">
+        <h4>Prefer to reach out directly?</h4>
+        <p>If you would rather make contact before booking, or have a specific question you would like answered first, Matthew is happy to hear from you.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a>
+          <a class="contact-link" href="tel:02036330579">020 3633 0579</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: booking widget -->
+    <div class="booking-widget-col fade d1">
+      <span class="widget-label">Discovery conversation</span>
+      <div class="widget-title">Choose a time that works for you</div>
+
+      <!-- GoHighLevel booking widget embed -->
+      <iframe
+        src="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty"
+        class="widget-frame"
+        frameborder="0"
+        scrolling="yes"
+        title="Book a discovery conversation with Matthew Steiner"
+        onload="this.style.minHeight = this.contentWindow.document.body.scrollHeight + 'px'"
+      ></iframe>
+
+      <p class="widget-meta">Alternatively, <a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty" style="color:var(--gold); text-decoration:none; border-bottom: 1px solid var(--border);" target="_blank">open the booking page directly →</a></p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ALTERNATIVE ROUTES -->
+<section class="alt-section">
+  <div class="alt-inner">
+    <div class="fade">
+      <span class="label">Other ways to engage</span>
+      <h2>Not ready to book? Two other starting points.</h2>
+    </div>
+    <div class="alt-grid">
+      <div class="alt-card alt-card--event fade">
+        <span class="alt-tag">Upcoming event</span>
+        <div class="alt-date">15 April 2026 &nbsp;·&nbsp; 12:00–12:45</div>
+        <h3>Financial Wellbeing in the Workplace</h3>
+        <div class="alt-card-meta">
+          <span><strong style="font-weight:500; color:var(--navy);">Format</strong> &nbsp; Webinar via Zoom</span>
+          <span><strong style="font-weight:500; color:var(--navy);">Speakers</strong> &nbsp; Matthew Steiner &amp; Daniel Cottam</span>
+        </div>
+        <p>Hear the thinking behind Aetas ITW, understand whether financial pressure is affecting your organisation's performance, and see what a structured response looks like — before committing to any conversation.</p>
+        <a class="btn btn-outline" href="https://links.aetas-partners.com/widget/booking/4q95PzVyRtNPdzPavQzV">Reserve a place</a>
+      </div>
+
+      <div class="alt-card alt-card--diagnostic fade d1">
+        <span class="alt-tag">Free diagnostic</span>
+        <h3>Take the 12-question diagnostic first</h3>
+        <p>A short self-assessment across governance, financial guidance, and staff financial wellbeing. It takes around five minutes and gives you a scored picture of where your organisation's gaps may be — useful context for a discovery conversation, or a useful starting point in its own right.</p>
+        <a class="btn btn-primary" href="diagnostic.html">Start the diagnostic</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE NAV -->
+<div class="service-nav">
+  <div class="service-nav-inner">
+    <span class="service-nav-label">The three services — charities and not-for-profits</span>
+    <div class="service-nav-grid">
+      <a class="service-nav-card" href="governance.html">
+        <span class="service-nav-num">01 — Offered by Adena Street</span>
+        <div class="service-nav-title">Governance</div>
+        <div class="service-nav-sub">Oversight structures, IPS, trustee training</div>
+      </a>
+      <a class="service-nav-card" href="financial-guidance.html">
+        <span class="service-nav-num">02 — Offered by Adena Street</span>
+        <div class="service-nav-title">Financial Guidance</div>
+        <div class="service-nav-sub">Asset returns, fee transparency, investment oversight</div>
+      </a>
+      <a class="service-nav-card" href="financial-wellbeing.html">
+        <span class="service-nav-num">03 — Powered by Aetas ITW</span>
+        <div class="service-nav-title">Financial Wellbeing</div>
+        <div class="service-nav-sub">Staff benefits, workshops, resilience programmes</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">Aetas in the Workplace</span>
+    <div class="footer-contact">
+      <a href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a>
+      &nbsp;·&nbsp; 020 3633 0579
+    </div>
+    <hr class="footer-rule" />
+    <p class="footer-legal">Aetas in the Workplace provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Governance and financial guidance services for charities are provided independently by Adena Street Limited.</p>
+    <div class="footer-links">
+      <a href="faqs.html">FAQs</a>
+      <a href="diagnostic.html">Take the diagnostic</a>
+      <a href="https://itw.aetaspartners.com/privacy.html">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

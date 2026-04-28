@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diagnostic — Aetas in the Workplace for Charities</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:       #1a2744;
+  --navy-dark:  #111b33;
+  --gold:       #b89a5a;
+  --gold-light: #d4b97a;
+  --cream:      #f8f4ee;
+  --cream-dark: #ede8df;
+  --white:      #ffffff;
+  --text:       #2a2a2a;
+  --muted:      #5c5c5c;
+  --border:     rgba(184,154,90,0.22);
+  --green:      #3a7d5a;
+  --amber:      #b87c2a;
+  --red:        #8b3030;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 64px; background: var(--navy);
+  border-bottom: 1px solid rgba(184,154,90,0.18);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px;
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500; font-size: 1rem; letter-spacing: 0.03em;
+  color: var(--white); text-decoration: none; white-space: nowrap;
+}
+.nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+.nav-links a {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
+  text-transform: uppercase; color: rgba(255,255,255,0.6);
+  text-decoration: none; transition: color 0.3s;
+}
+.nav-links a:hover  { color: var(--gold-light); }
+.nav-links a.active { color: var(--gold-light); }
+.nav-cta a {
+  color: var(--gold-light) !important;
+  border: 1px solid rgba(184,154,90,0.4); padding: 7px 18px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s !important;
+}
+.nav-cta a:hover { background: var(--gold); color: var(--navy) !important; border-color: var(--gold); }
+
+/* LAYOUT */
+.label {
+  display: block; font-size: 0.68rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 18px;
+}
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.2; color: var(--navy); }
+h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); }
+h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); }
+h3 { font-size: 1.55rem; }
+p { color: var(--muted); }
+
+.btn {
+  display: inline-block; font-family: 'Jost', sans-serif;
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  padding: 13px 30px; border: 1px solid transparent;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+.btn-primary { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+.btn-ghost-white { background: transparent; color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.28); }
+.btn-ghost-white:hover { color: var(--white); border-color: rgba(255,255,255,0.65); }
+.btn-outline { background: transparent; color: var(--navy); border-color: rgba(26,39,68,0.35); }
+.btn-outline:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+/* ─── SCREEN SYSTEM ────────────────────────────── */
+.screen { display: none; min-height: 100vh; }
+.screen.active { display: flex; flex-direction: column; }
+
+/* ─── INTRO SCREEN ─────────────────────────────── */
+#screen-intro {
+  background: var(--navy);
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 60px;
+  position: relative;
+  overflow: hidden;
+}
+#screen-intro::before {
+  content: ''; position: absolute; top: -80px; right: -80px;
+  width: 480px; height: 480px; border-radius: 50%;
+  border: 1px solid rgba(184,154,90,0.1); pointer-events: none;
+}
+#screen-intro::after {
+  content: ''; position: absolute; bottom: -100px; left: -60px;
+  width: 340px; height: 340px; border-radius: 50%;
+  border: 1px solid rgba(184,154,90,0.07); pointer-events: none;
+}
+.intro-inner {
+  max-width: 760px; width: 100%; position: relative; z-index: 1;
+}
+.intro-inner .label { color: var(--gold-light); }
+.intro-inner h1 { color: var(--white); margin-bottom: 24px; }
+.intro-inner h1 em { font-style: italic; color: var(--gold-light); }
+.intro-inner .intro-lead { color: rgba(255,255,255,0.62); font-size: 1.05rem; max-width: 580px; margin-bottom: 40px; }
+
+.intro-meta {
+  display: flex; gap: 32px; flex-wrap: wrap; margin-bottom: 44px;
+}
+.intro-meta-item {
+  display: flex; align-items: center; gap: 10px;
+}
+.intro-meta-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 300; color: var(--gold); line-height: 1;
+}
+.intro-meta-text { font-size: 0.78rem; color: rgba(255,255,255,0.5); max-width: 100px; line-height: 1.4; }
+
+.areas-preview {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-bottom: 44px;
+}
+.area-preview {
+  background: rgba(255,255,255,0.05);
+  border-top: 2px solid var(--gold);
+  padding: 20px 24px;
+}
+.area-preview-num { font-size: 0.7rem; color: var(--gold); font-weight: 500; letter-spacing: 0.1em; margin-bottom: 6px; display: block; }
+.area-preview-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--white); }
+.area-preview-by { font-size: 0.68rem; color: rgba(255,255,255,0.38); margin-top: 4px; }
+
+/* ─── QUESTION SCREENS ─────────────────────────── */
+.question-screen {
+  background: var(--white);
+  flex-grow: 1;
+}
+
+/* Progress bar */
+.progress-bar-wrap {
+  position: fixed; top: 64px; left: 0; right: 0; z-index: 190;
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  padding: 0 40px;
+}
+.progress-bar-inner {
+  max-width: 760px; margin: 0 auto;
+  display: flex; align-items: center; gap: 16px; padding: 16px 0;
+}
+.progress-track {
+  flex-grow: 1; height: 3px;
+  background: rgba(184,154,90,0.2);
+  position: relative;
+}
+.progress-fill {
+  height: 100%; background: var(--gold);
+  transition: width 0.4s ease;
+  width: 0%;
+}
+.progress-text {
+  font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted); white-space: nowrap;
+}
+.progress-section-name {
+  font-size: 0.7rem; color: var(--gold); font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  white-space: nowrap; display: none;
+}
+
+/* Question content */
+.question-content {
+  max-width: 760px; margin: 0 auto;
+  padding: 80px 40px 60px;
+}
+
+.section-header {
+  margin-bottom: 48px; padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 8px;
+}
+.section-header h2 { margin-bottom: 10px; }
+.section-header p { font-size: 0.9rem; max-width: 100%; }
+.section-header .provider-tag {
+  display: inline-block; margin-top: 14px;
+  font-size: 0.62rem; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gold);
+  background: var(--navy); padding: 5px 12px;
+}
+
+/* Single question */
+.question-block {
+  margin-bottom: 40px;
+  animation: slideIn 0.35s ease;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.q-number {
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 10px; display: block;
+}
+.q-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+  font-weight: 400; color: var(--navy); line-height: 1.35;
+  margin-bottom: 28px;
+}
+.q-hint { font-size: 0.82rem; color: var(--muted); margin-bottom: 24px; font-style: italic; }
+
+.answer-group {
+  display: flex; flex-direction: column; gap: 10px;
+}
+.answer-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.85rem; font-weight: 400;
+  padding: 16px 24px;
+  text-align: left; cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  color: var(--navy);
+  transition: all 0.25s;
+  display: flex; align-items: center; gap: 14px;
+  position: relative;
+}
+.answer-btn:hover { background: var(--cream-dark); border-color: var(--gold); }
+.answer-btn.selected {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+.answer-btn .answer-indicator {
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 1px solid var(--border); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.25s;
+}
+.answer-btn.selected .answer-indicator {
+  background: var(--gold); border-color: var(--gold);
+}
+.answer-indicator-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--navy); opacity: 0;
+  transition: opacity 0.2s;
+}
+.answer-btn.selected .answer-indicator-dot { opacity: 1; }
+.answer-score-label {
+  margin-left: auto; font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  opacity: 0; transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.answer-btn.selected .answer-score-label { opacity: 0.55; }
+
+/* Navigation */
+.q-nav { margin-top: 36px; display: flex; justify-content: space-between; align-items: center; }
+.q-nav-back {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--muted);
+  background: none; border: none; cursor: pointer;
+  padding: 0; transition: color 0.3s;
+  display: flex; align-items: center; gap: 8px;
+}
+.q-nav-back:hover { color: var(--navy); }
+.q-nav-back::before { content: '←'; font-size: 0.85rem; }
+
+/* ─── RESULTS SCREEN ───────────────────────────── */
+#screen-results {
+  background: var(--cream);
+  padding-top: 64px;
+}
+
+.results-hero {
+  background: var(--navy);
+  padding: 80px 40px 72px;
+  position: relative; overflow: hidden;
+}
+.results-hero::before {
+  content: ''; position: absolute; top: -60px; right: -80px;
+  width: 400px; height: 400px; border-radius: 50%;
+  border: 1px solid rgba(184,154,90,0.1); pointer-events: none;
+}
+.results-hero-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+.results-hero-inner .label { color: var(--gold-light); }
+.results-hero-inner h1 { color: var(--white); margin-bottom: 20px; font-size: clamp(2rem, 4vw, 3rem); }
+.results-hero-inner p { color: rgba(255,255,255,0.6); max-width: 560px; font-size: 0.95rem; }
+
+.results-body { max-width: 760px; margin: 0 auto; padding: 64px 40px; }
+
+/* Score cards */
+.score-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; margin-bottom: 56px; }
+
+.score-card {
+  background: var(--white);
+  padding: 36px 32px 40px;
+  border-top: 4px solid var(--border);
+  position: relative;
+}
+.score-card--strong { border-top-color: var(--green); }
+.score-card--review { border-top-color: var(--amber); }
+.score-card--priority { border-top-color: var(--red); }
+
+.score-card-area {
+  font-size: 0.62rem; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 4px; display: block;
+}
+.score-card-service {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; font-weight: 400; color: var(--navy); margin-bottom: 16px;
+}
+.score-fraction {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem; font-weight: 300; color: var(--navy); line-height: 1; margin-bottom: 4px;
+}
+.score-fraction span { font-size: 1.4rem; color: var(--muted); }
+.score-label {
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; padding-top: 12px;
+  margin-top: 12px; border-top: 1px solid var(--border);
+}
+.score-label--strong { color: var(--green); }
+.score-label--review { color: var(--amber); }
+.score-label--priority { color: var(--red); }
+
+/* Interpretation */
+.result-sections {}
+.result-section { margin-bottom: 44px; }
+.result-section:last-child { margin-bottom: 0; }
+.result-section-header {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 16px;
+}
+.result-section-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 300; color: var(--gold);
+}
+.result-section h3 { font-size: 1.3rem; }
+.result-section-body { font-size: 0.9rem; color: var(--muted); line-height: 1.75; margin-bottom: 14px; }
+.result-section-link {
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--navy);
+  text-decoration: none; border-bottom: 1px solid var(--border);
+  padding-bottom: 2px; transition: color 0.3s, border-color 0.3s;
+}
+.result-section-link:hover { color: var(--gold); border-color: var(--gold); }
+
+/* CTA block */
+.results-cta {
+  background: var(--navy);
+  padding: 52px 44px;
+  margin-top: 52px;
+}
+.results-cta h3 { color: var(--white); margin-bottom: 12px; }
+.results-cta p { color: rgba(255,255,255,0.58); font-size: 0.9rem; margin-bottom: 28px; max-width: 100%; }
+.results-cta-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Restart */
+.restart-link {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted);
+  text-decoration: none; border-bottom: 1px solid var(--border);
+  padding-bottom: 2px; margin-top: 32px; display: inline-block;
+  transition: color 0.3s; cursor: pointer;
+}
+.restart-link:hover { color: var(--navy); }
+
+/* FOOTER */
+footer { background: var(--navy-dark); padding: 56px 40px 40px; }
+.footer-inner { max-width: 1080px; margin: 0 auto; }
+.footer-brand { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+.footer-contact { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 32px; }
+.footer-contact a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.3s; }
+.footer-contact a:hover { color: var(--gold-light); }
+hr.footer-rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 24px 0; }
+.footer-legal { font-size: 0.76rem; line-height: 1.7; color: rgba(255,255,255,0.32); max-width: 820px; margin-bottom: 24px; }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+.footer-links a { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.32); text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: var(--gold-light); }
+
+@media (max-width: 700px) {
+  .nav-links { display: none; }
+  nav { padding: 0 24px; }
+  footer { padding: 48px 24px 32px; }
+  .progress-bar-wrap { padding: 0 24px; }
+  #screen-intro, .results-hero { padding-left: 24px; padding-right: 24px; }
+  .question-content, .results-body { padding-left: 24px; padding-right: 24px; }
+  .areas-preview { grid-template-columns: 1fr; }
+  .score-cards { grid-template-columns: 1fr; }
+  .intro-meta { gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://itw.aetaspartners.com/index.html">Aetas in the Workplace</a>
+  <ul class="nav-links">
+    <li><a href="https://itw.aetaspartners.com/limited-companies.html">Limited companies</a></li>
+    <li><a href="charities-v2.html">Charities</a></li>
+    <li><a href="https://aetas-partners.com/business-events/">Events</a></li>
+    <li><a href="insights.html">Insights</a></li>
+    <li><a href="faqs.html">FAQs</a></li>
+    <li><a href="#" class="active">Diagnostic</a></li>
+    <li class="nav-cta"><a href="book-a-meeting.html">Book a meeting</a></li>
+  </ul>
+</nav>
+
+<!-- PROGRESS BAR (hidden initially) -->
+<div class="progress-bar-wrap" id="progressWrap" style="display:none;">
+  <div class="progress-bar-inner">
+    <span class="progress-section-name" id="progressSection"></span>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-text" id="progressText">1 of 12</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SCREEN 0 — INTRO
+════════════════════════════════════════════════ -->
+<div class="screen active" id="screen-intro">
+  <div class="intro-inner">
+    <span class="label">Self-assessment</span>
+    <h1>How well is your charity<br><em>set up to thrive?</em></h1>
+    <p class="intro-lead">Twelve short questions across governance, financial guidance, and staff financial wellbeing. Your answers take around five minutes and produce a scored picture of where your organisation may have gaps — and which services are most worth exploring.</p>
+
+    <div class="intro-meta">
+      <div class="intro-meta-item">
+        <div class="intro-meta-num">12</div>
+        <div class="intro-meta-text">questions across three areas</div>
+      </div>
+      <div class="intro-meta-item">
+        <div class="intro-meta-num">5</div>
+        <div class="intro-meta-text">minutes to complete</div>
+      </div>
+      <div class="intro-meta-item">
+        <div class="intro-meta-num">3</div>
+        <div class="intro-meta-text">scored results with guidance</div>
+      </div>
+    </div>
+
+    <div class="areas-preview">
+      <div class="area-preview">
+        <span class="area-preview-num">01</span>
+        <div class="area-preview-title">Governance</div>
+        <div class="area-preview-by">Offered by Adena Street</div>
+      </div>
+      <div class="area-preview">
+        <span class="area-preview-num">02</span>
+        <div class="area-preview-title">Financial Guidance</div>
+        <div class="area-preview-by">Offered by Adena Street</div>
+      </div>
+      <div class="area-preview">
+        <span class="area-preview-num">03</span>
+        <div class="area-preview-title">Financial Wellbeing</div>
+        <div class="area-preview-by">Powered by Aetas ITW</div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" id="startBtn" style="font-size:0.8rem; padding:16px 40px;">Start the diagnostic →</button>
+    <p style="color:rgba(255,255,255,0.3); font-size:0.78rem; margin-top:16px;">Your answers are not stored. Results are shown only to you.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SCREEN 1 — GOVERNANCE (Q1–Q4)
+════════════════════════════════════════════════ -->
+<div class="screen" id="screen-governance">
+  <div class="question-content">
+    <div class="section-header">
+      <div class="section-header-num">01</div>
+      <h2>Governance</h2>
+      <p>Four questions about your board's governance structures, trustee responsibilities, and investment policy.</p>
+      <span class="provider-tag">Offered by Adena Street</span>
+    </div>
+
+    <div id="governance-questions"></div>
+
+    <div class="q-nav">
+      <button class="q-nav-back" id="govBack">Intro</button>
+      <button class="btn btn-primary" id="govNext">Next section →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SCREEN 2 — FINANCIAL GUIDANCE (Q5–Q8)
+════════════════════════════════════════════════ -->
+<div class="screen" id="screen-financial-guidance">
+  <div class="question-content">
+    <div class="section-header">
+      <div class="section-header-num">02</div>
+      <h2>Financial Guidance</h2>
+      <p>Four questions about your investment performance, fees, and financial arrangements.</p>
+      <span class="provider-tag">Offered by Adena Street</span>
+    </div>
+
+    <div id="fguidance-questions"></div>
+
+    <div class="q-nav">
+      <button class="q-nav-back" id="fgBack">Governance</button>
+      <button class="btn btn-primary" id="fgNext">Next section →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SCREEN 3 — FINANCIAL WELLBEING (Q9–Q12)
+════════════════════════════════════════════════ -->
+<div class="screen" id="screen-financial-wellbeing">
+  <div class="question-content">
+    <div class="section-header">
+      <div class="section-header-num">03</div>
+      <h2>Financial Wellbeing</h2>
+      <p>Four questions about how your organisation currently supports staff with financial pressure and uncertainty.</p>
+      <span class="provider-tag">Powered by Aetas in the Workplace</span>
+    </div>
+
+    <div id="fwellbeing-questions"></div>
+
+    <div class="q-nav">
+      <button class="q-nav-back" id="fwBack">Financial Guidance</button>
+      <button class="btn btn-primary" id="fwNext">See my results →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SCREEN 4 — RESULTS
+════════════════════════════════════════════════ -->
+<div class="screen" id="screen-results">
+  <div class="results-hero">
+    <div class="results-hero-inner">
+      <span class="label">Your results</span>
+      <h1 id="resultsHeadline">Your diagnostic results</h1>
+      <p id="resultsIntro">Based on your answers, here is a picture of where your organisation currently stands across the three service areas.</p>
+    </div>
+  </div>
+
+  <div class="results-body">
+    <div class="score-cards" id="scoreCards"></div>
+    <div class="result-sections" id="resultSections"></div>
+
+    <div class="results-cta">
+      <h3>The next step is a no-cost conversation</h3>
+      <p>A 45-minute discovery call with Matthew Steiner — no obligation, designed to give you as much clarity from it as we gain. Your diagnostic results will help focus the conversation on the areas that matter most.</p>
+      <div class="results-cta-btns">
+        <a class="btn btn-primary" href="book-a-meeting.html">Book a discovery conversation</a>
+        <a class="btn btn-ghost-white" href="charities-v2.html">Back to the charities overview</a>
+      </div>
+    </div>
+
+    <span class="restart-link" id="restartBtn">← Start the diagnostic again</span>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-brand">Aetas in the Workplace</span>
+      <div class="footer-contact">
+        <a href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a>
+        &nbsp;·&nbsp; 020 3633 0579
+      </div>
+      <hr class="footer-rule" />
+      <p class="footer-legal">Aetas in the Workplace provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Governance and financial guidance services for charities are provided independently by Adena Street Limited.</p>
+      <div class="footer-links">
+        <a href="faqs.html">FAQs</a>
+        <a href="book-a-meeting.html">Book a meeting</a>
+        <a href="https://itw.aetaspartners.com/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+// ─────────────────────────────────────────────────
+// DATA
+// ─────────────────────────────────────────────────
+const sections = [
+  {
+    id: 'governance',
+    screen: 'screen-governance',
+    container: 'governance-questions',
+    label: '01 — Governance',
+    questions: [
+      {
+        id: 'g1',
+        text: 'Does your charity have a current Investment Policy Statement that has been reviewed in the last 12 months?',
+        hint: 'An IPS is a legal requirement if you use a discretionary investment manager. It should be reviewed at least annually.',
+        answers: [
+          { label: 'Yes — we have a current, reviewed IPS in place', value: 2 },
+          { label: 'We have one, but it hasn\'t been reviewed recently', value: 1 },
+          { label: 'No — we don\'t have one, or we\'re unsure', value: 0 }
+        ]
+      },
+      {
+        id: 'g2',
+        text: 'Has your board received formal training on trustee investment responsibilities in the last two years?',
+        hint: 'The Charity Commission actively encourages trustees to seek education when they lack the time or knowledge to act confidently.',
+        answers: [
+          { label: 'Yes — trustees have received structured training', value: 2 },
+          { label: 'Informally, but not through structured training', value: 1 },
+          { label: 'No formal training has taken place', value: 0 }
+        ]
+      },
+      {
+        id: 'g3',
+        text: 'Can your trustees clearly describe the ethical restrictions applied to your investment portfolio — including any ESG or exclusion criteria?',
+        hint: 'Misalignment between investments and a charity\'s charitable objects is a governance and reputational risk many boards are not aware of.',
+        answers: [
+          { label: 'Yes — we have documented ethical restrictions our manager follows', value: 2 },
+          { label: 'We have a general understanding but nothing formally documented', value: 1 },
+          { label: 'No — this has not been formally addressed', value: 0 }
+        ]
+      },
+      {
+        id: 'g4',
+        text: 'Does your board have a documented process for identifying and managing conflicts of interest among trustees and officers?',
+        hint: 'Conflict of interest policies are a standard expectation of good governance and are relevant to all charities regardless of size.',
+        answers: [
+          { label: 'Yes — we have a formal policy and it is applied consistently', value: 2 },
+          { label: 'We manage conflicts informally but without a written policy', value: 1 },
+          { label: 'No — this is not something we have formally addressed', value: 0 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'financial-guidance',
+    screen: 'screen-financial-guidance',
+    container: 'fguidance-questions',
+    label: '02 — Financial Guidance',
+    questions: [
+      {
+        id: 'fg1',
+        text: 'Do you know the total cost of your investment or banking arrangements — including all underlying fund charges and hidden fees?',
+        hint: 'Many charities pay significantly more than they realise once Ongoing Charges Figures (OCF) embedded in funds are included.',
+        answers: [
+          { label: 'Yes — we have a full breakdown of all costs including fund-level charges', value: 2 },
+          { label: 'We know the headline management fee but not the full picture', value: 1 },
+          { label: 'No — we don\'t have a clear view of what we\'re paying', value: 0 }
+        ]
+      },
+      {
+        id: 'fg2',
+        text: 'Has your charity\'s investment performance been formally benchmarked against an independent index in the last 12 months?',
+        hint: 'Without benchmarking — for example against the ARC Charity Indices — it is very difficult to assess whether your investment manager is delivering appropriate results.',
+        answers: [
+          { label: 'Yes — we benchmark regularly and review against relevant indices', value: 2 },
+          { label: 'We receive performance reports but don\'t formally benchmark', value: 1 },
+          { label: 'No — we have not benchmarked our investment performance', value: 0 }
+        ]
+      },
+      {
+        id: 'fg3',
+        text: 'Has your charity reviewed its banking, cash deposit, and short-term reserve arrangements in the last two years?',
+        hint: 'With significant shifts in interest rates, many charities are holding cash in arrangements that no longer reflect the best available terms.',
+        answers: [
+          { label: 'Yes — we reviewed our arrangements recently and are confident they are optimised', value: 2 },
+          { label: 'We haven\'t reviewed recently but it is on the agenda', value: 1 },
+          { label: 'No — our banking and cash arrangements have not been reviewed', value: 0 }
+        ]
+      },
+      {
+        id: 'fg4',
+        text: 'When did you last conduct a formal review of your investment manager relationship — including considering alternatives from across the market?',
+        hint: 'A formal review does not necessarily mean changing manager. It means having an evidenced basis for the relationship you have.',
+        answers: [
+          { label: 'Within the last three years — we reviewed the relationship formally', value: 2 },
+          { label: 'More than three years ago, or we\'ve never formally reviewed it', value: 1 },
+          { label: 'We don\'t use an investment manager / we\'ve never considered reviewing', value: 0 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'financial-wellbeing',
+    screen: 'screen-financial-wellbeing',
+    container: 'fwellbeing-questions',
+    label: '03 — Financial Wellbeing',
+    questions: [
+      {
+        id: 'fw1',
+        text: 'Do your employees have a clear understanding of their full benefits package — including the value of their pension and any other entitlements?',
+        hint: 'A benefit that is not understood is not working. Poor benefits communication is one of the most common — and most fixable — gaps in staff financial support.',
+        answers: [
+          { label: 'Yes — we communicate benefits clearly and employees can articulate their value', value: 2 },
+          { label: 'We share the information but are not confident it is understood', value: 1 },
+          { label: 'No — benefits are rarely communicated or discussed with staff', value: 0 }
+        ]
+      },
+      {
+        id: 'fw2',
+        text: 'Has your organisation offered any structured financial education or resilience support to staff in the last 12 months?',
+        hint: 'Financial anxiety is driven by uncertainty. Proactive, practical education is more effective than reactive support once problems have developed.',
+        answers: [
+          { label: 'Yes — we have run workshops or sessions on financial topics for staff', value: 2 },
+          { label: 'We have signposted resources but haven\'t run structured sessions', value: 1 },
+          { label: 'No — we have not offered financial education to staff', value: 0 }
+        ]
+      },
+      {
+        id: 'fw3',
+        text: 'Do your employees have access to confidential one-to-one financial guidance from a qualified person — at no cost to themselves?',
+        hint: 'This is consistently one of the most valued forms of financial support, and one of the hardest for individuals to access independently.',
+        answers: [
+          { label: 'Yes — employees have access to confidential one-to-one financial guidance', value: 2 },
+          { label: 'We have an EAP but not specific financial planning guidance', value: 1 },
+          { label: 'No — there is no individual financial guidance available to staff', value: 0 }
+        ]
+      },
+      {
+        id: 'fw4',
+        text: 'When did you last review the structure and cost of your workplace pension and wider benefits arrangements?',
+        hint: 'A structured review often identifies savings and improvements that more than offset the cost — particularly relevant for not-for-profits working within tight budgets.',
+        answers: [
+          { label: 'Within the last two years — we have recently reviewed and are confident in what we offer', value: 2 },
+          { label: 'It has been more than two years since any formal review', value: 1 },
+          { label: 'We have never formally reviewed our pension or benefits structure', value: 0 }
+        ]
+      }
+    ]
+  }
+];
+
+const serviceLinks = {
+  governance: 'governance.html',
+  'financial-guidance': 'financial-guidance.html',
+  'financial-wellbeing': 'financial-wellbeing.html'
+};
+
+const serviceNames = {
+  governance: 'Governance',
+  'financial-guidance': 'Financial Guidance',
+  'financial-wellbeing': 'Financial Wellbeing'
+};
+
+const resultInterpretations = {
+  governance: {
+    strong: 'Your governance arrangements appear well-structured. Your board has the foundations in place — a current IPS, trained trustees, documented ethical restrictions, and a conflict of interest policy. Independent oversight from Adena Street can add an additional layer of assurance and provide the documentation to support trustee and funder reporting.',
+    review:  'There are some governance gaps worth addressing. One or more areas — your IPS, trustee training, ethical restrictions, or conflict of interest policy — may benefit from a structured review. Adena Street can assess what is in place, identify what needs attention, and provide independent support to close the gaps.',
+    priority:'Your governance arrangements have significant gaps that carry real risk for your trustees and your organisation. Addressing these — starting with an Investment Policy Statement and a trustee training session — is a priority. Adena Street provides exactly this kind of independent, expert support for charities.'
+  },
+  'financial-guidance': {
+    strong: 'Your financial arrangements appear to be well-managed and well-understood. You benchmark performance, understand your costs, and keep your arrangements under review. Independent oversight from Adena Street can provide additional confidence and ensure your board always has the evidence it needs.',
+    review:  'There are one or more areas in your financial arrangements where greater clarity or independent oversight would be valuable — whether around fees, benchmarking, or when your investment manager relationship was last formally reviewed. Adena Street can provide a structured and independent assessment.',
+    priority:'Your financial arrangements have material gaps. You may be paying more than you realise, receiving performance that has never been independently assessed, or holding cash in arrangements that have not been reviewed in years. An independent financial guidance engagement from Adena Street is likely to more than pay for itself.'
+  },
+  'financial-wellbeing': {
+    strong: 'Your financial wellbeing offering is well-developed. Staff have access to clear benefits information, structured education, and individual guidance. Aetas ITW can help you build on this foundation — adding bespoke programmes, improving communications, and ensuring what you offer continues to evolve with your workforce.',
+    review:  'Your staff have some financial support in place, but there are gaps. Communication may be unclear, structured education may be missing, or individual guidance may not be available. A structured Aetas ITW engagement can identify the most impactful improvements and implement them with minimal demand on your leadership team.',
+    priority:'Staff financial wellbeing is an area that would benefit from a structured response. Your people may lack the clarity, education, and access to guidance that would help them manage financial pressure effectively — with real consequences for engagement, performance, and retention. Aetas ITW is designed specifically for organisations in your position.'
+  }
+};
+
+// ─────────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────────
+const answers = {};
+
+// ─────────────────────────────────────────────────
+// RENDER QUESTIONS
+// ─────────────────────────────────────────────────
+function renderSection(sectionData) {
+  const container = document.getElementById(sectionData.container);
+  container.innerHTML = '';
+  sectionData.questions.forEach((q, i) => {
+    const block = document.createElement('div');
+    block.className = 'question-block';
+    block.innerHTML = `
+      <span class="q-number">Question ${sectionData.id === 'governance' ? i+1 : sectionData.id === 'financial-guidance' ? i+5 : i+9} of 12</span>
+      <div class="q-text">${q.text}</div>
+      <p class="q-hint">${q.hint}</p>
+      <div class="answer-group" data-qid="${q.id}">
+        ${q.answers.map(a => `
+          <button class="answer-btn ${answers[q.id] === a.value ? 'selected' : ''}" data-value="${a.value}" data-qid="${q.id}">
+            <div class="answer-indicator"><div class="answer-indicator-dot"></div></div>
+            <span>${a.label}</span>
+          </button>
+        `).join('')}
+      </div>
+    `;
+    container.appendChild(block);
+  });
+
+  container.querySelectorAll('.answer-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const qid = btn.dataset.qid;
+      const val = parseInt(btn.dataset.value);
+      answers[qid] = val;
+      container.querySelectorAll(`.answer-group[data-qid="${qid}"] .answer-btn`).forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      updateProgress();
+    });
+  });
+}
+
+// ─────────────────────────────────────────────────
+// PROGRESS
+// ─────────────────────────────────────────────────
+function updateProgress() {
+  const total = 12;
+  const answered = Object.keys(answers).length;
+  const pct = Math.round((answered / total) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = `${answered} of ${total}`;
+}
+
+function setProgressSection(label) {
+  const el = document.getElementById('progressSection');
+  el.textContent = label;
+  el.style.display = 'block';
+}
+
+// ─────────────────────────────────────────────────
+// SCREEN NAVIGATION
+// ─────────────────────────────────────────────────
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function sectionScore(sectionData) {
+  return sectionData.questions.reduce((sum, q) => {
+    const v = answers[q.id];
+    return sum + (v !== undefined ? v : 0);
+  }, 0);
+}
+
+function allAnswered(sectionData) {
+  return sectionData.questions.every(q => answers[q.id] !== undefined);
+}
+
+// ─────────────────────────────────────────────────
+// RESULTS
+// ─────────────────────────────────────────────────
+function scoreToTier(score) {
+  if (score >= 7) return 'strong';
+  if (score >= 4) return 'review';
+  return 'priority';
+}
+
+function tierLabel(tier) {
+  if (tier === 'strong')   return 'Good foundations';
+  if (tier === 'review')   return 'Worth reviewing';
+  if (tier === 'priority') return 'Priority area';
+}
+
+function buildResults() {
+  const scores = sections.map(s => ({ id: s.id, score: sectionScore(s), name: serviceNames[s.id] }));
+  const tiers = scores.map(s => ({ ...s, tier: scoreToTier(s.score) }));
+
+  // Headline
+  const priorityCount = tiers.filter(t => t.tier === 'priority').length;
+  const reviewCount   = tiers.filter(t => t.tier === 'review').length;
+  let headline, intro;
+  if (priorityCount >= 2) {
+    headline = 'There are significant gaps across multiple areas.';
+    intro = 'Your results suggest that two or more service areas would benefit from structured support. The discovery conversation will help you understand what a proportionate, phased response could look like.';
+  } else if (priorityCount === 1) {
+    const p = tiers.find(t => t.tier === 'priority');
+    headline = `${p.name} stands out as the priority area.`;
+    intro = 'Your results suggest one area has significant gaps worth addressing. The other areas show a stronger picture, though there may still be improvements worth considering.';
+  } else if (reviewCount >= 2) {
+    headline = 'There are improvements worth making across several areas.';
+    intro = 'Your foundations are in reasonable shape, but there are meaningful improvements available across more than one area. A structured engagement is likely to surface practical, cost-effective actions.';
+  } else {
+    headline = 'Your foundations are broadly in good shape.';
+    intro = 'Your results suggest a well-managed organisation with strong foundations across most areas. Independent oversight can add assurance — and there may still be specific improvements that a discovery conversation would surface.';
+  }
+
+  document.getElementById('resultsHeadline').textContent = headline;
+  document.getElementById('resultsIntro').textContent = intro;
+
+  // Score cards
+  const cardsHtml = tiers.map(t => `
+    <div class="score-card score-card--${t.tier}">
+      <span class="score-card-area">${t.id === 'governance' ? '01' : t.id === 'financial-guidance' ? '02' : '03'}</span>
+      <div class="score-card-service">${t.name}</div>
+      <div class="score-fraction">${t.score}<span> / 8</span></div>
+      <div class="score-label score-label--${t.tier}">${tierLabel(t.tier)}</div>
+    </div>
+  `).join('');
+  document.getElementById('scoreCards').innerHTML = cardsHtml;
+
+  // Interpretations
+  const sectionsHtml = tiers.map(t => `
+    <div class="result-section">
+      <div class="result-section-header">
+        <div class="result-section-num">${t.id === 'governance' ? '01' : t.id === 'financial-guidance' ? '02' : '03'}</div>
+        <h3>${t.name}</h3>
+      </div>
+      <p class="result-section-body">${resultInterpretations[t.id][t.tier]}</p>
+      <a class="result-section-link" href="${serviceLinks[t.id]}">Read about the ${t.name} service →</a>
+    </div>
+  `).join('');
+  document.getElementById('resultSections').innerHTML = sectionsHtml;
+}
+
+// ─────────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────────
+sections.forEach(s => renderSection(s));
+
+document.getElementById('startBtn').addEventListener('click', () => {
+  document.getElementById('progressWrap').style.display = '';
+  setProgressSection(sections[0].label);
+  showScreen('screen-governance');
+  updateProgress();
+});
+
+document.getElementById('govBack').addEventListener('click', () => {
+  document.getElementById('progressWrap').style.display = 'none';
+  showScreen('screen-intro');
+});
+
+document.getElementById('govNext').addEventListener('click', () => {
+  if (!allAnswered(sections[0])) {
+    alert('Please answer all four questions before continuing.');
+    return;
+  }
+  setProgressSection(sections[1].label);
+  showScreen('screen-financial-guidance');
+  updateProgress();
+});
+
+document.getElementById('fgBack').addEventListener('click', () => {
+  setProgressSection(sections[0].label);
+  showScreen('screen-governance');
+  updateProgress();
+});
+
+document.getElementById('fgNext').addEventListener('click', () => {
+  if (!allAnswered(sections[1])) {
+    alert('Please answer all four questions before continuing.');
+    return;
+  }
+  setProgressSection(sections[2].label);
+  showScreen('screen-financial-wellbeing');
+  updateProgress();
+});
+
+document.getElementById('fwBack').addEventListener('click', () => {
+  setProgressSection(sections[1].label);
+  showScreen('screen-financial-guidance');
+  updateProgress();
+});
+
+document.getElementById('fwNext').addEventListener('click', () => {
+  if (!allAnswered(sections[2])) {
+    alert('Please answer all four questions before continuing.');
+    return;
+  }
+  document.getElementById('progressWrap').style.display = 'none';
+  buildResults();
+  showScreen('screen-results');
+});
+
+document.getElementById('restartBtn').addEventListener('click', () => {
+  Object.keys(answers).forEach(k => delete answers[k]);
+  sections.forEach(s => renderSection(s));
+  document.getElementById('progressWrap').style.display = 'none';
+  showScreen('screen-intro');
+  updateProgress();
+});
+</script>
+</body>
+</html>
