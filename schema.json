@@ -1,0 +1,182 @@
+{
+  "_instructions": "Add the relevant schema block to the <head> of each HTML page as a <script type='application/ld+json'> tag. Each page has its own block below.",
+
+  "home_index": {
+    "_page": "index.html",
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Aetas in the Workplace — For Charities and Not-for-Profits",
+    "url": "https://charities.aetaspartners.com/",
+    "description": "Specialist governance, financial guidance, and staff financial wellbeing services for charities and not-for-profit organisations. Delivered by Adena Street and Aetas in the Workplace.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Aetas in the Workplace",
+      "url": "https://charities.aetaspartners.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "matthew.steiner@aetas-partners.com",
+        "telephone": "+442036330579",
+        "contactType": "Customer Service"
+      }
+    },
+    "about": [
+      { "@type": "Thing", "name": "Charity governance" },
+      { "@type": "Thing", "name": "Investment Policy Statement" },
+      { "@type": "Thing", "name": "Financial wellbeing" },
+      { "@type": "Thing", "name": "Not-for-profit financial guidance" },
+      { "@type": "Thing", "name": "Trustee training" }
+    ]
+  },
+
+  "governance": {
+    "_page": "governance.html",
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Governance for Charities",
+    "url": "https://charities.aetaspartners.com/governance.html",
+    "description": "Independent governance support for charity trustees and boards. Covers Investment Policy Statements, ethical investment frameworks, trustee training, and Charity Commission compliance. Offered by Adena Street Limited.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Adena Street Limited",
+      "description": "Independent advisory firm specialising in governance and financial guidance for charities and philanthropic organisations."
+    },
+    "serviceType": "Charity Governance Advisory",
+    "areaServed": "GB",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Charity trustees and boards, not-for-profit organisations"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Governance Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment Policy Statement drafting and review" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Independent investment manager oversight" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ethical investment framework development" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trustee training and board education" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Charity Commission compliance support" } }
+      ]
+    }
+  },
+
+  "financial_guidance": {
+    "_page": "financial-guidance.html",
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Financial Guidance for Charities",
+    "url": "https://charities.aetaspartners.com/financial-guidance.html",
+    "description": "Independent financial guidance for charities covering investment performance benchmarking, fee transparency including OCF analysis, cash management strategy, and investment manager search and review. Offered by Adena Street Limited.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Adena Street Limited"
+    },
+    "serviceType": "Charity Financial Advisory",
+    "areaServed": "GB",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Financial Guidance Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment performance benchmarking against ARC Charity Indices" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fee transparency and OCF analysis" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cash management strategy" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment manager search and tender support" } }
+      ]
+    }
+  },
+
+  "financial_wellbeing": {
+    "_page": "financial-wellbeing.html",
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Financial Wellbeing for Charity Staff",
+    "url": "https://charities.aetaspartners.com/financial-wellbeing.html",
+    "description": "Consultancy-led financial wellbeing programme for charity and not-for-profit employees. Covers employee benefits consultancy, financial resilience workshops, confidential one-to-one guidance, and wellbeing initiatives. Powered by Aetas in the Workplace.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Aetas in the Workplace",
+      "url": "https://charities.aetaspartners.com"
+    },
+    "serviceType": "Workplace Financial Wellbeing",
+    "areaServed": "GB",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Financial Wellbeing Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Employee benefits consultancy" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Financial resilience workshops" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-to-one financial guidance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wellbeing and incentive initiatives" } }
+      ]
+    }
+  },
+
+  "faqs": {
+    "_page": "faqs.html",
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "FAQs — Aetas in the Workplace for Charities",
+    "url": "https://charities.aetaspartners.com/faqs.html",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an Investment Policy Statement and do we legally need one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An Investment Policy Statement (IPS) is a formal document setting out your charity's investment objectives, risk appetite, ethical restrictions, and governance framework. If your charity has delegated discretionary investment management to an external manager, an IPS is a legal requirement under Charity Commission guidance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an OCF and why does it matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An Ongoing Charges Figure (OCF) is a fee embedded within investment funds, deducted directly from fund assets. It does not appear as a visible line on a statement and is frequently not raised in trustee meetings. Over time, OCF charges can represent a material drag on net returns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this affordable for a not-for-profit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The initial discovery conversation is provided at no cost. If further work is recommended, fees are transparent and agreed in advance. In many cases, improvements identified through a benefits and investment review generate savings that offset the cost of the engagement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "We already have an Employee Assistance Programme. Does that cover financial wellbeing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An EAP typically provides reactive, crisis-focused support. It does not review your benefits structure, run financial resilience workshops, or provide one-to-one guidance from a regulated financial planner. Aetas ITW sits alongside an EAP, addressing proactive financial capability building."
+        }
+      }
+    ]
+  },
+
+  "organisation": {
+    "_page": "All pages — add to every page",
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Aetas in the Workplace",
+    "alternateName": "Aetas ITW",
+    "url": "https://charities.aetaspartners.com",
+    "description": "Consultancy-led financial wellbeing and governance service for charities and not-for-profit organisations.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+442036330579",
+      "email": "matthew.steiner@aetas-partners.com",
+      "contactType": "Sales",
+      "areaServed": "GB",
+      "availableLanguage": "English"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Matthew Steiner",
+      "jobTitle": "Founder and Lead Consultant"
+    },
+    "sameAs": [
+      "https://aetas-partners.com",
+      "https://aetas-wealth.com",
+      "https://itw.aetaspartners.com"
+    ]
+  }
+}
