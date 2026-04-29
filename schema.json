@@ -6,12 +6,12 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Aetas in the Workplace — For Charities and Not-for-Profits",
-    "url": "https://charities.aetaspartners.com/",
+    "url": "https://charitywellbeing.aetaspartners.com/",
     "description": "Specialist governance, financial guidance, and staff financial wellbeing services for charities and not-for-profit organisations. Delivered by Adena Street and Aetas in the Workplace.",
     "provider": {
       "@type": "Organization",
       "name": "Aetas in the Workplace",
-      "url": "https://charities.aetaspartners.com",
+      "url": "https://charitywellbeing.aetaspartners.com",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "matthew.steiner@aetas-partners.com",
@@ -33,7 +33,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Governance for Charities",
-    "url": "https://charities.aetaspartners.com/governance.html",
+    "url": "https://charitywellbeing.aetaspartners.com/governance.html",
     "description": "Independent governance support for charity trustees and boards. Covers Investment Policy Statements, ethical investment frameworks, trustee training, and Charity Commission compliance. Offered by Adena Street Limited.",
     "provider": {
       "@type": "Organization",
@@ -64,7 +64,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Financial Guidance for Charities",
-    "url": "https://charities.aetaspartners.com/financial-guidance.html",
+    "url": "https://charitywellbeing.aetaspartners.com/financial-guidance.html",
     "description": "Independent financial guidance for charities covering investment performance benchmarking, fee transparency including OCF analysis, cash management strategy, and investment manager search and review. Offered by Adena Street Limited.",
     "provider": {
       "@type": "Organization",
@@ -115,7 +115,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "name": "FAQs — Aetas in the Workplace for Charities",
-    "url": "https://charities.aetaspartners.com/faqs.html",
+    "url": "https://charitywellbeing.aetaspartners.com/faqs.html",
     "mainEntity": [
       {
         "@type": "Question",
@@ -158,7 +158,7 @@
     "@type": "Organization",
     "name": "Aetas in the Workplace",
     "alternateName": "Aetas ITW",
-    "url": "https://charities.aetaspartners.com",
+    "url": "https://charitywellbeing.aetaspartners.com",
     "description": "Consultancy-led financial wellbeing and governance service for charities and not-for-profit organisations.",
     "contactPoint": {
       "@type": "ContactPoint",
