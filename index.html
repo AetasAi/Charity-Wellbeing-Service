@@ -12,23 +12,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Charity Wellbeing Service",
-  "url": "https://charitywellbeing.aetaspartners.com",
-  "description": "Specialist governance, financial guidance, and staff financial wellbeing for charities and not-for-profit organisations. A partnership between Adena Street and Aetas in the Workplace.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+442036330579",
-    "email": "matthew.steiner@aetas-partners.com",
-    "contactType": "Enquiries"
-  },
-  "founder": [
-    { "@type": "Person", "name": "Matthew Steiner", "jobTitle": "Founder, Aetas in the Workplace" },
-    { "@type": "Person", "name": "Rupert Cecil", "jobTitle": "Founder, Adena Street" }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://charitywellbeing.aetaspartners.com/#organization",
+        "name": "Charity Wellbeing Service",
+        "url": "https://charitywellbeing.aetaspartners.com",
+        "description": "Specialist governance, financial guidance, and staff financial wellbeing for charities and not-for-profit organisations. A partnership between Adena Street and Aetas in the Workplace.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+442036330579",
+          "email": "matthew.steiner@aetas-partners.com",
+          "contactType": "Enquiries"
+        },
+        "founder": [
+          { "@type": "Person", "name": "Matthew Steiner", "jobTitle": "Founder, Aetas in the Workplace" },
+          { "@type": "Person", "name": "Rupert Cecil", "jobTitle": "Founder, Adena Street" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://charitywellbeing.aetaspartners.com/#website",
+        "url": "https://charitywellbeing.aetaspartners.com",
+        "name": "Charity Wellbeing Service",
+        "description": "Governance, financial guidance, and staff financial wellbeing for UK charities and not-for-profits.",
+        "publisher": { "@id": "https://charitywellbeing.aetaspartners.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://charitywellbeing.aetaspartners.com/#webpage",
+        "url": "https://charitywellbeing.aetaspartners.com",
+        "name": "Charity Wellbeing Service — Governance, Financial Guidance and Staff Wellbeing for Charities",
+        "description": "Specialist governance, investment guidance, and staff financial wellbeing for charities and not-for-profits. Built for organisations where every person matters.",
+        "isPartOf": { "@id": "https://charitywellbeing.aetaspartners.com/#website" },
+        "dateModified": "2026-05-01"
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Charity Wellbeing Service",
+        "url": "https://charitywellbeing.aetaspartners.com",
+        "description": "Three-pillar service for UK charities: trustee governance and IPS support, independent investment fee benchmarking, and employee financial wellbeing programmes.",
+        "areaServed": { "@type": "Country", "name": "United Kingdom" },
+        "audience": { "@type": "Audience", "audienceType": "UK charities, trustees, not-for-profit organisations" },
+        "provider": { "@id": "https://charitywellbeing.aetaspartners.com/#organization" }
+      }
+    ]
+  }
 </script>
 
 <style>
