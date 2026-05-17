@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Financial Wellbeing for Charity Staff · Charity Wellbeing Service</title>
-  <meta name="description" content="A consultancy-led financial wellbeing programme built for charities and not-for-profits. Reduce financial anxiety in your team, strengthen retention, and identify savings that can be redirected to your mission.">
+  <title>Calculator · Charity Wellbeing Service</title>
+  <meta name="description" content="Estimate the annual cost of financial pressure in your charity workforce. An interactive tool that calculates retention cost, productivity loss, absence cost, and benefits waste.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://charitywellbeing.aetaspartners.com/financial-wellbeing.html">
+  <link rel="canonical" href="https://charitywellbeing.aetaspartners.com/calculator.html">
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://charitywellbeing.aetaspartners.com/financial-wellbeing.html">
-  <meta property="og:title" content="Financial Wellbeing for Charity Staff · Charity Wellbeing Service">
-  <meta property="og:description" content="A consultancy-led financial wellbeing programme built for charities and not-for-profits. Reduce financial anxiety in your team, strengthen retention, and identify savings that can be redirected to your mission.">
+  <meta property="og:url" content="https://charitywellbeing.aetaspartners.com/calculator.html">
+  <meta property="og:title" content="Calculator · Charity Wellbeing Service">
+  <meta property="og:description" content="Estimate the annual cost of financial pressure in your charity workforce. An interactive tool that calculates retention cost, productivity loss, absence cost, and benefits waste.">
   <meta property="og:site_name" content="Charity Wellbeing Service">
   <meta property="og:locale" content="en_GB">
   <meta property="og:image" content="https://charitywellbeing.aetaspartners.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Financial Wellbeing for Charity Staff · Charity Wellbeing Service">
-  <meta name="twitter:description" content="A consultancy-led financial wellbeing programme built for charities and not-for-profits. Reduce financial anxiety in your team, strengthen retention, and identify savings that can be redirected to your mission.">
+  <meta name="twitter:title" content="Calculator · Charity Wellbeing Service">
+  <meta name="twitter:description" content="Estimate the annual cost of financial pressure in your charity workforce. An interactive tool that calculates retention cost, productivity loss, absence cost, and benefits waste.">
   <meta name="twitter:image" content="https://charitywellbeing.aetaspartners.com/og-image.png">
 
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
@@ -887,241 +887,203 @@ article.post blockquote {
 
 <section class="page-banner">
   <div class="container">
-    <p class="breadcrumbs"><a href="./">Home</a> <span class="sep">/</span> Financial Wellbeing</p>
-    <div class="hero-eyebrow" style="color: var(--aetas-gold-soft); margin-bottom: 1.5rem;">Financial wellbeing for charity staff</div>
-    <h1>Financial anxiety is costing your organisation <span class="accent">more than you can see</span></h1>
-    <p class="lead">Staff who are worried about money are less focused, less engaged, and more likely to leave. In a not-for-profit, where purpose is the competitive advantage, financial pressure among your workforce is a risk your mission cannot afford to ignore.</p>
+    <p class="breadcrumbs"><a href="./">Home</a> <span class="sep">/</span> Calculator</p>
+    <div class="hero-eyebrow" style="color: var(--aetas-gold-soft); margin-bottom: 1.5rem;">Cost calculator</div>
+    <h1>What is financial pressure <span class="accent">costing your charity?</span></h1>
+    <p class="lead">A short interactive tool that estimates the annual cost of financial pressure in your specific workforce. Move the sliders to match your charity, and the numbers update live.</p>
   </div>
 </section>
 
 
 <section class="section">
   <div class="container">
-    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book a Charity Wellbeing Review</a>
-      <a href="diagnostic.html" class="btn btn-ghost">Take the diagnostic</a>
+    <div class="grid grid-2" style="align-items: start; gap: 3rem;">
+
+      <div>
+        <div class="section-head left" style="margin-bottom: 2rem;">
+          <span class="eyebrow">Your workforce</span>
+          <h2 style="font-size: 1.4rem;">Tell us about your charity</h2>
+        </div>
+
+        <div class="calc-form">
+
+          <div class="calc-field">
+            <label for="employees">Number of staff <span style="color: var(--aetas-turquoise); font-weight: 700;" id="employees-display">50</span></label>
+            <input type="range" id="employees" min="10" max="250" value="50" step="1">
+          </div>
+
+          <div class="calc-field">
+            <label for="salary">Average annual salary <span style="color: var(--aetas-turquoise); font-weight: 700;" id="salary-display">£30,000</span></label>
+            <input type="range" id="salary" min="20000" max="70000" value="30000" step="1000">
+          </div>
+
+          <div class="calc-field">
+            <label for="turnover">Annual staff turnover <span style="color: var(--aetas-turquoise); font-weight: 700;" id="turnover-display">15%</span></label>
+            <input type="range" id="turnover" min="0" max="40" value="15" step="1">
+          </div>
+
+          <div class="calc-field">
+            <label for="sickdays">Sick days per staff member per year <span style="color: var(--aetas-turquoise); font-weight: 700;" id="sickdays-display">9.4</span></label>
+            <input type="range" id="sickdays" min="0" max="20" value="9.4" step="0.1">
+          </div>
+
+        </div>
+
+        <p style="font-size: 0.82rem; color: var(--ink-muted); margin-top: 2rem; font-style: italic;">Slider defaults reflect UK charity sector averages. Adjust to match your organisation for a more accurate estimate.</p>
+      </div>
+
+      <div>
+        <div class="calc-result-card">
+          <span class="eyebrow" style="color: var(--aetas-gold-soft);">Estimated annual cost</span>
+          <div class="calc-result-num" id="total-value">£106,000</div>
+          <p style="margin-bottom: 0;" id="total-sub">for a 50-person charity, driven primarily by turnover, productivity loss, and absence</p>
+        </div>
+
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 1.5rem; margin-top: 1rem;">
+          <h3 style="font-size: 1rem; margin-bottom: 1rem;">Breakdown</h3>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.95rem;">
+              <span style="color: var(--ink-soft);">Retention cost</span>
+              <strong style="color: var(--aetas-blue);" id="retention-value">£0</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.95rem;">
+              <span style="color: var(--ink-soft);">Productivity loss</span>
+              <strong style="color: var(--aetas-blue);" id="productivity-value">£0</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.95rem;">
+              <span style="color: var(--ink-soft);">Absence cost</span>
+              <strong style="color: var(--aetas-blue);" id="absence-value">£0</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.95rem;">
+              <span style="color: var(--ink-soft);">Benefits waste</span>
+              <strong style="color: var(--aetas-blue);" id="benefits-value">£0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--paper-warm); border-left: 3px solid var(--aetas-gold); border-radius: 4px; padding: 1.5rem; margin-top: 1rem;">
+          <span class="eyebrow">Compare to programme investment</span>
+          <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">A typical full programme investment for your size is around <strong id="roei-investment">£0</strong> per year. The estimated cost above is <strong id="roei-ratio" style="color: var(--aetas-gold);">0×</strong> the programme cost.</p>
+        </div>
+
+        <p style="font-size: 0.82rem; color: var(--ink-muted); margin-top: 1.25rem; font-style: italic;">Most charities find that the pension and benefits savings identified in the Review more than cover the programme cost in year one, meaning the savings can be redirected to programme delivery.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
 
-<!-- STATS BAND -->
-<section class="section section-blue">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" style="color: var(--aetas-gold-soft);">What the evidence shows</span>
-      <h2 style="color:#fff;">The cost of doing nothing is rarely invisible for long</h2>
-    </div>
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-num"><strong>77%</strong></div>
-        <div class="stat-label">of employees say financial worries affect their performance at work</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><strong>£6.2bn</strong></div>
-        <div class="stat-label">annual UK cost of financial stress through absenteeism and presenteeism</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><strong>50&ndash;200%</strong></div>
-        <div class="stat-label">typical cost of replacing a skilled employee as a share of annual salary</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- WHY CHARITIES -->
+<!-- METHODOLOGY -->
 <section class="section section-soft">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Why this matters in charities and not-for-profits</span>
-      <h2>Purpose brings people in. Financial security keeps them.</h2>
-      <p>Charity staff are often paid below the market for equivalent work in commercial sectors. They stay because of the mission. But mission alone does not pay the mortgage, and financial pressure quietly erodes the very engagement that purpose was supposed to provide.</p>
+      <span class="eyebrow">Methodology</span>
+      <h2>How the calculator works</h2>
+      <p>Four cost categories, each estimated using widely accepted research figures applicable to UK organisations. These are averages, your specific number will differ. The Charity Wellbeing Review finds the real one.</p>
     </div>
 
-    <div class="grid grid-3">
+    <div class="grid grid-2">
       <div class="card reveal">
         <div class="card-icon">01</div>
-        <h3>Retention is your largest hidden cost</h3>
-        <p>Replacing an experienced charity professional typically costs between 50% and 200% of their annual salary, in recruitment, onboarding, and the months of productivity lost in transition. In a small team, one departure of the wrong person sets a programme back materially.</p>
+        <h3>Retention cost</h3>
+        <p>Number of staff × turnover rate × (75% of average salary). Replacing an experienced charity professional typically costs 50% to 200% of annual salary in recruitment, onboarding, and productivity loss during transition. The charity sector specifically tends toward the upper end given the difficulty of recruiting mission-aligned talent.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">02</div>
-        <h3>Mission delivery suffers quietly</h3>
-        <p>Financial stress reduces focus, decision quality, and resilience under pressure. In a charity context, that translates directly into reduced impact: missed funding deadlines, weaker programme delivery, and gaps that nobody connects back to the underlying cause.</p>
+        <h3>Productivity loss</h3>
+        <p>Approximately 25% of UK employees report financial worries affecting their performance, costing roughly three hours of focused output per week per affected person. In charity work, this often translates into slower programme delivery and weaker funder relationships.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">03</div>
-        <h3>Funders and trustees are watching</h3>
-        <p>Boards and major funders are increasingly asking how charities care for their staff, not as a soft question but as evidence of well-run organisations. A structured wellbeing approach is now a credibility signal in funding conversations.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- WHAT'S COVERED -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">What financial wellbeing covers</span>
-      <h2>A consultancy-led programme, built around your workforce</h2>
-      <p>Every engagement begins with a Charity Wellbeing Review before anything is recommended. What follows reflects your organisation: your team size, your culture, your reserves position, and the specific pressures your people are carrying.</p>
-    </div>
-
-    <div class="grid grid-3">
-      <div class="card reveal">
-        <div class="card-icon">01</div>
-        <h3>Clarity</h3>
-        <p style="font-size: 0.85rem; color: var(--aetas-turquoise); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 0.75rem; text-transform: uppercase;">Benefits and pension review</p>
-        <p>A structured review of pension, benefits, and financial support arrangements. Most charities find that this work alone identifies savings that more than cover the cost of the programme, savings that can be redirected to the mission.</p>
+        <h3>Absence cost</h3>
+        <p>UK average sickness absence is 9.4 days per employee. Roughly 20% of that absence is linked to stress and financial pressure. Daily salary cost × stress-linked absence × workforce size. Charity teams tend to be small, which makes each absent day proportionally more disruptive.</p>
       </div>
       <div class="card reveal">
-        <div class="card-icon">02</div>
-        <h3>Confidence</h3>
-        <p style="font-size: 0.85rem; color: var(--aetas-turquoise); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 0.75rem; text-transform: uppercase;">Education and 1-to-1 guidance</p>
-        <p>Practical financial workshops covering budgeting, pensions, and planning. One-to-one access to a regulated Independent Financial Adviser at no cost to staff. Communications and scheduling managed entirely on your behalf.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">03</div>
-        <h3>Stability</h3>
-        <p style="font-size: 0.85rem; color: var(--aetas-turquoise); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 0.75rem; text-transform: uppercase;">Ongoing support</p>
-        <p>Continued access to tools and guidance. Annual review of impact, with reporting suitable for trustee meetings and major funder updates. A demonstrably strong employee proposition reinforced year after year.</p>
+        <div class="card-icon">04</div>
+        <h3>Benefits waste</h3>
+        <p>Average UK employer spends roughly £800 per employee per year on benefits, and around 15% of that is typically unused or poorly understood. For charities, that waste is doubly painful: it's money that could have gone to programme delivery or staff retention.</p>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- BUILT FOR CHARITIES -->
-<section class="section section-blue">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" style="color: var(--aetas-gold-soft);">What makes this different for charities</span>
-      <h2 style="color:#fff;">Designed for organisations where every pound earns its place</h2>
-      <p style="color: rgba(255,255,255,0.78);">Generic financial wellbeing platforms assume a large HR function, generous budgets, and a workforce that engages independently. A charity operates differently. The programme is built around that reality.</p>
-    </div>
-
-    <div class="process" style="border-top-color: rgba(255,255,255,0.18); border-bottom-color: rgba(255,255,255,0.18); margin-top: 3rem;">
-      <div class="process-step" style="border-right-color: rgba(255,255,255,0.12);">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">01</div>
-        <h3 style="color:#fff;">No overhead added to your team</h3>
-        <p style="color: rgba(255,255,255,0.7);">We coordinate delivery, manage communications, and handle the operational work. Your CEO and HR lead retain visibility without absorbing additional time.</p>
-      </div>
-      <div class="process-step" style="border-right-color: rgba(255,255,255,0.12);">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">02</div>
-        <h3 style="color:#fff;">Proportionate to your reserves</h3>
-        <p style="color: rgba(255,255,255,0.7);">Fees are per-employee, agreed in writing before work begins. The Review is always provided at no cost, regardless of whether further work follows.</p>
-      </div>
-      <div class="process-step" style="border-right-color: rgba(255,255,255,0.12);">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">03</div>
-        <h3 style="color:#fff;">A story you can tell trustees</h3>
-        <p style="color: rgba(255,255,255,0.7);">Clear documentation of what has been introduced and the outcomes achieved. A meaningful item for board updates and major funder conversations.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">04</div>
-        <h3 style="color:#fff;">Savings redirected to the mission</h3>
-        <p style="color: rgba(255,255,255,0.7);">The pension and benefits review typically identifies recurring savings that can be returned to programme delivery, not just absorbed as cost reduction.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- HOW IT WORKS -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">The engagement</span>
-      <h2>A structured process, managed on your behalf throughout</h2>
-      <p>From first conversation to ongoing programme. Designed to be proportionate to your charity and minimal in its demands on your senior team.</p>
-    </div>
-
-    <div class="process" style="margin-top: 2rem;">
-      <div class="process-step">
-        <div class="process-num">01</div>
-        <h3>Charity Wellbeing Review</h3>
-        <p>A structured, no-cost two-part conversation to identify whether financial pressure is affecting performance in your charity and what a proportionate response would look like.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">02</div>
-        <h3>Programme design and trustee approval</h3>
-        <p>Where action is justified, a programme is designed around your specific charity. Fees are presented alongside identified savings, so trustees see the net position before approving.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">03</div>
-        <h3>Managed delivery and review</h3>
-        <p>Workshops, one-to-one guidance, pension and benefits changes coordinated and delivered. Communications drafted for your approval. Impact reviewed annually with reporting suitable for trustees and major funders.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- FAQ PREVIEW -->
-<section class="section section-soft">
-  <div class="container-narrow">
-    <div class="section-head left">
-      <span class="eyebrow">Common questions</span>
-      <h2>What organisations typically ask</h2>
-    </div>
-
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary>We are a small charity, is this proportionate for us?</summary>
-        <div class="faq-body">
-          <p>The programme is designed to scale down as readily as it scales up. For smaller charities (10 to 50 staff), the engagement is typically concentrated on the Clarity pillar plus a focused programme of workshops. The Review is always free, so the first step costs nothing regardless of size.</p>
-        </div>
-      </details>
-      <details class="faq-item">
-        <summary>How do you handle the cost when funds are tight?</summary>
-        <div class="faq-body">
-          <p>Per-employee pricing, agreed in writing before delivery. The Review identifies savings opportunities in your existing pension and benefits arrangements, and fees are presented alongside those findings. Most charities find that the savings identified more than offset the programme cost in year one.</p>
-        </div>
-      </details>
-      <details class="faq-item">
-        <summary>Can our staff actually get regulated financial advice?</summary>
-        <div class="faq-body">
-          <p>Yes. Through Aetas Wealth (FCA registration 458421), employees can access qualified, regulated Independent Financial Advisers as a workplace benefit. The introduction happens through the programme, but the regulated engagement sits separately and confidentially with the adviser.</p>
-        </div>
-      </details>
-      <details class="faq-item">
-        <summary>What about confidentiality with our trustees?</summary>
-        <div class="faq-body">
-          <p>Individual participation in workshops or one-to-one guidance is never disclosed back to the charity. Aggregate engagement data is reported in a form suitable for trustee discussion without identifying individuals.</p>
-        </div>
-      </details>
-    </div>
-    <p style="text-align: center; margin-top: 2rem;"><a href="faqs.html" class="card-link">See all FAQs</a></p>
   </div>
 </section>
 
 
 <!-- CTA -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Two ways to start</span>
-      <h2>Find out what financial wellbeing could look like for your organisation</h2>
-      <p>Both are free and carry no obligation.</p>
-    </div>
-
-    <div class="grid grid-2">
-      <div class="card reveal">
-        <div class="card-icon">A</div>
-        <h3>Book a Charity Wellbeing Review</h3>
-        <p>A focused conversation with Matthew Steiner to identify whether financial pressure is affecting performance in your charity and what it may be costing.</p>
-        <p style="margin-top: 1.25rem;"><a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book a meeting</a></p>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">B</div>
-        <h3>Take the diagnostic</h3>
-        <p>A short scored self-assessment for charity leaders. Gives you an immediate picture of where the gaps may be, with a personalised report delivered to your inbox.</p>
-        <p style="margin-top: 1.25rem;"><a href="diagnostic.html" class="btn btn-ghost">Start the diagnostic</a></p>
-      </div>
-    </div>
+<section class="section section-blue">
+  <div class="container-narrow text-center">
+    <span class="eyebrow" style="color: var(--aetas-gold-soft);">From estimate to actual</span>
+    <h2 id="cta-headline" style="color:#fff;">These are estimates. Your Charity Wellbeing Review finds the real number.</h2>
+    <p style="color: rgba(255,255,255,0.78); font-size: 1.05rem; max-width: 620px; margin: 1.25rem auto 0;">The Review is two short conversations and produces a written summary you can take to your senior team or trustees. It is provided at no cost and carries no obligation.</p>
+    <p style="margin-top: 2rem;">
+      <a href="book-a-meeting.html" class="btn btn-gold btn-arrow" style="background: var(--aetas-gold); color: #fff;">Book a Charity Wellbeing Review</a>
+    </p>
+    <p style="color: rgba(255,255,255,0.55); font-size: 0.85rem; margin-top: 1rem;">No cost · No obligation · Two short conversations</p>
   </div>
 </section>
+
+<script>
+const fmt = (n) => '£' + Math.round(n).toLocaleString('en-GB');
+const fmtK = (n) => {
+  const r = Math.round(n);
+  return r >= 1000 ? '£' + Math.round(r/1000) + 'k' : '£' + r;
+};
+
+function calculate() {
+  const employees = parseInt(document.getElementById('employees').value);
+  const salary    = parseInt(document.getElementById('salary').value);
+  const turnover  = parseFloat(document.getElementById('turnover').value) / 100;
+  const sickDays  = parseFloat(document.getElementById('sickdays').value);
+
+  document.getElementById('employees-display').textContent = employees;
+  document.getElementById('salary-display').textContent    = '£' + salary.toLocaleString('en-GB');
+  document.getElementById('turnover-display').textContent  = Math.round(turnover * 100) + '%';
+  document.getElementById('sickdays-display').textContent  = sickDays;
+
+  const leavers          = employees * turnover;
+  const replacementCost  = salary * 0.75;
+  const retentionCost    = leavers * replacementCost;
+
+  const stressedCount    = employees * 0.25;
+  const hourlyRate       = salary / 2080;
+  const productivityLoss = stressedCount * 3 * 52 * hourlyRate;
+
+  const dailyRate        = salary / 260;
+  const absenceCost      = employees * sickDays * dailyRate * 0.20;
+
+  const benefitsWaste    = employees * 800 * 0.15;
+
+  const total = retentionCost + productivityLoss + absenceCost + benefitsWaste;
+
+  let ratePerEmployee;
+  if (employees <= 30) ratePerEmployee = 165;
+  else if (employees <= 80) ratePerEmployee = 140;
+  else ratePerEmployee = 115;
+  const programmeInv = employees * ratePerEmployee;
+  const roiRatio     = total / programmeInv;
+
+  document.getElementById('total-value').textContent    = fmt(total);
+  document.getElementById('total-sub').textContent      = 'for a ' + employees + '-person charity, driven primarily by turnover, productivity loss, and absence';
+  document.getElementById('retention-value').textContent  = fmtK(retentionCost);
+  document.getElementById('productivity-value').textContent = fmtK(productivityLoss);
+  document.getElementById('absence-value').textContent     = fmtK(absenceCost);
+  document.getElementById('benefits-value').textContent    = fmtK(benefitsWaste);
+  document.getElementById('roei-investment').textContent   = fmtK(programmeInv);
+  document.getElementById('roei-ratio').textContent        = Math.round(roiRatio) + '×';
+
+  const fmtTotal = fmt(total);
+  const ctaHead = document.getElementById('cta-headline');
+  if (ctaHead) ctaHead.innerHTML = 'These are estimates. Your Charity Wellbeing Review finds the real number, but ' + fmtTotal + ' a year is roughly what is in play.';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  ['employees', 'salary', 'turnover', 'sickdays'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', calculate);
+  });
+  calculate();
+});
+</script>
 
 
 <footer class="site-footer">
