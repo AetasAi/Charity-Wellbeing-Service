@@ -1,1217 +1,756 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aetas for Charities · The Mission Performance Solution</title>
-  <meta name="description" content="A structured financial wellbeing service built specifically for charities and not-for-profits. Reduce financial anxiety in your team, strengthen retention, and unlock savings that can be redirected to your mission.">
-  <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="hgBONfhMUxNPQtKSW1GgVOZOdZE5WbUTBZVXmowTlCw">
-  <link rel="canonical" href="https://charities.aetaspartners.com/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aetas for Charities · The Charity Performance Audit</title>
+<meta name="description" content="Financial pressure is quietly affecting UK charities. The Charity Performance Audit identifies where it is costing your organisation — in retention, focus, and mission delivery — and provides a practical response.">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="hgBONfhMUxNPQtKSW1GgVOZOdZE5WbUTBZVXmowTlCw">
+<link rel="canonical" href="https://charities.aetaspartners.com/">
 
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://charities.aetaspartners.com/">
-  <meta property="og:title" content="Aetas for Charities · The Mission Performance Solution">
-  <meta property="og:description" content="Structured financial wellbeing for charities and not-for-profits. By Aetas in the Workplace.">
-  <meta property="og:site_name" content="Aetas for Charities">
-  <meta property="og:locale" content="en_GB">
-  <meta property="og:image" content="https://charities.aetaspartners.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Aetas for Charities · The Mission Performance Solution">
-  <meta name="twitter:description" content="Structured financial wellbeing for charities and not-for-profits. By Aetas in the Workplace.">
-  <meta name="twitter:image" content="https://charities.aetaspartners.com/og-image.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://charities.aetaspartners.com/">
+<meta property="og:title" content="Aetas for Charities · The Charity Performance Audit">
+<meta property="og:description" content="Financial pressure is a hidden organisational risk for UK charities. We identify where it is affecting your people and mission delivery, then provide a practical, proportionate response.">
+<meta property="og:site_name" content="Aetas for Charities">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://charities.aetaspartners.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aetas for Charities · The Charity Performance Audit">
+<meta name="twitter:description" content="Financial pressure is a hidden organisational risk for UK charities. We identify where it is affecting your people and mission delivery, then provide a practical, proportionate response.">
+<meta name="twitter:image" content="https://charities.aetaspartners.com/og-image.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="#00205B">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#00205B">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
 
-  <style>
+<style>
 /* ============================================================
-   Aetas Wealth — Main stylesheet
-   Brand: Deep Blue #00205B, Turquoise #009CA6, Gold #9A7B3A
-   Typeface: Open Sans
-   ============================================================ */
+Aetas for Charities — Main stylesheet
+Brand: Deep Blue #00205B, Turquoise #009CA6, Gold #9A7B3A
+Typeface: Open Sans
+============================================================ */
 
 /* ---------- 1. Design tokens ---------- */
 :root {
-  /* Brand palette */
-  --aetas-blue: #00205B;
-  --aetas-blue-dark: #001640;
-  --aetas-blue-soft: #f4f6fb;
-  --aetas-turquoise: #009CA6;
-  --aetas-turquoise-dark: #007a82;
-  --aetas-gold: #9A7B3A;
-  --aetas-gold-soft: #c8a55c;
-
-  /* Neutrals */
-  --ink: #1a1f2e;
-  --ink-soft: #4a5269;
-  --ink-muted: #8089a0;
-  --paper: #ffffff;
-  --paper-warm: #fafaf7;
-  --line: #e6e8ee;
-  --line-soft: #f0f2f6;
-
-  /* Typography */
-  --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --tracking-display: -0.01em;
-  --tracking-eyebrow: 0.18em;
-
-  /* Layout */
-  --container: 1200px;
-  --container-narrow: 880px;
-  --gutter: clamp(1.25rem, 4vw, 2.5rem);
-  --section-y: clamp(4rem, 9vw, 7rem);
-
-  /* Effects */
-  --shadow-sm: 0 1px 2px rgba(0, 32, 91, 0.04), 0 2px 6px rgba(0, 32, 91, 0.04);
-  --shadow-md: 0 4px 12px rgba(0, 32, 91, 0.06), 0 12px 28px rgba(0, 32, 91, 0.06);
-  --shadow-lg: 0 10px 30px rgba(0, 32, 91, 0.08), 0 24px 60px rgba(0, 32, 91, 0.08);
-  --radius-sm: 4px;
-  --radius: 8px;
-  --radius-lg: 14px;
-
-  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+--aetas-blue: #00205B;
+--aetas-blue-dark: #001640;
+--aetas-blue-soft: #f4f6fb;
+--aetas-turquoise: #009CA6;
+--aetas-turquoise-dark: #007a82;
+--aetas-gold: #9A7B3A;
+--aetas-gold-soft: #c8a55c;
+--ink: #1a1f2e;
+--ink-soft: #4a5269;
+--ink-muted: #8089a0;
+--paper: #ffffff;
+--paper-warm: #fafaf7;
+--line: #e6e8ee;
+--line-soft: #f0f2f6;
+--font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+--tracking-display: -0.01em;
+--tracking-eyebrow: 0.18em;
+--container: 1200px;
+--container-narrow: 880px;
+--gutter: clamp(1.25rem, 4vw, 2.5rem);
+--section-y: clamp(4rem, 9vw, 7rem);
+--shadow-sm: 0 1px 2px rgba(0,32,91,0.04), 0 2px 6px rgba(0,32,91,0.04);
+--shadow-md: 0 4px 12px rgba(0,32,91,0.06), 0 12px 28px rgba(0,32,91,0.06);
+--shadow-lg: 0 10px 30px rgba(0,32,91,0.08), 0 24px 60px rgba(0,32,91,0.08);
+--radius-sm: 4px;
+--radius: 8px;
+--radius-lg: 14px;
+--ease: cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 /* ---------- 2. Reset ---------- */
-*, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0;
-  font-family: var(--font-sans);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 1.65;
-  color: var(--ink);
-  background: var(--paper);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-img { max-width: 100%; height: auto; display: block; }
-a { color: var(--aetas-blue); text-decoration: none; transition: color 200ms var(--ease); }
-a:hover { color: var(--aetas-turquoise); }
-button { font-family: inherit; cursor: pointer; }
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{margin:0;font-family:var(--font-sans);font-weight:400;font-size:17px;line-height:1.65;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+img{max-width:100%;height:auto;display:block;}
+a{color:var(--aetas-blue);text-decoration:none;transition:color 200ms var(--ease);}
+a:hover{color:var(--aetas-turquoise);}
+button{font-family:inherit;cursor:pointer;}
 
 /* ---------- 3. Typography ---------- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans);
-  color: var(--aetas-blue);
-  font-weight: 700;
-  line-height: 1.18;
-  letter-spacing: var(--tracking-display);
-  margin: 0 0 0.6em;
-}
-h1 { font-size: clamp(2.25rem, 5.5vw, 3.75rem); font-weight: 300; }
-h1 strong, h1 .accent { font-weight: 700; }
-h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 400; }
-h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 600; }
-h4 { font-size: 1.125rem; font-weight: 600; }
-p { margin: 0 0 1.1em; color: var(--ink-soft); }
-.lead { font-size: 1.2rem; line-height: 1.55; color: var(--ink); font-weight: 300; }
+h1,h2,h3,h4,h5,h6{font-family:var(--font-sans);color:var(--aetas-blue);font-weight:700;line-height:1.18;letter-spacing:var(--tracking-display);margin:0 0 0.6em;}
+h1{font-size:clamp(2.25rem,5.5vw,3.75rem);font-weight:300;}
+h1 strong,h1 .accent{font-weight:700;}
+h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:400;}
+h3{font-size:clamp(1.25rem,2vw,1.5rem);font-weight:600;}
+h4{font-size:1.125rem;font-weight:600;}
+p{margin:0 0 1.1em;color:var(--ink-soft);}
+.lead{font-size:1.2rem;line-height:1.55;color:var(--ink);font-weight:300;}
+.eyebrow{display:inline-block;font-size:0.78rem;font-weight:600;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--aetas-gold);margin-bottom:1rem;}
+.eyebrow.turquoise{color:var(--aetas-turquoise);}
+.rule{width:60px;height:2px;background:var(--aetas-gold);border:0;margin:0 0 1.75rem;}
+.rule.center{margin-left:auto;margin-right:auto;}
 
-.eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: var(--tracking-eyebrow);
-  text-transform: uppercase;
-  color: var(--aetas-gold);
-  margin-bottom: 1rem;
-}
-.eyebrow.turquoise { color: var(--aetas-turquoise); }
+/* ---------- 4. Layout ---------- */
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter);}
+.container-narrow{width:100%;max-width:var(--container-narrow);margin-inline:auto;padding-inline:var(--gutter);}
+.section{padding-block:var(--section-y);}
+.section-tight{padding-block:clamp(2.5rem,6vw,4rem);}
+.section-soft{background:var(--paper-warm);}
+.section-blue{background:var(--aetas-blue);color:#ffffff;}
+.section-blue h1,.section-blue h2,.section-blue h3{color:#ffffff;}
+.section-blue p{color:rgba(255,255,255,0.82);}
+.grid{display:grid;gap:2rem;}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+.text-center{text-align:center;}
 
-.rule {
-  width: 60px;
-  height: 2px;
-  background: var(--aetas-gold);
-  border: 0;
-  margin: 0 0 1.75rem;
-}
-.rule.center { margin-left: auto; margin-right: auto; }
-
-/* ---------- 4. Layout helpers ---------- */
-.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
-.container-narrow { width: 100%; max-width: var(--container-narrow); margin-inline: auto; padding-inline: var(--gutter); }
-.section { padding-block: var(--section-y); }
-.section-tight { padding-block: clamp(2.5rem, 6vw, 4rem); }
-.section-soft { background: var(--paper-warm); }
-.section-blue { background: var(--aetas-blue); color: #ffffff; }
-.section-blue h1, .section-blue h2, .section-blue h3 { color: #ffffff; }
-.section-blue p { color: rgba(255, 255, 255, 0.82); }
-
-.grid { display: grid; gap: 2rem; }
-.grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-.grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-.grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-
-.text-center { text-align: center; }
-
-/* ---------- 5. Header / nav ---------- */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: saturate(180%) blur(8px);
-  -webkit-backdrop-filter: saturate(180%) blur(8px);
-  border-bottom: 1px solid var(--line);
-}
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 1.1rem;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--aetas-blue);
-}
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  position: relative;
-  flex-shrink: 0;
-}
-.brand-mark img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-.brand-text { display: flex; flex-direction: column; line-height: 1; }
-.brand-text span:last-child {
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--aetas-turquoise);
-  margin-top: 4px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.nav-links a {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--ink);
-  position: relative;
-  padding-block: 6px;
-  white-space: nowrap;
-}
-.nav-links a:hover, .nav-links a.is-active { color: var(--aetas-blue); }
-.nav-links a.is-active::after {
-  content: '';
-  position: absolute;
-  inset: auto 0 -2px 0;
-  height: 2px;
-  background: var(--aetas-gold);
-}
-.nav-cta {
-  background: var(--aetas-blue);
-  color: #fff !important;
-  padding: 0.65rem 1.25rem !important;
-  border-radius: 2px;
-  white-space: nowrap;
-  transition: background 200ms var(--ease);
-}
-.nav-cta:hover { background: var(--aetas-turquoise) !important; color: #fff !important; }
-.nav-cta::after { display: none !important; }
-
-.nav-toggle {
-  display: none;
-  background: transparent;
-  border: 0;
-  width: 40px;
-  height: 40px;
-  position: relative;
-}
-.nav-toggle span {
-  position: absolute;
-  left: 8px;
-  right: 8px;
-  height: 2px;
-  background: var(--aetas-blue);
-  transition: transform 200ms var(--ease), opacity 200ms var(--ease);
-}
-.nav-toggle span:nth-child(1) { top: 13px; }
-.nav-toggle span:nth-child(2) { top: 19px; }
-.nav-toggle span:nth-child(3) { top: 25px; }
-.nav-toggle.is-open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.nav-toggle.is-open span:nth-child(2) { opacity: 0; }
-.nav-toggle.is-open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-
-@media (max-width: 1024px) {
-  .nav-toggle { display: block; }
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    inset-inline: 0;
-    flex-direction: column;
-    gap: 0;
-    background: #fff;
-    border-bottom: 1px solid var(--line);
-    padding: 0.5rem 0 1rem;
-    transform: translateY(-12px);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 200ms var(--ease), opacity 200ms var(--ease);
-  }
-  .nav-links.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-  .nav-links li { width: 100%; }
-  .nav-links a {
-    display: block;
-    padding: 0.85rem var(--gutter);
-    border-bottom: 1px solid var(--line-soft);
-  }
-  .nav-cta {
-    margin: 0.75rem var(--gutter) 0;
-    text-align: center;
-    border-radius: 2px;
-  }
+/* ---------- 5. Header ---------- */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(8px);-webkit-backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding-block:1.1rem;}
+.brand{display:flex;align-items:center;gap:0.7rem;font-size:1.1rem;font-weight:700;letter-spacing:0.02em;color:var(--aetas-blue);}
+.brand-mark{width:42px;height:42px;display:grid;place-items:center;position:relative;flex-shrink:0;}
+.brand-mark img{width:100%;height:100%;object-fit:contain;display:block;}
+.brand-text{display:flex;flex-direction:column;line-height:1;}
+.brand-text span:last-child{font-size:0.65rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--aetas-turquoise);margin-top:4px;}
+.nav-links{display:flex;align-items:center;gap:1.5rem;list-style:none;margin:0;padding:0;}
+.nav-links a{font-size:0.9rem;font-weight:500;color:var(--ink);position:relative;padding-block:6px;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.is-active{color:var(--aetas-blue);}
+.nav-links a.is-active::after{content:'';position:absolute;inset:auto 0 -2px 0;height:2px;background:var(--aetas-gold);}
+.nav-cta{background:var(--aetas-blue);color:#fff!important;padding:0.65rem 1.25rem!important;border-radius:2px;white-space:nowrap;transition:background 200ms var(--ease);}
+.nav-cta:hover{background:var(--aetas-turquoise)!important;color:#fff!important;}
+.nav-cta::after{display:none!important;}
+.nav-toggle{display:none;background:transparent;border:0;width:40px;height:40px;position:relative;}
+.nav-toggle span{position:absolute;left:8px;right:8px;height:2px;background:var(--aetas-blue);transition:transform 200ms var(--ease),opacity 200ms var(--ease);}
+.nav-toggle span:nth-child(1){top:13px;}
+.nav-toggle span:nth-child(2){top:19px;}
+.nav-toggle span:nth-child(3){top:25px;}
+.nav-toggle.is-open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.nav-toggle.is-open span:nth-child(2){opacity:0;}
+.nav-toggle.is-open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+@media(max-width:1024px){
+.nav-toggle{display:block;}
+.nav-links{position:absolute;top:100%;inset-inline:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:0.5rem 0 1rem;transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform 200ms var(--ease),opacity 200ms var(--ease);}
+.nav-links.is-open{transform:translateY(0);opacity:1;pointer-events:auto;}
+.nav-links li{width:100%;}
+.nav-links a{display:block;padding:0.85rem var(--gutter);border-bottom:1px solid var(--line-soft);}
+.nav-cta{margin:0.75rem var(--gutter) 0;text-align:center;border-radius:2px;}
 }
 
 /* ---------- 6. Buttons ---------- */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.6rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  transition: all 220ms var(--ease);
-  cursor: pointer;
-}
-.btn-primary { background: var(--aetas-blue); color: #fff; }
-.btn-primary:hover { background: var(--aetas-turquoise); color: #fff; transform: translateY(-1px); box-shadow: var(--shadow-md); }
-.btn-ghost { background: transparent; color: var(--aetas-blue); border-color: var(--aetas-blue); }
-.btn-ghost:hover { background: var(--aetas-blue); color: #fff; }
-.btn-gold { background: var(--aetas-gold); color: #fff; }
-.btn-gold:hover { background: var(--aetas-blue); color: #fff; }
-.btn-arrow::after {
-  content: '→';
-  transition: transform 200ms var(--ease);
-}
-.btn:hover .btn-arrow::after, .btn-arrow:hover::after { transform: translateX(3px); }
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 1.6rem;font-size:0.95rem;font-weight:600;letter-spacing:0.02em;border-radius:2px;border:1px solid transparent;transition:all 220ms var(--ease);cursor:pointer;}
+.btn-primary{background:var(--aetas-blue);color:#fff;}
+.btn-primary:hover{background:var(--aetas-turquoise);color:#fff;transform:translateY(-1px);box-shadow:var(--shadow-md);}
+.btn-ghost{background:transparent;color:var(--aetas-blue);border-color:var(--aetas-blue);}
+.btn-ghost:hover{background:var(--aetas-blue);color:#fff;}
+.btn-gold{background:var(--aetas-gold);color:#fff;}
+.btn-gold:hover{background:var(--aetas-blue);color:#fff;}
+.btn-arrow::after{content:'→';transition:transform 200ms var(--ease);}
+.btn:hover .btn-arrow::after,.btn-arrow:hover::after{transform:translateX(3px);}
 
 /* ---------- 7. Hero ---------- */
-.hero {
-  position: relative;
-  padding-block: clamp(5rem, 11vw, 9rem);
-  background: linear-gradient(180deg, #fafaf7 0%, #ffffff 100%);
-  overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background:
-    radial-gradient(circle at 70% 30%, rgba(0, 156, 166, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 90% 70%, rgba(154, 123, 58, 0.04) 0%, transparent 50%);
-  pointer-events: none;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  position: relative;
-}
-.hero-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: var(--tracking-eyebrow);
-  text-transform: uppercase;
-  color: var(--aetas-turquoise);
-  margin-bottom: 1.5rem;
-}
-.hero-eyebrow::before {
-  content: '';
-  width: 32px;
-  height: 1px;
-  background: var(--aetas-gold);
-}
-.hero h1 { margin-bottom: 1.5rem; }
-.hero p { font-size: 1.18rem; max-width: 540px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
-.hero-aside {
-  background: #fff;
-  padding: 2.5rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
-  border-top: 3px solid var(--aetas-gold);
-  position: relative;
-}
-.hero-aside h3 { color: var(--aetas-blue); }
-.hero-aside ul { list-style: none; padding: 0; margin: 1rem 0 0; }
-.hero-aside li {
-  position: relative;
-  padding: 0.6rem 0 0.6rem 1.5rem;
-  font-size: 0.95rem;
-  color: var(--ink-soft);
-  border-bottom: 1px solid var(--line-soft);
-}
-.hero-aside li:last-child { border-bottom: 0; }
-.hero-aside li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 1.05rem;
-  width: 6px;
-  height: 6px;
-  background: var(--aetas-turquoise);
-  border-radius: 50%;
-}
-@media (max-width: 880px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero::before { display: none; }
-}
+.hero{position:relative;padding-block:clamp(5rem,11vw,9rem);background:linear-gradient(180deg,#fafaf7 0%,#ffffff 100%);overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:radial-gradient(circle at 70% 30%,rgba(0,156,166,0.06) 0%,transparent 50%),radial-gradient(circle at 90% 70%,rgba(154,123,58,0.04) 0%,transparent 50%);pointer-events:none;}
+.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:center;position:relative;}
+.hero-eyebrow{display:flex;align-items:center;gap:0.85rem;font-size:0.78rem;font-weight:600;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--aetas-turquoise);margin-bottom:1.5rem;}
+.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--aetas-gold);}
+.hero h1{margin-bottom:1.5rem;}
+.hero p{font-size:1.18rem;max-width:540px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem;}
+.hero-aside{background:#fff;padding:2.5rem;border-radius:var(--radius);box-shadow:var(--shadow-lg);border-top:3px solid var(--aetas-gold);position:relative;}
+.hero-aside h3{color:var(--aetas-blue);}
+.hero-aside ul{list-style:none;padding:0;margin:1rem 0 0;}
+.hero-aside li{position:relative;padding:0.6rem 0 0.6rem 1.5rem;font-size:0.95rem;color:var(--ink-soft);border-bottom:1px solid var(--line-soft);}
+.hero-aside li:last-child{border-bottom:0;}
+.hero-aside li::before{content:'';position:absolute;left:0;top:1.05rem;width:6px;height:6px;background:var(--aetas-turquoise);border-radius:50%;}
+@media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:2.5rem;}.hero::before{display:none;}}
 
-/* ---------- 8. Service / feature cards ---------- */
-.card {
-  background: #fff;
-  padding: 2rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  transition: transform 240ms var(--ease), box-shadow 240ms var(--ease), border-color 240ms var(--ease);
-  position: relative;
-  overflow: hidden;
-}
-.card::before {
-  content: '';
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 2px;
-  background: var(--aetas-turquoise);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 280ms var(--ease);
-}
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: transparent;
-}
-.card:hover::before { transform: scaleX(1); }
-.card-icon {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  background: var(--aetas-blue-soft);
-  color: var(--aetas-blue);
-  border-radius: 2px;
-  margin-bottom: 1.25rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-.card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
-.card p { font-size: 0.95rem; margin-bottom: 1rem; }
-.card-link {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--aetas-turquoise);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-.card-link::after { content: '→'; transition: transform 200ms var(--ease); }
-.card:hover .card-link::after { transform: translateX(3px); }
+/* ---------- 8. Cards ---------- */
+.card{background:#fff;padding:2rem;border:1px solid var(--line);border-radius:var(--radius);transition:transform 240ms var(--ease),box-shadow 240ms var(--ease),border-color 240ms var(--ease);position:relative;overflow:hidden;}
+.card::before{content:'';position:absolute;inset:auto 0 0 0;height:2px;background:var(--aetas-turquoise);transform:scaleX(0);transform-origin:left;transition:transform 280ms var(--ease);}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:transparent;}
+.card:hover::before{transform:scaleX(1);}
+.card-icon{width:44px;height:44px;display:grid;place-items:center;background:var(--aetas-blue-soft);color:var(--aetas-blue);border-radius:2px;margin-bottom:1.25rem;font-size:1.25rem;font-weight:700;}
+.card h3{font-size:1.15rem;margin-bottom:0.6rem;}
+.card p{font-size:0.95rem;margin-bottom:1rem;}
+.card-link{font-size:0.9rem;font-weight:600;color:var(--aetas-turquoise);display:inline-flex;align-items:center;gap:0.4rem;}
+.card-link::after{content:'→';transition:transform 200ms var(--ease);}
+.card:hover .card-link::after{transform:translateX(3px);}
 
 /* ---------- 9. Process steps ---------- */
-.process {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.process-step {
-  padding: 2.5rem 1.75rem;
-  border-right: 1px solid var(--line);
-  position: relative;
-}
-.process-step:last-child { border-right: 0; }
-.process-num {
-  font-size: 0.75rem;
-  letter-spacing: var(--tracking-eyebrow);
-  font-weight: 600;
-  color: var(--aetas-gold);
-  margin-bottom: 1rem;
-}
-.process-step h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-.process-step p { font-size: 0.92rem; margin: 0; }
-@media (max-width: 720px) {
-  .process-step { border-right: 0; border-bottom: 1px solid var(--line); }
-  .process-step:last-child { border-bottom: 0; }
+.process{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.process-step{padding:2.5rem 1.75rem;border-right:1px solid var(--line);position:relative;}
+.process-step:last-child{border-right:0;}
+.process-num{font-size:0.75rem;letter-spacing:var(--tracking-eyebrow);font-weight:600;color:var(--aetas-gold);margin-bottom:1rem;}
+.process-step h3{font-size:1.1rem;margin-bottom:0.5rem;}
+.process-step p{font-size:0.92rem;margin:0;}
+@media(max-width:720px){.process-step{border-right:0;border-bottom:1px solid var(--line);}.process-step:last-child{border-bottom:0;}}
+
+/* ---------- 10. Section header ---------- */
+.section-head{max-width:720px;margin:0 auto 3.5rem;text-align:center;}
+.section-head.left{text-align:left;margin-inline:0;}
+
+/* ---------- 11. Stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;}
+.stat{padding:2rem;border-right:1px solid rgba(255,255,255,0.15);text-align:center;}
+.stat:last-child{border-right:0;}
+.stat-num{font-size:clamp(2rem,4vw,2.75rem);font-weight:300;color:#fff;line-height:1;margin-bottom:0.5rem;}
+.stat-num strong{color:var(--aetas-gold-soft);font-weight:600;}
+.stat-label{font-size:0.78rem;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:rgba(255,255,255,0.7);}
+
+/* ---------- 12. Misc ---------- */
+.checklist{list-style:none;padding:0;margin:1.5rem 0;}
+.checklist li{position:relative;padding:0.5rem 0 0.5rem 2rem;font-size:0.98rem;color:var(--ink-soft);}
+.checklist li::before{content:'';position:absolute;left:0;top:0.85rem;width:14px;height:8px;border-left:2px solid var(--aetas-turquoise);border-bottom:2px solid var(--aetas-turquoise);transform:rotate(-45deg);}
+.disclaimer{font-size:0.78rem;color:var(--ink-muted);line-height:1.6;padding:1.5rem;background:var(--paper-warm);border-left:2px solid var(--aetas-gold);border-radius:2px;}
+
+/* ---------- 13. FAQ accordion ---------- */
+.faq-list{display:flex;flex-direction:column;gap:12px;margin-top:2rem;}
+.faq-item{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden;}
+.faq-item summary{list-style:none;cursor:pointer;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-weight:600;color:var(--aetas-blue);font-size:1rem;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';font-size:1.5rem;font-weight:300;color:var(--aetas-turquoise);transition:transform 220ms var(--ease);}
+.faq-item[open] summary::after{transform:rotate(45deg);}
+.faq-item[open] summary{border-bottom:1px solid var(--line);}
+.faq-item .faq-body{padding:1.25rem 1.5rem 1.5rem;}
+.faq-item .faq-body p{font-size:0.97rem;}
+.faq-item .faq-body p:last-child{margin-bottom:0;}
+
+/* ---------- 14. Footer ---------- */
+.site-footer{background:var(--aetas-blue-dark);color:rgba(255,255,255,0.7);padding-block:4rem 2rem;position:relative;}
+.site-footer::before{content:'';position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--aetas-gold) 0%,var(--aetas-turquoise) 100%);}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem;}
+@media(max-width:880px){.footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr;}}
+.footer-grid h4{color:#fff;font-size:0.78rem;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;margin-bottom:1rem;}
+.footer-grid ul{list-style:none;padding:0;margin:0;}
+.footer-grid li{margin-bottom:0.55rem;}
+.footer-grid a{color:rgba(255,255,255,0.7);font-size:0.92rem;transition:color 180ms var(--ease);}
+.footer-grid a:hover{color:#fff;}
+.footer-brand p{font-size:0.92rem;line-height:1.6;margin-top:1rem;}
+.footer-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,0.12);font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.7;}
+.footer-bottom p{margin:0 0 0.5rem;color:inherit;}
+.footer-bottom a{color:rgba(255,255,255,0.7);}
+
+/* ---------- 15. Reveal ---------- */
+@media(prefers-reduced-motion:no-preference){
+.reveal{opacity:0;transform:translateY(16px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);}
+.reveal.is-visible{opacity:1;transform:translateY(0);}
 }
 
-/* ---------- 10. Quote / testimonial ---------- */
-.quote {
-  position: relative;
-  padding: 2.5rem;
-  background: var(--paper-warm);
-  border-radius: var(--radius);
-  border-left: 3px solid var(--aetas-gold);
-}
-.quote-text {
-  font-size: 1.05rem;
-  font-style: italic;
-  color: var(--ink);
-  line-height: 1.6;
-  margin-bottom: 1.25rem;
-}
-.quote-attr { font-size: 0.85rem; color: var(--ink-muted); font-weight: 600; letter-spacing: 0.04em; }
+/* ---------- 16. Print ---------- */
+@media print{.site-header,.site-footer,.nav-toggle,.hero-actions,.btn{display:none!important;}body{color:#000;background:#fff;}}
 
-/* ---------- 11. Section header ---------- */
-.section-head {
-  max-width: 720px;
-  margin: 0 auto 3.5rem;
-  text-align: center;
-}
-.section-head.left { text-align: left; margin-inline: 0; }
+/* ---------- 17. Filter pills ---------- */
+.filter-pill{display:inline-block;padding:0.42rem 0.95rem;font-family:inherit;font-size:0.82rem;font-weight:500;color:var(--ink);background:var(--paper-warm);border:1px solid var(--line);border-radius:999px;cursor:pointer;transition:background 0.18s ease,color 0.18s ease,border-color 0.18s ease;letter-spacing:0.01em;white-space:nowrap;}
+.filter-pill:hover{background:#fff;border-color:var(--aetas-gold);}
+.filter-pill.is-active{background:var(--aetas-gold);color:#fff;border-color:var(--aetas-gold);}
+</style>
 
-/* ---------- 12. Page banner (sub-pages) ---------- */
-.page-banner {
-  background: var(--aetas-blue);
-  color: #fff;
-  padding-block: clamp(3.5rem, 8vw, 5.5rem);
-  position: relative;
-  overflow: hidden;
-}
-.page-banner::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(0, 156, 166, 0.18) 0%, transparent 60%);
-  pointer-events: none;
-}
-.page-banner::after {
-  content: '';
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--aetas-turquoise) 0%, var(--aetas-gold) 100%);
-}
-.page-banner h1 { color: #fff; max-width: 720px; position: relative; }
-.page-banner .lead { color: rgba(255, 255, 255, 0.85); max-width: 640px; position: relative; font-weight: 300; }
-.breadcrumbs {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 1.25rem;
-  position: relative;
-}
-.breadcrumbs a { color: rgba(255, 255, 255, 0.85); }
-.breadcrumbs a:hover { color: #fff; }
-.breadcrumbs .sep { margin-inline: 0.5rem; opacity: 0.5; }
-
-/* ---------- 13. Insights / blog ---------- */
-.post-list { list-style: none; padding: 0; margin: 0; }
-.post-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--line);
-  transition: padding-left 200ms var(--ease);
-}
-.post-card:hover { padding-left: 0.75rem; }
-.post-meta {
-  font-size: 0.78rem;
-  letter-spacing: var(--tracking-eyebrow);
-  text-transform: uppercase;
-  color: var(--aetas-gold);
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-.post-card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--aetas-blue); }
-.post-card p { font-size: 1rem; margin-bottom: 0.75rem; }
-
-article.post .post-body { max-width: 720px; margin: 0 auto; }
-article.post h2 { margin-top: 2.5rem; }
-article.post h3 { margin-top: 2rem; }
-article.post p { font-size: 1.05rem; line-height: 1.75; }
-article.post blockquote {
-  margin: 2rem 0;
-  padding: 1.25rem 1.75rem;
-  border-left: 3px solid var(--aetas-gold);
-  background: var(--paper-warm);
-  font-style: italic;
-  color: var(--ink);
-}
-
-/* ---------- 14. Forms ---------- */
-.form-grid { display: grid; gap: 1.25rem; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
-.form-field { display: flex; flex-direction: column; }
-.form-field label {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--aetas-blue);
-  letter-spacing: 0.04em;
-  margin-bottom: 0.45rem;
-}
-.form-field input, .form-field select, .form-field textarea {
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 0.85rem 1rem;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 2px;
-  color: var(--ink);
-  transition: border-color 180ms var(--ease), box-shadow 180ms var(--ease);
-}
-.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
-  outline: 0;
-  border-color: var(--aetas-turquoise);
-  box-shadow: 0 0 0 3px rgba(0, 156, 166, 0.12);
-}
-
-/* ---------- 15. Contact details strip ---------- */
-.contact-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 2.5rem;
-  background: var(--paper-warm);
-  border-radius: var(--radius);
-}
-.contact-strip h4 {
-  color: var(--aetas-blue);
-  font-size: 0.78rem;
-  letter-spacing: var(--tracking-eyebrow);
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
-}
-.contact-strip p { font-size: 0.95rem; margin: 0; }
-
-/* ---------- 16. Footer ---------- */
-.site-footer {
-  background: var(--aetas-blue-dark);
-  color: rgba(255, 255, 255, 0.7);
-  padding-block: 4rem 2rem;
-  position: relative;
-}
-.site-footer::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--aetas-gold) 0%, var(--aetas-turquoise) 100%);
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 2.5rem;
-  margin-bottom: 3rem;
-}
-@media (max-width: 880px) {
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-}
-@media (max-width: 480px) {
-  .footer-grid { grid-template-columns: 1fr; }
-}
-.footer-grid h4 {
-  color: #fff;
-  font-size: 0.78rem;
-  letter-spacing: var(--tracking-eyebrow);
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-.footer-grid ul { list-style: none; padding: 0; margin: 0; }
-.footer-grid li { margin-bottom: 0.55rem; }
-.footer-grid a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.92rem;
-  transition: color 180ms var(--ease);
-}
-.footer-grid a:hover { color: #fff; }
-.footer-brand p { font-size: 0.92rem; line-height: 1.6; margin-top: 1rem; }
-.footer-bottom {
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1.7;
-}
-.footer-bottom p { margin: 0 0 0.5rem; color: inherit; }
-.footer-bottom a { color: rgba(255, 255, 255, 0.7); }
-
-/* ---------- 17. Stats / pull-out ---------- */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0;
-}
-.stat {
-  padding: 2rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-  text-align: center;
-}
-.stat:last-child { border-right: 0; }
-.stat-num {
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 300;
-  color: #fff;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-.stat-num strong { color: var(--aetas-gold-soft); font-weight: 600; }
-.stat-label {
-  font-size: 0.78rem;
-  letter-spacing: var(--tracking-eyebrow);
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* ---------- 18. Misc ---------- */
-.checklist { list-style: none; padding: 0; margin: 1.5rem 0; }
-.checklist li {
-  position: relative;
-  padding: 0.5rem 0 0.5rem 2rem;
-  font-size: 0.98rem;
-  color: var(--ink-soft);
-}
-.checklist li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.85rem;
-  width: 14px;
-  height: 8px;
-  border-left: 2px solid var(--aetas-turquoise);
-  border-bottom: 2px solid var(--aetas-turquoise);
-  transform: rotate(-45deg);
-}
-
-.disclaimer {
-  font-size: 0.78rem;
-  color: var(--ink-muted);
-  line-height: 1.6;
-  padding: 1.5rem;
-  background: var(--paper-warm);
-  border-left: 2px solid var(--aetas-gold);
-  border-radius: 2px;
-}
-
-/* ---------- 19. Reveal-on-scroll (light touch) ---------- */
-@media (prefers-reduced-motion: no-preference) {
-  .reveal {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 600ms var(--ease), transform 600ms var(--ease);
-  }
-  .reveal.is-visible { opacity: 1; transform: translateY(0); }
-}
-
-/* ---------- 20. Print ---------- */
-@media print {
-  .site-header, .site-footer, .nav-toggle, .hero-actions, .btn { display: none !important; }
-  body { color: #000; background: #fff; }
-}
-
-/* ============================================================
-   FILTER PILLS (Insights category filter)
-   ============================================================ */
-.filter-pill {
-  display: inline-block;
-  padding: 0.42rem 0.95rem;
-  font-family: inherit;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--ink);
-  background: var(--paper-warm);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
-}
-.filter-pill:hover {
-  background: #fff;
-  border-color: var(--aetas-gold);
-  color: var(--aetas-navy);
-}
-.filter-pill.is-active {
-  background: var(--aetas-gold);
-  color: #fff;
-  border-color: var(--aetas-gold);
-}
-.filter-pill.is-active:hover {
-  background: var(--aetas-gold);
-  color: #fff;
-  border-color: var(--aetas-gold);
-}
-@media (max-width: 600px) {
-  .filter-pill { font-size: 0.78rem; padding: 0.38rem 0.8rem; }
-}
-
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["FinancialService", "LocalBusiness"],
+      "@id": "https://charities.aetaspartners.com/#organization",
+      "name": "Aetas for Charities",
+      "alternateName": "Charity Performance Audit",
+      "url": "https://charities.aetaspartners.com",
+      "logo": "https://charities.aetaspartners.com/aetas-mark.svg",
+      "description": "A structured diagnostic and improvement service for UK charities and not-for-profit organisations. The Charity Performance Audit identifies where financial pressure is affecting people, performance and mission delivery, then provides a practical, proportionate response.",
+      "telephone": "02036330579",
+      "email": "matthew.steiner@aetas-partners.com",
+      "areaServed": "GB",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Charity CEOs, Trustees, and Senior Leadership Teams"
+      },
+      "parentOrganization": {
         "@type": "Organization",
-        "@id": "https://charities.aetaspartners.com/#organization",
-        "name": "Aetas for Charities",
-        "url": "https://charities.aetaspartners.com",
-        "description": "A structured financial wellbeing service for UK charities and not-for-profits. Delivered by Aetas in the Workplace.",
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Aetas in the Workplace",
-          "url": "https://itw.aetaspartners.com"
-        }
+        "name": "Aetas in the Workplace",
+        "url": "https://itw.aetaspartners.com"
+      },
+      "knowsAbout": [
+        "Charity governance",
+        "Organisational resilience",
+        "Employee financial pressure",
+        "Pension and benefits review",
+        "Charity sector retention",
+        "Mission delivery risk",
+        "Trustee reporting"
+      ],
+      "sameAs": ["https://itw.aetaspartners.com", "https://aetas-partners.com"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://charities.aetaspartners.com/#website",
+      "url": "https://charities.aetaspartners.com",
+      "name": "Aetas for Charities",
+      "publisher": {"@id": "https://charities.aetaspartners.com/#organization"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://charities.aetaspartners.com/insights.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Service",
+      "@id": "https://charities.aetaspartners.com/#audit",
+      "name": "Charity Performance Audit",
+      "description": "A structured, no-cost diagnostic process that helps charities identify whether financial pressure is silently affecting their organisation — in retention, focus, governance, and mission delivery — and determines what a proportionate response looks like.",
+      "provider": {"@id": "https://charities.aetaspartners.com/#organization"},
+      "areaServed": "GB",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "UK charities and not-for-profit organisations"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "description": "The Charity Performance Audit is provided at no cost and carries no obligation."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://charities.aetaspartners.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Charity Performance Audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Charity Performance Audit is a structured, no-cost diagnostic process delivered by Aetas for Charities. It identifies whether financial pressure is affecting your organisation — in staff retention, daily focus, absence, engagement and leadership capacity — and produces a written assessment with proportionate next steps. Two short conversations, no obligation, useful on its own or as the first step in a broader programme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does financial pressure affect charities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Financial pressure among charity staff affects concentration, engagement, decision-making quality and retention. In a charity context, these translate directly into reduced impact: missed deadlines, weaker programme delivery, and leadership time absorbed by people problems rather than mission. The underlying cause — staff carrying financial stress — is rarely visible to leadership until it has already cost the organisation significantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can charities improve employee retention?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Improving charity employee retention requires understanding what is driving departures. Financial pressure is one of the most significant and least visible contributors. The Charity Performance Audit identifies whether financial stress is a factor in your specific organisation, and the programme that follows — covering pension and benefits optimisation, financial education and ongoing support — addresses the underlying cause rather than the symptoms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can charities support employees without increasing salaries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many charities cannot match private sector salaries but can significantly improve their total employment offering through pension optimisation, structured financial education, access to regulated financial guidance, and benefits improvements. In a typical engagement, the pension and benefits review alone identifies recurring annual savings that more than cover the cost of the programme — savings that can be returned to mission delivery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is organisational resilience for charities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Organisational resilience for charities is the capacity to deliver their mission under pressure — financial, operational, and reputational. A key and often overlooked component is workforce resilience: whether your people can sustain performance when they themselves are under financial stress. The Charity Performance Audit assesses this and provides a structured response that strengthens the organisation's ability to deliver its charitable purpose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What employee support should charities provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Effective employee support for charities should start with understanding what your specific workforce needs — not deploying generic platforms. The Charity Performance Audit identifies where pressure exists and what support will have the greatest impact. Solutions may include pension improvements, structured financial education, access to regulated independent financial advice, and ongoing guidance — each introduced only where the evidence justifies it."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
-<!-- SHARED: site-header -->
+<!-- HEADER -->
 <header class="site-header">
-  <div class="container nav-inner">
-    <a href="./" class="brand" aria-label="Aetas for Charities home">
-      <span class="brand-mark"><img src="/aetas-mark.svg" alt="Aetas for Charities"></span>
-      <span class="brand-text">
-        <span>Aetas for Charities</span>
-        <span>The Mission Performance Solution</span>
-      </span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="charities.html">Charities</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="calculator.html">Calculator</a></li>
-      <li><a href="diagnostic.html">Diagnostic</a></li>
-      <li><a href="insights.html">Insights</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="book-a-meeting.html" class="nav-cta">Book a meeting</a></li>
-    </ul>
-  </div>
+<div class="container nav-inner">
+  <a href="./" class="brand" aria-label="Aetas for Charities home">
+    <span class="brand-mark"><img src="/aetas-mark.svg" alt="Aetas for Charities"></span>
+    <span class="brand-text">
+      <span>Aetas for Charities</span>
+      <span>The Charity Performance Audit</span>
+    </span>
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="charities.html">Charities</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="calculator.html">Calculator</a></li>
+    <li><a href="diagnostic.html">Diagnostic</a></li>
+    <li><a href="insights.html">Insights</a></li>
+    <li><a href="faqs.html">FAQs</a></li>
+    <li><a href="book-a-meeting.html" class="nav-cta">Book an Audit</a></li>
+  </ul>
+</div>
 </header>
-
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-eyebrow">For charities and not-for-profits</div>
-        <h1>Your people are motivated by purpose.<br><span class="accent">Financial pressure should not be the reason they leave.</span></h1>
-        <p class="lead">A structured financial wellbeing service built specifically for charities. Designed to reduce financial anxiety in your team, strengthen retention, and unlock savings that can be redirected to your mission.</p>
-        <div class="hero-actions">
-          <a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book a discovery conversation</a>
-          <a href="diagnostic.html" class="btn btn-ghost">Take the diagnostic</a>
-        </div>
-        <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--ink-muted);">No cost · No obligation · Built for organisations where every person matters</p>
+<div class="container">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">For charities and not-for-profits</div>
+      <h1>Financial pressure is quietly affecting your organisation.<br><strong>We identify exactly where, and fix it.</strong></h1>
+      <p class="lead">Not a wellbeing initiative. A structured diagnostic and improvement service for charity CEOs, trustees and leadership teams — built to protect mission delivery, strengthen organisational resilience, and demonstrate responsible governance.</p>
+      <div class="hero-actions">
+        <a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book a Charity Performance Audit</a>
+        <a href="diagnostic.html" class="btn btn-ghost">Take the diagnostic</a>
       </div>
-      <aside class="hero-aside reveal">
-        <h3>Take the diagnostic first</h3>
-        <p>A short self-assessment that surfaces where financial pressure may already be costing your charity, in retention, focus, and leadership time. Useful on its own or as context for a discovery conversation.</p>
-        <ul>
-          <li>Twelve short questions across three areas</li>
-          <li>Estimated cost in pounds per year</li>
-          <li>Scored results with tailored interpretation</li>
-          <li>No data stored, results shown only to you</li>
-        </ul>
-        <p style="margin: 1.25rem 0 0;"><a href="diagnostic.html" class="card-link">Start the diagnostic</a></p>
-      </aside>
+      <p style="margin-top:1.5rem;font-size:0.88rem;color:var(--ink-muted);">No cost · No obligation · Built for organisations where every person matters</p>
     </div>
+    <aside class="hero-aside reveal">
+      <h3>Take the diagnostic first</h3>
+      <p>A short self-assessment that surfaces where financial pressure may already be costing your charity — in retention, focus, and leadership time. Useful on its own or as context for an Audit conversation.</p>
+      <ul>
+        <li>Twelve short questions across three areas</li>
+        <li>Estimated cost in pounds per year</li>
+        <li>Scored results with tailored interpretation</li>
+        <li>No data stored, results shown only to you</li>
+      </ul>
+      <p style="margin:1.25rem 0 0;"><a href="diagnostic.html" class="card-link">Start the diagnostic</a></p>
+    </aside>
   </div>
+</div>
 </section>
-
 
 <!-- STATS BAND -->
 <section class="section section-blue">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" style="color: var(--aetas-gold-soft);">The hidden cost of financial pressure</span>
-      <h2 style="color:#fff;">What financial stress is already costing the sector</h2>
-      <p style="color: rgba(255,255,255,0.78);">These are sector-wide figures. The shape of every charity is different, but the categories of impact are consistent: lost focus, increased absence, and the cost of replacing people who leave.</p>
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow" style="color:var(--aetas-gold-soft);">The hidden cost of financial pressure</span>
+    <h2 style="color:#fff;">What financial stress is already costing the sector</h2>
+    <p style="color:rgba(255,255,255,0.78);">These are sector-wide figures. The shape of every charity is different, but the categories of impact are consistent: lost focus, increased absence, and the cost of replacing people who leave.</p>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num"><strong>£51bn</strong></div>
+      <div class="stat-label">Lost in UK productivity each year linked to financial stress</div>
     </div>
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-num"><strong>£51bn</strong></div>
-        <div class="stat-label">Lost in UK productivity each year linked to financial stress</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><strong>£6.2bn</strong></div>
-        <div class="stat-label">Cost of financial stress through absenteeism and presenteeism</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><strong>9.4</strong></div>
-        <div class="stat-label">Average sickness absence days per employee, a record high</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><strong>50&ndash;200%</strong></div>
-        <div class="stat-label">Typical cost of replacing a mid-level employee as a share of salary</div>
-      </div>
+    <div class="stat">
+      <div class="stat-num"><strong>£6.2bn</strong></div>
+      <div class="stat-label">Cost of financial stress through absenteeism and presenteeism</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><strong>9.4</strong></div>
+      <div class="stat-label">Average sickness absence days per employee, a record high</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><strong>50–200%</strong></div>
+      <div class="stat-label">Typical cost of replacing a mid-level employee as a share of salary</div>
     </div>
   </div>
+</div>
 </section>
 
-
-<!-- ENTRY OFFER: CHARITY WELLBEING REVIEW -->
-<section id="entry-offer" class="section section-soft">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">The entry offer</span>
-      <h2>The Charity Wellbeing Review</h2>
-      <p>A structured, no-cost review that identifies whether financial pressure is affecting performance in your charity, and what a proportionate response looks like. The first step before anything else is introduced or agreed.</p>
-    </div>
-
-    <div class="grid grid-3">
-      <div class="card reveal">
-        <div class="card-icon">01</div>
-        <h3>A structured two-part conversation</h3>
-        <p>A diagnostic of where financial pressure may be affecting focus, retention, and service delivery. An honest assessment of whether your current pension and benefits setup is working. A written summary of findings you can take to trustees or your senior team.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">02</div>
-        <h3>Clarity before any commitment</h3>
-        <p>A clear view of whether this is an issue in your specific organisation. Practical, proportionate next steps, whether action is needed or not. An understanding of what it may be costing you to leave it unaddressed.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">03</div>
-        <h3>No cost. No obligation. Nothing pitched.</h3>
-        <p>Two short conversations, designed around your time. Nothing is recommended without the review completing first. Whether there is an issue or not, you come away with a clearer picture than you had going in.</p>
-      </div>
-    </div>
-
-    <p style="text-align: center; margin-top: 3rem;">
-      <a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book a Charity Wellbeing Review</a>
-    </p>
+<!-- THE AUDIT -->
+<section id="audit" class="section section-soft">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">The entry point</span>
+    <h2>The Charity Performance Audit</h2>
+    <p>A structured, no-cost diagnostic that identifies whether financial pressure is affecting performance in your charity, and what a proportionate response looks like. The first step before anything is introduced or agreed.</p>
   </div>
+  <div class="grid grid-3">
+    <div class="card reveal">
+      <div class="card-icon">01</div>
+      <h3>A structured two-part conversation</h3>
+      <p>A diagnostic of where financial pressure may be affecting focus, retention, and mission delivery. An honest assessment of whether your current pension and benefits setup is working. A written summary you can take to trustees or your senior team.</p>
+    </div>
+    <div class="card reveal">
+      <div class="card-icon">02</div>
+      <h3>Clarity before any commitment</h3>
+      <p>A clear view of whether this is an issue in your specific organisation. Practical, proportionate next steps — whether action is needed or not. An understanding of what it may be costing you to leave it unaddressed.</p>
+    </div>
+    <div class="card reveal">
+      <div class="card-icon">03</div>
+      <h3>No cost. No obligation. Nothing pitched.</h3>
+      <p>Two short conversations, designed around your time. Nothing is recommended without the Audit completing first. Whether there is an issue or not, you come away with a clearer picture than you had going in.</p>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:3rem;">
+    <a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book a Charity Performance Audit</a>
+  </p>
+</div>
 </section>
 
-
-<!-- THREE STRUCTURED OUTCOMES -->
+<!-- THREE PILLARS -->
 <section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Where there is an issue, we address it</span>
-      <h2>Three structured outcomes</h2>
-      <p>The Review identifies whether action is needed. Where it is, a structured three-part programme addresses the root cause, built around your charity, your staff, and your constraints. Each pillar is introduced only where it earns its place.</p>
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Where there is an issue, we address it</span>
+    <h2>Three structured outcomes</h2>
+    <p>The Audit identifies whether action is needed. Where it is, a structured three-part programme addresses the root cause — built around your charity, your staff, and your constraints. Each pillar is introduced only where it earns its place.</p>
+  </div>
+  <div class="grid grid-3">
+    <div class="card reveal">
+      <div class="card-icon">01</div>
+      <h3>Clarity</h3>
+      <p style="font-size:0.85rem;color:var(--aetas-turquoise);font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;text-transform:uppercase;">Understanding what you have</p>
+      <p>A structured review of your pension, benefits, and financial support arrangements — identifying gaps, inefficiencies, and spend that is not performing. Staff begin to understand and value what is already in place.</p>
+      <div class="disclaimer" style="margin-top:1.25rem;font-size:0.85rem;padding:1rem;">
+        <strong style="color:var(--aetas-blue);display:block;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.4rem;">Outcome</strong>
+        Improved return on existing spend. Savings redirected to your mission. In one recent engagement, pension charge reductions alone saved £45,000 per year.
+      </div>
     </div>
-
-    <div class="grid grid-3">
-      <div class="card reveal">
-        <div class="card-icon">01</div>
-        <h3>Clarity</h3>
-        <p style="font-size: 0.85rem; color: var(--aetas-turquoise); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 0.75rem; text-transform: uppercase;">Understanding what you have</p>
-        <p>A structured review of your pension, benefits, and financial support arrangements, identifying gaps, inefficiencies, and spend that is not performing. Staff start to understand and value what is already in place.</p>
-        <div class="disclaimer" style="margin-top: 1.25rem; font-size: 0.85rem; padding: 1rem;">
-          <strong style="color: var(--aetas-blue); display: block; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem;">Outcome</strong>
-          Improved return on existing spend. Savings that can be redirected to your mission. In one recent engagement, pension charge reductions alone saved £45,000 per year.
-        </div>
+    <div class="card reveal">
+      <div class="card-icon">02</div>
+      <h3>Confidence</h3>
+      <p style="font-size:0.85rem;color:var(--aetas-turquoise);font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;text-transform:uppercase;">Helping staff feel in control</p>
+      <p>Practical financial education for your team — covering budgeting, debt, pensions, and planning — delivered in a format that makes it feel achievable, not overwhelming. One-to-one guidance from a regulated financial planner where needed, at no cost to staff.</p>
+      <div class="disclaimer" style="margin-top:1.25rem;font-size:0.85rem;padding:1rem;">
+        <strong style="color:var(--aetas-blue);display:block;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.4rem;">Outcome</strong>
+        Reduced financial anxiety. Higher daily focus and engagement. A team present and contributing — not distracted by money worries.
       </div>
-
-      <div class="card reveal">
-        <div class="card-icon">02</div>
-        <h3>Confidence</h3>
-        <p style="font-size: 0.85rem; color: var(--aetas-turquoise); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 0.75rem; text-transform: uppercase;">Helping staff feel in control</p>
-        <p>Practical financial education for your team (covering budgeting, debt, pensions, and planning) delivered in a format that makes it feel achievable, not overwhelming. One-to-one guidance from a regulated financial planner where needed, at no cost to staff.</p>
-        <div class="disclaimer" style="margin-top: 1.25rem; font-size: 0.85rem; padding: 1rem;">
-          <strong style="color: var(--aetas-blue); display: block; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem;">Outcome</strong>
-          Reduced financial anxiety. Higher daily focus and engagement. A team that is present, not distracted by money worries.
-        </div>
-      </div>
-
-      <div class="card reveal">
-        <div class="card-icon">03</div>
-        <h3>Stability</h3>
-        <p style="font-size: 0.85rem; color: var(--aetas-turquoise); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 0.75rem; text-transform: uppercase;">Ongoing support over time</p>
-        <p>Continued access to tools, guidance, and partner services through the Aetas Collective, sustaining the improvements made and building financial resilience across your team year after year.</p>
-        <div class="disclaimer" style="margin-top: 1.25rem; font-size: 0.85rem; padding: 1rem;">
-          <strong style="color: var(--aetas-blue); display: block; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem;">Outcome</strong>
-          Improved retention over time. A demonstrably stronger employer proposition. A governance story you can tell trustees and funders with confidence.
-        </div>
+    </div>
+    <div class="card reveal">
+      <div class="card-icon">03</div>
+      <h3>Stability</h3>
+      <p style="font-size:0.85rem;color:var(--aetas-turquoise);font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;text-transform:uppercase;">Ongoing support over time</p>
+      <p>Continued access to tools, guidance, and partner services through the Aetas Collective — sustaining the improvements made and building financial resilience across your team year after year.</p>
+      <div class="disclaimer" style="margin-top:1.25rem;font-size:0.85rem;padding:1rem;">
+        <strong style="color:var(--aetas-blue);display:block;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.4rem;">Outcome</strong>
+        Improved retention. A stronger employer proposition. A governance story you can tell trustees and funders with confidence.
       </div>
     </div>
   </div>
+</div>
 </section>
 
-
-<!-- DIFFERENTIATOR -->
+<!-- DIFFERENTIATORS -->
 <section class="section section-blue">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" style="color: var(--aetas-gold-soft);">Why this approach is different</span>
-      <h2 style="color:#fff;">Not an EAP. Not a benefits platform. Built for charities specifically.</h2>
-      <p style="color: rgba(255,255,255,0.78);">Most financial wellbeing solutions are designed for large corporate employers. They rely on broad platforms, generic content, and the assumption that staff will engage independently. In practice, uptake is low, impact is hard to measure, and your organisation is left wondering whether any of it made a difference. In a charity, where every person matters and every pound matters more, the stakes are simply higher.</p>
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow" style="color:var(--aetas-gold-soft);">Why this approach is different</span>
+    <h2 style="color:#fff;">Not an EAP. Not a benefits platform. A board-level consultancy service for charities.</h2>
+    <p style="color:rgba(255,255,255,0.78);">Most financial wellbeing solutions are designed for large corporate employers. They rely on broad platforms, generic content, and the assumption that staff will engage independently. In a charity, where every person matters and every pound matters more, the stakes are simply higher.</p>
+  </div>
+  <div class="process" style="border-top-color:rgba(255,255,255,0.18);border-bottom-color:rgba(255,255,255,0.18);margin-top:3rem;">
+    <div class="process-step" style="border-right-color:rgba(255,255,255,0.12);">
+      <div class="process-num" style="color:var(--aetas-gold-soft);">01</div>
+      <h3 style="color:#fff;">The Audit comes first, always</h3>
+      <p style="color:rgba(255,255,255,0.7);">Nothing is introduced without first understanding your charity, your team, and where pressure is actually showing up. No two programmes look the same.</p>
     </div>
-
-    <div class="process" style="border-top-color: rgba(255,255,255,0.18); border-bottom-color: rgba(255,255,255,0.18); margin-top: 3rem;">
-      <div class="process-step" style="border-right-color: rgba(255,255,255,0.12);">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">01</div>
-        <h3 style="color:#fff;">The Review comes first, always</h3>
-        <p style="color: rgba(255,255,255,0.7);">Nothing is introduced without first understanding your charity, your team, and where pressure is actually showing up. No two programmes look the same.</p>
-      </div>
-      <div class="process-step" style="border-right-color: rgba(255,255,255,0.12);">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">02</div>
-        <h3 style="color:#fff;">Proportionate, not sentiment-led</h3>
-        <p style="color: rgba(255,255,255,0.7);">Every recommendation has a rationale. If the numbers do not justify it, we say so. Fees are presented alongside the savings we identify, so you can see the net position.</p>
-      </div>
-      <div class="process-step" style="border-right-color: rgba(255,255,255,0.12);">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">03</div>
-        <h3 style="color:#fff;">Managed on your behalf throughout</h3>
-        <p style="color: rgba(255,255,255,0.7);">We coordinate delivery, handle staff communications, and oversee implementation. Your leadership team has full visibility without managing providers yourselves.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num" style="color: var(--aetas-gold-soft);">04</div>
-        <h3 style="color:#fff;">A governance story for trustees and funders</h3>
-        <p style="color: rgba(255,255,255,0.7);">Clear documentation of what has been introduced and the outcomes achieved, supporting reporting to trustees, funders, and other stakeholders.</p>
-      </div>
+    <div class="process-step" style="border-right-color:rgba(255,255,255,0.12);">
+      <div class="process-num" style="color:var(--aetas-gold-soft);">02</div>
+      <h3 style="color:#fff;">Evidence-led, not sentiment-led</h3>
+      <p style="color:rgba(255,255,255,0.7);">Every recommendation has a rationale. If the numbers do not justify it, we say so. Fees are presented alongside identified savings so you see the net position before approving anything.</p>
+    </div>
+    <div class="process-step" style="border-right-color:rgba(255,255,255,0.12);">
+      <div class="process-num" style="color:var(--aetas-gold-soft);">03</div>
+      <h3 style="color:#fff;">Managed throughout</h3>
+      <p style="color:rgba(255,255,255,0.7);">We coordinate delivery, handle staff communications, and oversee implementation. Your leadership team has full visibility without managing providers yourselves.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num" style="color:var(--aetas-gold-soft);">04</div>
+      <h3 style="color:#fff;">A governance story for trustees</h3>
+      <p style="color:rgba(255,255,255,0.7);">Clear documentation of what has been introduced and the outcomes achieved — supporting responsible governance reporting to trustees, funders, and other stakeholders.</p>
     </div>
   </div>
+</div>
 </section>
 
-
-<!-- SUPPORTING YOUR INCOME -->
+<!-- SUPPORTING INCOME -->
 <section class="section section-soft">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">An additional opportunity</span>
-      <h2>Supporting your income as well as your people</h2>
-      <p>For charities, an engagement can open conversations that connect directly to your income strategy. Introduced only where there is genuine appetite, not products, but conversations structured with confidence.</p>
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">An additional opportunity</span>
+    <h2>Supporting your income as well as your people</h2>
+    <p>For charities, an engagement can open conversations that connect directly to your income strategy. Introduced only where there is genuine appetite — not products, but conversations structured with confidence.</p>
+  </div>
+  <div class="grid grid-2">
+    <div class="card reveal">
+      <div class="card-icon">A</div>
+      <h3>Legacy giving programmes</h3>
+      <p>Gifts in wills are one of the most significant sources of charitable income. Many supporters who would consider leaving a legacy have never been asked. We help you introduce a structured legacy giving programme — supporting the conversation with supporters and the practical planning that makes a gift in wills feel achievable.</p>
+      <span class="card-link">Built around how your supporters give</span>
     </div>
-
-    <div class="grid grid-2">
-      <div class="card reveal">
-        <div class="card-icon">A</div>
-        <h3>Legacy giving programmes</h3>
-        <p>Gifts in wills are one of the most significant sources of charitable income. Many supporters who would consider leaving a legacy have never been asked. We help you introduce a structured legacy giving programme, supporting the conversation with supporters and the practical planning that makes a gift in wills feel achievable.</p>
-        <span class="card-link">Built around how your supporters give</span>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">B</div>
-        <h3>Corporate donation schemes</h3>
-        <p>Many businesses are looking for meaningful ways to support charities. We help you build a structured corporate giving proposition, including payroll giving, matched donation schemes, and employee volunteering frameworks, that makes it straightforward for businesses to partner with your organisation.</p>
-        <span class="card-link">Structured to make giving easy for partners</span>
-      </div>
+    <div class="card reveal">
+      <div class="card-icon">B</div>
+      <h3>Corporate donation schemes</h3>
+      <p>Many businesses are looking for meaningful ways to support charities. We help you build a structured corporate giving proposition — including payroll giving, matched donation schemes, and employee volunteering frameworks — that makes it straightforward for businesses to partner with your organisation.</p>
+      <span class="card-link">Structured to make giving easy for partners</span>
     </div>
   </div>
+</div>
 </section>
-
 
 <!-- HOW IT WORKS -->
 <section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">How it works</span>
-      <h2>Three stages, light on your team throughout</h2>
-      <p>From first conversation to ongoing programme. Designed to be proportionate to your charity and minimal in its demands on your leadership team.</p>
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">How it works</span>
+    <h2>Three stages, light on your team throughout</h2>
+    <p>From first conversation to ongoing programme — designed to be proportionate to your charity and minimal in its demands on your leadership team.</p>
+  </div>
+  <div class="process" style="margin-top:2rem;">
+    <div class="process-step">
+      <div class="process-num">01</div>
+      <h3>Charity Performance Audit</h3>
+      <p>A no-cost, two-part conversation to understand your charity, your team, and your current arrangements across pension, benefits, and staff support. No obligation beyond the conversation.</p>
     </div>
-
-    <div class="process" style="margin-top: 2rem;">
-      <div class="process-step">
-        <div class="process-num">01</div>
-        <h3>Discovery conversation</h3>
-        <p>A no-cost conversation to understand your charity, your team, and your current arrangements across pension, benefits, and staff support. No obligation beyond the conversation.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">02</div>
-        <h3>Diagnostic and planning</h3>
-        <p>A structured diagnostic identifies which elements will have the greatest impact. Nothing is recommended that does not fit your context and constraints. A clear plan is agreed before anything is introduced.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">03</div>
-        <h3>Managed delivery and review</h3>
-        <p>We coordinate delivery, manage staff communications, and review impact on an ongoing basis. Your leadership team has full visibility without being required to manage providers themselves.</p>
-      </div>
+    <div class="process-step">
+      <div class="process-num">02</div>
+      <h3>Diagnostic and planning</h3>
+      <p>A structured diagnostic identifies which elements will have the greatest impact. Nothing is recommended that does not fit your context and constraints. A clear plan is agreed — and presented to trustees — before anything is introduced.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">03</div>
+      <h3>Managed delivery and review</h3>
+      <p>We coordinate delivery, manage staff communications, and review impact on an ongoing basis. Your leadership team has full visibility without being required to manage providers themselves.</p>
     </div>
   </div>
+</div>
 </section>
 
+<!-- FAQ SECTION -->
+<section class="section section-soft">
+<div class="container-narrow">
+  <div class="section-head left">
+    <span class="eyebrow">Common questions</span>
+    <h2>What charity leaders typically ask</h2>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>What is a Charity Performance Audit?</summary>
+      <div class="faq-body"><p>The Charity Performance Audit is a structured, no-cost diagnostic process. It identifies whether financial pressure is affecting your organisation — in staff retention, daily focus, absence, engagement and leadership capacity — and produces a written assessment with proportionate next steps. Two short conversations, no obligation, useful on its own or as the first step in a broader programme.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>How does financial pressure affect charities specifically?</summary>
+      <div class="faq-body"><p>In a charity, financial pressure among staff affects concentration, engagement, decision quality and retention — all of which translate directly into reduced mission delivery. The underlying cause is rarely visible to leadership until it has already cost the organisation significantly in programme performance, funder relationships, and people.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>What does this cost?</summary>
+      <div class="faq-body"><p>The Charity Performance Audit is always provided at no cost, regardless of whether further work follows. Where a programme is recommended, fees are per-employee, agreed in writing, and presented alongside the savings the Audit identifies — so trustees see the net position before approving. Indicative full programme rates for charities run from around £140 to £165 per employee per year.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Is this appropriate for trustees to consider?</summary>
+      <div class="faq-body"><p>Yes. This service is specifically designed to be governed and reported at board level. The Audit produces a written summary suitable for trustee discussion. Ongoing reporting covers financial savings, workforce outcomes, and engagement metrics — in a format designed for board updates and major funder conversations. Supporting staff financially is not just a wellbeing question: it is a governance and mission-resilience question.</p></div>
+    </details>
+  </div>
+  <p style="text-align:center;margin-top:2rem;"><a href="faqs.html" class="card-link">See all FAQs</a></p>
+</div>
+</section>
 
 <!-- GET STARTED -->
-<section class="section section-soft">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Get started</span>
-      <h2>Two ways to take the next step</h2>
-      <p>Both are provided at no cost and carry no obligation.</p>
+<section class="section">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Get started</span>
+    <h2>Two ways to take the next step</h2>
+    <p>Both are provided at no cost and carry no obligation.</p>
+  </div>
+  <div class="grid grid-2">
+    <div class="card reveal">
+      <div class="card-icon">A</div>
+      <h3>Book a Charity Performance Audit</h3>
+      <p>A focused conversation with Matthew Steiner to identify whether financial pressure is affecting performance in your charity and what it may be costing — in retention, focus, and mission delivery.</p>
+      <ul class="checklist">
+        <li>No obligation beyond the conversation itself</li>
+        <li>Written summary suitable for trustees</li>
+        <li>Available by video or phone, at a time that suits you</li>
+      </ul>
+      <p style="margin-top:1.25rem;">
+        <a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book an Audit</a>
+      </p>
     </div>
-
-    <div class="grid grid-2">
-      <div class="card reveal">
-        <div class="card-icon">A</div>
-        <h3>Book a discovery conversation</h3>
-        <p>A focused 45-minute conversation with Matthew Steiner to explore whether the Aetas for Charities is the right fit. We look at what is already in place, where pressure may be showing up, and what a proportionate response could look like.</p>
-        <ul class="checklist">
-          <li>No obligation beyond the conversation itself</li>
-          <li>Designed to give you as much clarity as we gain from it</li>
-          <li>Available by video or phone, at a time that suits you</li>
-        </ul>
-        <p style="margin-top: 1.25rem;">
-          <a href="book-a-meeting.html" class="btn btn-primary btn-arrow">Book a meeting</a>
-        </p>
-      </div>
-
-      <div class="card reveal">
-        <div class="card-icon">B</div>
-        <h3>Take the 12-question diagnostic</h3>
-        <p>A short self-assessment across three areas of charity financial wellbeing. Takes around five minutes and produces a scored picture of where your organisation's gaps may be, useful on its own or as context for a discovery conversation.</p>
-        <ul class="checklist">
-          <li>Twelve questions across three service areas</li>
-          <li>Scored results with tailored interpretation</li>
-          <li>No data stored, results shown only to you</li>
-        </ul>
-        <p style="margin-top: 1.25rem;">
-          <a href="diagnostic.html" class="btn btn-ghost">Start the diagnostic</a>
-        </p>
-      </div>
+    <div class="card reveal">
+      <div class="card-icon">B</div>
+      <h3>Take the 12-question diagnostic</h3>
+      <p>A short self-assessment across three areas of charity organisational performance. Takes around five minutes and produces a scored picture of where your gaps may be — useful on its own or as context for an Audit conversation.</p>
+      <ul class="checklist">
+        <li>Twelve questions across three areas</li>
+        <li>Scored results with tailored interpretation</li>
+        <li>No data stored, results shown only to you</li>
+      </ul>
+      <p style="margin-top:1.25rem;">
+        <a href="diagnostic.html" class="btn btn-ghost">Start the diagnostic</a>
+      </p>
     </div>
   </div>
+</div>
 </section>
 
-
-<!-- SHARED: site-footer -->
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand">
-          <span class="brand-mark" style="background:#fff; padding:4px;"><img src="/aetas-mark.svg" alt="Aetas for Charities"></span>
-          <span class="brand-text">
-            <span style="color:#fff;">Aetas for Charities</span>
-            <span>The Mission Performance Solution</span>
-          </span>
-        </div>
-        <p>Structured financial wellbeing for charities and not-for-profit organisations across the UK.</p>
-        <p style="margin-top: 0.75rem; font-size: 0.88rem;"><a href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a></p>
-        <p style="margin-top: 0.25rem; font-size: 0.88rem;">020 3633 0579</p>
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-mark" style="background:#fff;padding:4px;"><img src="/aetas-mark.svg" alt="Aetas for Charities"></span>
+        <span class="brand-text">
+          <span style="color:#fff;">Aetas for Charities</span>
+          <span>The Charity Performance Audit</span>
+        </span>
       </div>
-      <div>
-        <h4>The Service</h4>
-        <ul>
-          <li><a href="charities.html">Charities</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="calculator.html">Calculator</a></li>
-          <li><a href="diagnostic.html">Diagnostic</a></li>
-          <li><a href="insights.html">Insights</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="book-a-meeting.html">Book a meeting</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>The Aetas Group</h4>
-        <ul>
-          <li><a href="https://aetas-partners.com/">Aetas Partners</a></li>
-          <li><a href="https://aetas-wealth.com/">Aetas Wealth</a></li>
-          <li><a href="https://itw.aetaspartners.com/">Aetas in the Workplace</a></li>
-          <li><a href="https://collective.aetaspartners.com/">Aetas Collective</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in touch</h4>
-        <ul>
-          <li><a href="book-a-meeting.html">Book a meeting</a></li>
-          <li><a href="https://www.aetas-partners.com">aetas-partners.com</a></li>
-        </ul>
-      </div>
+      <p>Organisational performance and resilience consultancy for UK charities and not-for-profit organisations.</p>
+      <p style="margin-top:0.75rem;font-size:0.88rem;"><a href="mailto:matthew.steiner@aetas-partners.com">matthew.steiner@aetas-partners.com</a></p>
+      <p style="margin-top:0.25rem;font-size:0.88rem;">020 3633 0579</p>
     </div>
-
-    <div class="footer-bottom">
-      <p>Aetas for Charities is the charity proposition of Aetas in the Workplace, providing workplace financial wellbeing, education and consultancy services to charities and not-for-profit organisations. These services support financial understanding, engagement and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by <strong>Aetas Wealth</strong>, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421).</p>
-      <p>© <span data-year>2026</span> Aetas for Charities. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+    <div>
+      <h4>The Service</h4>
+      <ul>
+        <li><a href="charities.html">Charities</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="diagnostic.html">Diagnostic</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="book-a-meeting.html">Book an Audit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>The Aetas Group</h4>
+      <ul>
+        <li><a href="https://aetas-partners.com/">Aetas Partners</a></li>
+        <li><a href="https://aetas-wealth.com/">Aetas Wealth</a></li>
+        <li><a href="https://itw.aetaspartners.com/">Aetas in the Workplace</a></li>
+        <li><a href="https://collective.aetaspartners.com/">Aetas Collective</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <ul>
+        <li><a href="book-a-meeting.html">Book an Audit</a></li>
+        <li><a href="https://www.aetas-partners.com">aetas-partners.com</a></li>
+      </ul>
     </div>
   </div>
+  <div class="footer-bottom">
+    <p>Aetas for Charities is the charity proposition of Aetas in the Workplace, providing workplace performance consultancy, financial education and support services to charities and not-for-profit organisations. These services support organisational resilience and financial understanding but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by <strong>Aetas Wealth</strong>, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421).</p>
+    <p>© <span data-year>2026</span> Aetas for Charities. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</div>
 </footer>
 
 <script>
-/* ============================================================
-   Aetas Wealth — Site interactions
-   Mobile nav toggle, active link, scroll reveal
-   ============================================================ */
-
-(function () {
-  'use strict';
-
-  // ---------- Mobile nav toggle ----------
-  const toggle = document.querySelector('.nav-toggle');
-  const links = document.querySelector('.nav-links');
-  if (toggle && links) {
-    toggle.addEventListener('click', function () {
-      const open = links.classList.toggle('is-open');
-      toggle.classList.toggle('is-open', open);
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
-
-  // ---------- Highlight active nav link ----------
-  const path = window.location.pathname.replace(/\/$/, '');
-  document.querySelectorAll('.nav-links a').forEach(function (a) {
-    const href = a.getAttribute('href') || '';
-    const cleaned = href.replace(/\/$/, '').replace(/^\.\//, '');
-    if (
-      (cleaned && (path.endsWith('/' + cleaned) || path.endsWith(cleaned))) ||
-      (cleaned === 'index.html' && (path === '' || path === '/'))
-    ) {
-      a.classList.add('is-active');
-    }
-  });
-
-  // ---------- Scroll reveal ----------
-  if ('IntersectionObserver' in window) {
-    const obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
-  }
-
-  // ---------- Year in footer ----------
-  const yr = document.querySelector('[data-year]');
-  if (yr) yr.textContent = new Date().getFullYear();
+(function(){
+'use strict';
+const toggle=document.querySelector('.nav-toggle');
+const links=document.querySelector('.nav-links');
+if(toggle&&links){toggle.addEventListener('click',function(){const open=links.classList.toggle('is-open');toggle.classList.toggle('is-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');});}
+const path=window.location.pathname.replace(/\/$/,'');
+document.querySelectorAll('.nav-links a').forEach(function(a){const href=a.getAttribute('href')||'';const cleaned=href.replace(/\/$/,'').replace(/^\.\//, '');if((cleaned&&(path.endsWith('/'+cleaned)||path.endsWith(cleaned)))||(cleaned==='index.html'&&(path===''||path==='/'))){a.classList.add('is-active');}});
+if('IntersectionObserver'in window){const obs=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('is-visible');obs.unobserve(entry.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('is-visible');});}
+const yr=document.querySelector('[data-year]');if(yr)yr.textContent=new Date().getFullYear();
 })();
-
 </script>
 </body>
 </html>
