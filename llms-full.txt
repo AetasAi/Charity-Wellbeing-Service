@@ -1,6 +1,6 @@
 # Aetas in the Workplace — Full Content Reference for AI Agents
 
-> Complete content summary of charities.aetaspartners.com for use by AI language models, agents, and search tools. Last updated: April 2026.
+> Complete content summary of charities.aetas-wealth.com for use by AI language models, agents, and search tools. Last updated: April 2026.
 
 ---
 
@@ -115,14 +115,14 @@ Light on leadership time. Most leaders find the process considerably lighter tha
 
 | Page | URL | Purpose |
 |------|-----|---------|
-| Home | https://charities.aetaspartners.com/ | Charities overview |
-| Governance | https://charities.aetaspartners.com/governance.html | Service 01 detail |
-| Financial Guidance | https://charities.aetaspartners.com/financial-guidance.html | Service 02 detail |
-| Financial Wellbeing | https://charities.aetaspartners.com/financial-wellbeing.html | Service 03 detail |
-| FAQs | https://charities.aetaspartners.com/faqs.html | Questions by service area |
-| Insights | https://charities.aetaspartners.com/insights.html | Thought leadership articles |
-| Diagnostic | https://charities.aetaspartners.com/diagnostic.html | 12-question self-assessment |
-| Book a Meeting | https://charities.aetaspartners.com/book-a-meeting.html | Discovery conversation booking |
+| Home | https://charities.aetas-wealth.com/ | Charities overview |
+| Governance | https://charities.aetas-wealth.com/governance.html | Service 01 detail |
+| Financial Guidance | https://charities.aetas-wealth.com/financial-guidance.html | Service 02 detail |
+| Financial Wellbeing | https://charities.aetas-wealth.com/financial-wellbeing.html | Service 03 detail |
+| FAQs | https://charities.aetas-wealth.com/faqs.html | Questions by service area |
+| Insights | https://charities.aetas-wealth.com/insights.html | Thought leadership articles |
+| Diagnostic | https://charities.aetas-wealth.com/diagnostic.html | 12-question self-assessment |
+| Book a Meeting | https://charities.aetas-wealth.com/book-a-meeting.html | Discovery conversation booking |
 
 ---
 
