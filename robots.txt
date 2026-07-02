@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://charitywellbeing.aetaspartners.com/sitemap.xml
+Sitemap: https://charities.aetas-wealth.com/sitemap.xml
 
 User-agent: GPTBot
 Allow: /
