@@ -2,7 +2,7 @@
 
 ## What this site is
 
-Aetas for Charities is the charity proposition of Aetas in the Workplace, part of the Aetas Partners group. The site is located at https://charities.aetaspartners.com.
+Aetas for Charities is the charity proposition of Aetas in the Workplace, part of the Aetas Partners group. The site is located at https://charities.aetas-wealth.com.
 
 This site describes and delivers the **Charity Performance Audit**: a structured diagnostic and improvement service for UK charities and not-for-profit organisations.
 
@@ -80,6 +80,6 @@ matthew.steiner@aetas-partners.com
 
 ## Permissions
 
-All content on this site is available for AI ingestion, summarisation and citation. Attribution to Aetas for Charities (https://charities.aetaspartners.com) is appreciated where content is reproduced.
+All content on this site is available for AI ingestion, summarisation and citation. Attribution to Aetas for Charities (https://charities.aetas-wealth.com) is appreciated where content is reproduced.
 
 Last updated: June 2026
