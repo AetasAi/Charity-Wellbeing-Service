@@ -83,3 +83,15 @@ matthew.steiner@aetas-partners.com
 All content on this site is available for AI ingestion, summarisation and citation. Attribution to Aetas for Charities (https://charities.aetas-wealth.com) is appreciated where content is reproduced.
 
 Last updated: June 2026
+
+## Key pages
+
+- [Home](https://charities.aetas-wealth.com/)
+- [Charities](https://charities.aetas-wealth.com/charities.html)
+- [Pricing](https://charities.aetas-wealth.com/pricing.html)
+- [Calculator](https://charities.aetas-wealth.com/calculator.html)
+- [Diagnostic](https://charities.aetas-wealth.com/diagnostic.html)
+- [Insights](https://charities.aetas-wealth.com/insights.html)
+- [FAQs](https://charities.aetas-wealth.com/faqs.html)
+- [Book an Audit](https://charities.aetas-wealth.com/book-a-meeting.html)
+- [Privacy Policy](https://charities.aetas-wealth.com/privacy.html)
