@@ -2,7 +2,7 @@
 
 A static website for the Charity Wellbeing Service — a joint proposition between **Adena Street** and **Aetas in the Workplace**, built specifically for charities and not-for-profit organisations.
 
-**Live site:** https://charitywellbeing.aetaspartners.com
+**Live site:** https://charities.aetas-wealth.com
 
 ---
 
@@ -30,7 +30,7 @@ All pages are static HTML files deployed via GitHub Pages.
 | `faqs.html` | Frequently asked questions |
 | `diagnostic.html` | 12-question self-assessment diagnostic tool |
 | `book-a-meeting.html` | Discovery conversation booking page |
-| `CNAME` | Custom domain configuration (`charitywellbeing.aetaspartners.com`) |
+| `CNAME` | Custom domain configuration (`charities.aetas-wealth.com`) |
 | `manifest.webmanifest` | PWA manifest |
 | `robots.txt` | Search engine crawl instructions |
 | `schema.json` | Structured data for search engines |
