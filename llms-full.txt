@@ -116,13 +116,13 @@ Light on leadership time. Most leaders find the process considerably lighter tha
 | Page | URL | Purpose |
 |------|-----|---------|
 | Home | https://charities.aetas-wealth.com/ | Charities overview |
-| Governance | https://charities.aetas-wealth.com/governance.html | Service 01 detail |
-| Financial Guidance | https://charities.aetas-wealth.com/financial-guidance.html | Service 02 detail |
-| Financial Wellbeing | https://charities.aetas-wealth.com/financial-wellbeing.html | Service 03 detail |
-| FAQs | https://charities.aetas-wealth.com/faqs.html | Questions by service area |
-| Insights | https://charities.aetas-wealth.com/insights.html | Thought leadership articles |
-| Diagnostic | https://charities.aetas-wealth.com/diagnostic.html | 12-question self-assessment |
-| Book a Meeting | https://charities.aetas-wealth.com/book-a-meeting.html | Discovery conversation booking |
+| Governance | https://charities.aetas-wealth.com/governance | Service 01 detail |
+| Financial Guidance | https://charities.aetas-wealth.com/financial-guidance | Service 02 detail |
+| Financial Wellbeing | https://charities.aetas-wealth.com/financial-wellbeing | Service 03 detail |
+| FAQs | https://charities.aetas-wealth.com/faqs | Questions by service area |
+| Insights | https://charities.aetas-wealth.com/insights | Thought leadership articles |
+| Diagnostic | https://charities.aetas-wealth.com/diagnostic | 12-question self-assessment |
+| Book a Meeting | https://charities.aetas-wealth.com/book-a-meeting | Discovery conversation booking |
 
 ---
 
