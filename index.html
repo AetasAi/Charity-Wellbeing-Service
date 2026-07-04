@@ -255,7 +255,10 @@ p{margin:0 0 1.1em;color:var(--ink-soft);}
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["FinancialService", "LocalBusiness"],
+      "@type": [
+        "FinancialService",
+        "LocalBusiness"
+      ],
       "@id": "https://charities.aetas-wealth.com/#organization",
       "name": "Aetas for Charities",
       "alternateName": "Charity Performance Audit",
@@ -282,14 +285,27 @@ p{margin:0 0 1.1em;color:var(--ink-soft);}
         "Mission delivery risk",
         "Trustee reporting"
       ],
-      "sameAs": ["https://workplace.aetas-wealth.com", "https://aetas-wealth.com"]
+      "sameAs": [
+        "https://workplace.aetas-wealth.com",
+        "https://aetas-wealth.com"
+      ],
+      "telephone": "+44 20 7183 8485",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "13 Hanover Square",
+        "addressLocality": "London",
+        "postalCode": "W1S 1HN",
+        "addressCountry": "GB"
+      }
     },
     {
       "@type": "WebSite",
       "@id": "https://charities.aetas-wealth.com/#website",
       "url": "https://charities.aetas-wealth.com",
       "name": "Aetas for Charities",
-      "publisher": {"@id": "https://charities.aetas-wealth.com/#organization"},
+      "publisher": {
+        "@id": "https://charities.aetas-wealth.com/#organization"
+      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://charities.aetas-wealth.com/insights?q={search_term_string}",
@@ -301,7 +317,9 @@ p{margin:0 0 1.1em;color:var(--ink-soft);}
       "@id": "https://charities.aetas-wealth.com/#audit",
       "name": "Charity Performance Audit",
       "description": "A structured, no-cost diagnostic process that helps charities identify whether financial pressure is silently affecting their organisation — in retention, focus, governance, and mission delivery — and determines what a proportionate response looks like.",
-      "provider": {"@id": "https://charities.aetas-wealth.com/#organization"},
+      "provider": {
+        "@id": "https://charities.aetas-wealth.com/#organization"
+      },
       "areaServed": "GB",
       "audience": {
         "@type": "Audience",
@@ -312,7 +330,18 @@ p{margin:0 0 1.1em;color:var(--ink-soft);}
         "price": "0",
         "priceCurrency": "GBP",
         "description": "The Charity Performance Audit is provided at no cost and carries no obligation."
-      }
+      },
+      "telephone": "+44 20 7183 8485",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "13 Hanover Square",
+        "addressLocality": "London",
+        "postalCode": "W1S 1HN",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/aetas-wealth"
+      ]
     },
     {
       "@type": "FAQPage",
