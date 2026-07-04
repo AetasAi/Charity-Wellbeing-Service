@@ -748,5 +748,45 @@ if('IntersectionObserver'in window){const obs=new IntersectionObserver(function(
 const yr=document.querySelector('[data-year]');if(yr)yr.textContent=new Date().getFullYear();
 })();
 </script>
+
+<!-- Cookie notice + interaction-deferred GA4 (G-MXS6JSC1LE) -->
+<div id="aetas-cookie-notice" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e3d2f;color:#f5f1ea;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;font-family:'Jost',sans-serif;" role="alert" aria-live="polite">
+  <span>We use cookies to understand how visitors use this site. <a href="/privacy" style="color:#c49a45;text-decoration:underline;">Privacy policy</a></span>
+  <button id="aetas-cookie-accept" style="background:#c49a45;color:#1e3d2f;border:none;padding:8px 20px;font-size:13px;font-family:'Jost',sans-serif;font-weight:500;cursor:pointer;flex-shrink:0;" aria-label="Accept cookies">Accept</button>
+</div>
+<script>
+(function(){
+  var notice = document.getElementById('aetas-cookie-notice');
+  if(localStorage.getItem('aetas-cookie-consent') === 'accepted'){
+    if(notice) notice.style.display = 'none';
+    fireGA4();
+    return;
+  }
+  var btn = document.getElementById('aetas-cookie-accept');
+  if(btn){
+    btn.addEventListener('click', function(){
+      localStorage.setItem('aetas-cookie-consent', 'accepted');
+      if(notice) notice.style.display = 'none';
+      fireGA4();
+    });
+  }
+  function fireGA4(){
+    if(window._ga4fired) return;
+    window._ga4fired = true;
+    var GA4_ID = 'G-MXS6JSC1LE';
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    s.onload = function(){
+      gtag('js', new Date());
+      gtag('config', GA4_ID, { anonymize_ip: true });
+    };
+  }
+})();
+</script>
 </body>
 </html>
