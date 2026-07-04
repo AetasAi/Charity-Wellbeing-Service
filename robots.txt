@@ -1,18 +1,11 @@
+# Aetas for Charities — robots.txt
+# https://charities.aetas-wealth.com
+
+# ─────────────────────────────────────────────
+# Standard search engine bots
+# ─────────────────────────────────────────────
+
 User-agent: *
-Allow: /
-
-Sitemap: https://charities.aetas-wealth.com/sitemap.xml
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: PerplexityBot
 Allow: /
 
 User-agent: Googlebot
@@ -20,3 +13,59 @@ Allow: /
 
 User-agent: bingbot
 Allow: /
+
+# ─────────────────────────────────────────────
+# AI agent crawlers — explicitly permitted
+# ─────────────────────────────────────────────
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# OpenAI (ChatGPT browsing, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Bing / Microsoft Copilot
+User-agent: BingPreview
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Brave Search
+User-agent: BraveBot
+Allow: /
+
+# ─────────────────────────────────────────────
+# Sitemaps and structured content
+# ─────────────────────────────────────────────
+
+Sitemap: https://charities.aetas-wealth.com/sitemap.xml
