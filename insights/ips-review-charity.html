@@ -85,7 +85,89 @@ footer{background:var(--forest);padding:64px 48px}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
 .footer-links a{color:rgba(255,255,255,0.45);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:color 0.3s}
 .footer-links a:hover{color:var(--gold-light)}
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[    {"@type":"Question","name":"What is an Investment Policy Statement for a charity?","acceptedAnswer":{"@type":"Answer","text":"An IPS is a document that sets out how a charity's investment assets will be managed. It covers objectives, risk tolerance, ethical exclusions, asset allocation, performance benchmarks and review procedures."}}
+    {"@type":"Question","name":"How often should a charity review its IPS?","acceptedAnswer":{"@type":"Answer","text":"The Charity Commission recommends an annual review of the IPS, or more frequently if there are significant changes to the charity's financial position or objectives."}}
+    {"@type":"Question","name":"Who is responsible for the IPS in a charity?","acceptedAnswer":{"@type":"Answer","text":"The full board of trustees is responsible for the IPS, not just the treasurer or finance committee. All trustees should understand and have approved the investment policy."}}]}</script>
 </head>
 <body>
 <nav>
@@ -114,20 +196,20 @@ footer{background:var(--forest);padding:64px 48px}
 </section>
 <section class="article-body">
   <div class="container">
-    <p>An Investment Policy Statement is a legal requirement for any charity that has delegated discretionary investment management to an external manager. The Charity Commission is clear on this. Yet when Adena Street conducts an initial review, the most common finding is not that the IPS is imperfect — it is that the document has not been touched in years.</p>
-<blockquote>&ldquo;An IPS should be a living document &mdash; not something written once and filed away. Many charities have never been told that their original document no longer meets the standard required.&rdquo;</blockquote>
+    <p>An Investment Policy Statement is a legal requirement for any charity that has delegated discretionary investment management to an external manager. The Charity Commission is clear on this. Yet when Adena Street conducts an initial review, the most common finding is not that the IPS is imperfect ,  it is that the document has not been touched in years.</p>
+<blockquote>&ldquo;An IPS should be a living document ,  not something written once and filed away. Many charities have never been told that their original document no longer meets the standard required.&rdquo;</blockquote>
 <h2>What an IPS is required to cover</h2>
 <p>A well-drafted Investment Policy Statement sets out your charity&rsquo;s investment objectives, the risk appetite your trustees have agreed, any ethical restrictions that apply to your charitable objects, the governance framework for how investment decisions are made, and the basis on which you will evaluate your investment manager&rsquo;s performance. It is both a legal requirement and a practical management tool.</p>
-<p>The Charity Commission&rsquo;s guidance &mdash; CC14 &mdash; makes clear that trustees are responsible for the investment of charitable funds, and that this responsibility cannot be fully delegated. An IPS is the mechanism through which trustees exercise oversight of whatever external manager they have appointed.</p>
+<p>The Charity Commission&rsquo;s guidance ,  CC14 ,  makes clear that trustees are responsible for the investment of charitable funds, and that this responsibility cannot be fully delegated. An IPS is the mechanism through which trustees exercise oversight of whatever external manager they have appointed.</p>
 <h2>Why most IPSs fall out of date</h2>
 <p>The typical charity IPS was written when the investment manager was first appointed. It may have been drafted by the manager themselves, reviewed once by the board, and signed. It will then have sat in a folder without being revisited.</p>
-<p>In the years since, the charity&rsquo;s circumstances will have changed. Reserves may have grown or shrunk. The charitable objects may have been refined. A change of trustees may have brought different views on risk or ethics. The wider investment landscape will have shifted &mdash; particularly in relation to ESG considerations, which have developed significantly in the past decade.</p>
+<p>In the years since, the charity&rsquo;s circumstances will have changed. Reserves may have grown or shrunk. The charitable objects may have been refined. A change of trustees may have brought different views on risk or ethics. The wider investment landscape will have shifted ,  particularly in relation to ESG considerations, which have developed significantly in the past decade.</p>
 <p>The consequence is a document that no longer describes how the charity is actually being run. In a Charity Commission inquiry or a significant governance challenge, that gap becomes a problem.</p>
 <h2>What a review should cover</h2>
-<p>An effective annual IPS review should assess whether the stated investment objectives still reflect the charity&rsquo;s current position and needs. It should examine whether the risk parameters remain appropriate &mdash; both in terms of the charity&rsquo;s financial resilience and the preferences of the current board. It should consider whether any ethical restrictions remain relevant and whether any new ones should be added. And it should confirm that the governance processes described in the document are still in operation.</p>
+<p>An effective annual IPS review should assess whether the stated investment objectives still reflect the charity&rsquo;s current position and needs. It should examine whether the risk parameters remain appropriate ,  both in terms of the charity&rsquo;s financial resilience and the preferences of the current board. It should consider whether any ethical restrictions remain relevant and whether any new ones should be added. And it should confirm that the governance processes described in the document are still in operation.</p>
 <p>This is not a lengthy process. For a charity with a straightforward investment arrangement, an annual review should take no more than a board meeting agenda item, supported by independent input if the trustees do not have the expertise themselves.</p>
 <h2>Acting on the Charity Commission&rsquo;s encouragement</h2>
-<p>CC14 actively encourages trustees to seek independent advice when they lack the time, knowledge, or inclination to act alone. Commissioning an independent IPS review is itself a demonstration of responsible governance &mdash; one that provides the documentation to show a well-informed board acting in line with regulatory expectations. Adena Street provides independent IPS drafting and review for charities, working from the organisation&rsquo;s charitable objects and current position rather than from a template.</p>
+<p>CC14 actively encourages trustees to seek independent advice when they lack the time, knowledge, or inclination to act alone. Commissioning an independent IPS review is itself a demonstration of responsible governance ,  one that provides the documentation to show a well-informed board acting in line with regulatory expectations. Adena Street provides independent IPS drafting and review for charities, working from the organisation&rsquo;s charitable objects and current position rather than from a template.</p>
     <div class="cta-box">
       <h3>Discuss this with the Charity Wellbeing Service</h3>
       <p>A no-cost discovery conversation with Matthew Steiner to explore whether and how we can help your organisation.</p>
@@ -146,8 +228,8 @@ footer{background:var(--forest);padding:64px 48px}
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/financial-anxiety-staff-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The Hidden Cost of Financial Anxiety in Your Team</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/investment-fees-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">What Charities Are Really Paying in Investment Fees</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/legacy-giving-programme-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Legacy Giving: The Income Stream Most Charities Haven't Structured</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace — Aetas in the Workplace</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies — Aetas Wealth</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace ,  Aetas in the Workplace</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies ,  Aetas Wealth</a></li>
     </ul>
   </div>
 </section>
@@ -163,5 +245,18 @@ footer{background:var(--forest);padding:64px 48px}
     </div>
   </div>
 </footer>
+<script>
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>

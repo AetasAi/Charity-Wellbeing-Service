@@ -2,16 +2,112 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <title>Redirecting · Aetas for Charities</title>
-  <link rel="canonical" href="https://charities.aetas-wealth.com/charities">
+  <title>Financial Wellbeing for Charities | Aetas for Charities</title>
+  <link rel="canonical" href="https://charities.aetas-wealth.com/financial-wellbeing">
   <meta http-equiv="refresh" content="0; url=charities.html">
   <meta name="robots" content="noindex, follow">
-  <script>window.location.replace('charities.html');</script>
+  <script>
+
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+window.location.replace('charities.html');</script>
   <style>
     body { font-family: 'Open Sans', system-ui, sans-serif; background: #fff; color: #1a1f2e; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; padding: 2rem; }
     h1 { font-weight: 300; color: #00205B; }
     a { color: #009CA6; }
-  </style>
+  
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
+</style>
+  <meta name="description" content="Practical financial wellbeing programmes for charity staff and volunteers. Workshops, one-to-one guidance and ongoing support tailored for the third sector.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[    {"@type":"Question","name":"What financial wellbeing support does Aetas offer charities?","acceptedAnswer":{"@type":"Answer","text":"Aetas offers staff workshops, one-to-one financial guidance sessions with a regulated financial planner, and ongoing access to tools and support."}}
+    {"@type":"Question","name":"How is charity financial wellbeing different from corporate programmes?","acceptedAnswer":{"@type":"Answer","text":"Charity staff often face unique financial pressures including lower pay, sector uncertainty and pension provision gaps. Aetas designs programmes specifically for the third sector context."}}
+    {"@type":"Question","name":"Does financial wellbeing support count as regulated advice?","acceptedAnswer":{"@type":"Answer","text":"The education and workshop elements are not regulated advice. Where individual regulated financial advice is needed, this is provided through Aetas Wealth, FCA registered (FRN 458421)."}}]}</script>
 </head>
 <body>
   <div>

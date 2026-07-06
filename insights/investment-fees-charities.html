@@ -4,26 +4,26 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Investment Fees for Charities · Aetas for Charities</title>
-<meta name="description" content="The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost — and in many cases, trustees are unaware they exist." />
+<meta name="description" content="The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost ,  and in many cases, trustees are unaware they exist." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://charities.aetas-wealth.com/insights/investment-fees-charities" />
 <link rel="manifest" href="/manifest.webmanifest" />
 <meta property="og:locale" content="en_GB" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="What Charities Are Really Paying in Investment Fees" />
-<meta property="og:description" content="The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost — and in many cases, trustees are unaware they exist." />
+<meta property="og:description" content="The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost ,  and in many cases, trustees are unaware they exist." />
 <meta property="og:url" content="https://charities.aetas-wealth.com/insights/investment-fees-charities" />
 <meta property="og:site_name" content="Charity Wellbeing Service" />
 <meta property="og:image" content="https://charities.aetas-wealth.com/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="What Charities Are Really Paying in Investment Fees" />
-<meta name="twitter:description" content="The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost — and in many cases, trustees are unaware they exist." />
+<meta name="twitter:description" content="The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost ,  and in many cases, trustees are unaware they exist." />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "What Charities Are Really Paying in Investment Fees",
-  "description": "The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost — and in many cases, trustees are unaware they exist.",
+  "description": "The headline management charge is rarely the full story. OCF embedded within underlying funds can add significantly to the total cost ,  and in many cases, trustees are unaware they exist.",
   "url": "https://charities.aetas-wealth.com/insights/investment-fees-charities",
   "datePublished": "2026-03-15",
   "author": {
@@ -85,7 +85,89 @@ footer{background:var(--forest);padding:64px 48px}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
 .footer-links a{color:rgba(255,255,255,0.45);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:color 0.3s}
 .footer-links a:hover{color:var(--gold-light)}
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[    {"@type":"Question","name":"Are charity investment fees tax deductible?","acceptedAnswer":{"@type":"Answer","text":"Investment management fees charged to a charity's investment portfolio are generally an allowable expense. Trustees should ensure fees are reasonable and well-documented."}}
+    {"@type":"Question","name":"How should charity trustees review investment manager fees?","acceptedAnswer":{"@type":"Answer","text":"Trustees should benchmark fees against comparable mandates, understand the full cost including platform charges, and ensure the investment manager's performance justifies the fee over a reasonable time horizon."}}
+    {"@type":"Question","name":"What is a reasonable investment management fee for a charity?","acceptedAnswer":{"@type":"Answer","text":"Fees vary by mandate size and complexity. For pooled charity funds, total expense ratios of 0.3 to 0.8 per cent are typical. For bespoke mandates, fees of 0.5 to 1.0 per cent are common. Trustees should seek competitive quotes."}}]}</script>
 </head>
 <body>
 <nav>
@@ -116,18 +198,18 @@ footer{background:var(--forest);padding:64px 48px}
   <div class="container">
     <p>When a charity&rsquo;s trustees discuss investment costs, they are usually looking at the headline management charge. This is the figure the investment manager quotes, the one that appears on the engagement letter, and the one most likely to be mentioned at a trustee meeting. It is also frequently not the full picture.</p>
 <h2>What the headline charge does not include</h2>
-<p>Investment managers typically hold your charity&rsquo;s assets in a portfolio of funds &mdash; unit trusts, OEICs, ETFs, and similar vehicles. Each of those funds carries its own charges, known as the Ongoing Charges Figure. The OCF is deducted directly from the fund&rsquo;s assets, which means it does not appear as a line on your statement. It reduces the value of your holdings silently.</p>
-<p>The OCF is not hidden in the sense of being concealed &mdash; it is disclosed in the fund documentation. But it is rarely surfaced in trustee reporting, and many investment managers do not proactively discuss it. The result is that trustees often believe they are paying, say, 0.75% per year, when the true total cost including OCF may be 1.2%, 1.5%, or higher.</p>
+<p>Investment managers typically hold your charity&rsquo;s assets in a portfolio of funds ,  unit trusts, OEICs, ETFs, and similar vehicles. Each of those funds carries its own charges, known as the Ongoing Charges Figure. The OCF is deducted directly from the fund&rsquo;s assets, which means it does not appear as a line on your statement. It reduces the value of your holdings silently.</p>
+<p>The OCF is not hidden in the sense of being concealed ,  it is disclosed in the fund documentation. But it is rarely surfaced in trustee reporting, and many investment managers do not proactively discuss it. The result is that trustees often believe they are paying, say, 0.75% per year, when the true total cost including OCF may be 1.2%, 1.5%, or higher.</p>
 <blockquote>&ldquo;In most of the reviews Adena Street conducts, the total cost of the investment arrangement is materially higher than trustees believe it to be. The difference is almost always OCF.&rdquo;</blockquote>
 <h2>Why this matters for charities</h2>
-<p>For a charity managing &pound;2 million in investments, the difference between a 0.75% total cost and a 1.25% total cost is &pound;10,000 per year. Compounded over a decade, that is a very significant sum &mdash; money that would otherwise be available for charitable purposes. For a charity whose mission depends on maximising the impact of its endowment, understanding the true cost of investment management is not a technical nicety. It is a trustee responsibility.</p>
+<p>For a charity managing &pound;2 million in investments, the difference between a 0.75% total cost and a 1.25% total cost is &pound;10,000 per year. Compounded over a decade, that is a very significant sum ,  money that would otherwise be available for charitable purposes. For a charity whose mission depends on maximising the impact of its endowment, understanding the true cost of investment management is not a technical nicety. It is a trustee responsibility.</p>
 <h2>Custody and administration charges</h2>
 <p>Beyond the management fee and OCF, some arrangements include additional custody charges, platform fees, or administration costs. These vary by arrangement and are not always clearly delineated. A full cost analysis requires identifying and quantifying all of these elements.</p>
 <h2>What an independent review delivers</h2>
-<p>Adena Street provides a full cost analysis as part of its financial guidance service for charities. This means reviewing the complete fee structure &mdash; management charge, OCF across all underlying funds, custody, administration, and any other charges &mdash; and presenting trustees with a clear picture of what the arrangement actually costs. It also includes benchmarking the total cost against comparable arrangements in the market.</p>
-<p>In many cases, this review identifies savings that more than offset the cost of the engagement. Where the arrangement is competitively priced, trustees gain the documented evidence to confirm that &mdash; which is itself a governance benefit. Either outcome serves the charity&rsquo;s interests better than not knowing.</p>
+<p>Adena Street provides a full cost analysis as part of its financial guidance service for charities. This means reviewing the complete fee structure ,  management charge, OCF across all underlying funds, custody, administration, and any other charges ,  and presenting trustees with a clear picture of what the arrangement actually costs. It also includes benchmarking the total cost against comparable arrangements in the market.</p>
+<p>In many cases, this review identifies savings that more than offset the cost of the engagement. Where the arrangement is competitively priced, trustees gain the documented evidence to confirm that ,  which is itself a governance benefit. Either outcome serves the charity&rsquo;s interests better than not knowing.</p>
 <h2>How to approach this with your current manager</h2>
-<p>An independent review does not require a confrontational conversation with your investment manager. In most cases, it leads to a more informed relationship &mdash; one where trustees can ask better questions and managers can be held to account against agreed benchmarks. Where the review identifies a meaningful cost gap, it provides the basis for a structured negotiation or, where necessary, a manager search.</p>
+<p>An independent review does not require a confrontational conversation with your investment manager. In most cases, it leads to a more informed relationship ,  one where trustees can ask better questions and managers can be held to account against agreed benchmarks. Where the review identifies a meaningful cost gap, it provides the basis for a structured negotiation or, where necessary, a manager search.</p>
     <div class="cta-box">
       <h3>Discuss this with the Charity Wellbeing Service</h3>
       <p>A no-cost discovery conversation with Matthew Steiner to explore whether and how we can help your organisation.</p>
@@ -146,8 +228,8 @@ footer{background:var(--forest);padding:64px 48px}
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/financial-anxiety-staff-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The Hidden Cost of Financial Anxiety in Your Team</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/ips-review-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Does Your Investment Policy Statement Still Reflect Your Charity?</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/legacy-giving-programme-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Legacy Giving: The Income Stream Most Charities Haven't Structured</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace — Aetas in the Workplace</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies — Aetas Wealth</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace ,  Aetas in the Workplace</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies ,  Aetas Wealth</a></li>
     </ul>
   </div>
 </section>
@@ -163,5 +245,18 @@ footer{background:var(--forest);padding:64px 48px}
     </div>
   </div>
 </footer>
+<script>
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>

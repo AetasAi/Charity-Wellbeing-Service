@@ -85,7 +85,89 @@ footer{background:var(--forest);padding:64px 48px}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
 .footer-links a{color:rgba(255,255,255,0.45);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:color 0.3s}
 .footer-links a:hover{color:var(--gold-light)}
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[    {"@type":"Question","name":"Why is financial anxiety particularly prevalent in charities?","acceptedAnswer":{"@type":"Answer","text":"Charity sector salaries are often lower than equivalent private sector roles, and staff frequently face sector uncertainty and funding pressures. These structural factors increase financial stress among charity employees."}}
+    {"@type":"Question","name":"What can charity employers do to reduce financial anxiety among staff?","acceptedAnswer":{"@type":"Answer","text":"Practical steps include reviewing pension provision, offering financial education workshops, providing access to confidential guidance, and ensuring staff understand and value their existing benefits."}}
+    {"@type":"Question","name":"How does financial anxiety affect charity performance?","acceptedAnswer":{"@type":"Answer","text":"Financial anxiety reduces focus and productivity, increases absence, and contributes to the high staff turnover that many charities experience. Addressing it has a direct impact on organisational performance."}}]}</script>
 </head>
 <body>
 <nav>
@@ -114,19 +196,19 @@ footer{background:var(--forest);padding:64px 48px}
 </section>
 <section class="article-body">
   <div class="container">
-    <p>Financial anxiety affects a significant proportion of the working population at any given time. For charity and not-for-profit employees &mdash; who often accept below-market salaries in exchange for meaningful work &mdash; the pressure can be particularly acute. And unlike many challenges facing charity leaders, this one does not show up on the balance sheet until it has already done its damage.</p>
+    <p>Financial anxiety affects a significant proportion of the working population at any given time. For charity and not-for-profit employees ,  who often accept below-market salaries in exchange for meaningful work ,  the pressure can be particularly acute. And unlike many challenges facing charity leaders, this one does not show up on the balance sheet until it has already done its damage.</p>
 <h2>What the data shows</h2>
-<p>Research consistently shows that financial worry is one of the leading causes of reduced performance and engagement at work. Employees dealing with significant financial pressure experience measurably higher rates of presenteeism &mdash; being physically at work but cognitively distracted. They take more sick days, make more errors, and are more likely to be actively considering leaving their role.</p>
+<p>Research consistently shows that financial worry is one of the leading causes of reduced performance and engagement at work. Employees dealing with significant financial pressure experience measurably higher rates of presenteeism ,  being physically at work but cognitively distracted. They take more sick days, make more errors, and are more likely to be actively considering leaving their role.</p>
 <p>The aggregate cost of this is substantial. Estimates put the annual cost of financial stress to UK employers at several billion pounds in lost productivity, absence, and turnover. For a charity where every person matters and where the margin for disengagement is low, the proportional impact is higher than in a large corporate environment.</p>
-<blockquote>&ldquo;Exit interviews in the not-for-profit sector increasingly cite financial pressure rather than disillusionment with the cause. The mission still matters to them &mdash; they simply cannot sustain the trade-off.&rdquo;</blockquote>
+<blockquote>&ldquo;Exit interviews in the not-for-profit sector increasingly cite financial pressure rather than disillusionment with the cause. The mission still matters to them ,  they simply cannot sustain the trade-off.&rdquo;</blockquote>
 <h2>Why this is not just a salary problem</h2>
-<p>The instinctive response is to treat staff financial wellbeing as a salary problem &mdash; and to conclude that if the organisation cannot pay more, there is little that can be done. This misunderstands the nature of financial anxiety. Research suggests that the primary driver of financial stress at work is not the level of pay but the degree of uncertainty &mdash; about what benefits exist, whether they apply in specific circumstances, and where to turn when things change.</p>
+<p>The instinctive response is to treat staff financial wellbeing as a salary problem ,  and to conclude that if the organisation cannot pay more, there is little that can be done. This misunderstands the nature of financial anxiety. Research suggests that the primary driver of financial stress at work is not the level of pay but the degree of uncertainty ,  about what benefits exist, whether they apply in specific circumstances, and where to turn when things change.</p>
 <p>Many employees do not know what their pension is worth in practice, do not understand the protection policies their employer holds on their behalf, and have never had access to independent guidance on how to make the most of their salary and benefits package. Addressing that uncertainty does not require increasing the payroll. It requires communication, structured guidance, and access to expertise.</p>
 <h2>What structured financial wellbeing delivers</h2>
-<p>A well-designed financial wellbeing programme does several things. It ensures employees understand what benefits they have and how to use them. It provides practical guidance on day-to-day financial management &mdash; the kind of information that is rarely taught and difficult to access independently. It offers a channel for one-to-one support on specific personal financial concerns, handled confidentially by a qualified financial planner. And it signals to employees that the organisation sees their financial security as part of its responsibility toward them as people, not just as staff.</p>
-<p>The last of these is not trivial. In a sector where salaries are constrained, the symbolic value of demonstrating care for employee financial wellbeing &mdash; through a structured, professional programme &mdash; is itself a retention signal.</p>
+<p>A well-designed financial wellbeing programme does several things. It ensures employees understand what benefits they have and how to use them. It provides practical guidance on day-to-day financial management ,  the kind of information that is rarely taught and difficult to access independently. It offers a channel for one-to-one support on specific personal financial concerns, handled confidentially by a qualified financial planner. And it signals to employees that the organisation sees their financial security as part of its responsibility toward them as people, not just as staff.</p>
+<p>The last of these is not trivial. In a sector where salaries are constrained, the symbolic value of demonstrating care for employee financial wellbeing ,  through a structured, professional programme ,  is itself a retention signal.</p>
 <h2>The engagement evidence</h2>
-<p>Organisations that introduce structured financial wellbeing programmes consistently report improvements in employee engagement scores, reductions in absence, and a positive effect on retention &mdash; particularly in the 18 to 36 months following introduction, when the effects of improved financial literacy and confidence compound. Aetas in the Workplace monitors these indicators as part of every ongoing engagement, providing clients with documented evidence of impact they can share with trustees and funders.</p>
+<p>Organisations that introduce structured financial wellbeing programmes consistently report improvements in employee engagement scores, reductions in absence, and a positive effect on retention ,  particularly in the 18 to 36 months following introduction, when the effects of improved financial literacy and confidence compound. Aetas in the Workplace monitors these indicators as part of every ongoing engagement, providing clients with documented evidence of impact they can share with trustees and funders.</p>
     <div class="cta-box">
       <h3>Discuss this with the Charity Wellbeing Service</h3>
       <p>A no-cost discovery conversation with Matthew Steiner to explore whether and how we can help your organisation.</p>
@@ -145,8 +227,8 @@ footer{background:var(--forest);padding:64px 48px}
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/investment-fees-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">What Charities Are Really Paying in Investment Fees</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/ips-review-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Does Your Investment Policy Statement Still Reflect Your Charity?</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/legacy-giving-programme-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Legacy Giving: The Income Stream Most Charities Haven't Structured</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace — Aetas in the Workplace</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies — Aetas Wealth</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace ,  Aetas in the Workplace</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies ,  Aetas Wealth</a></li>
     </ul>
   </div>
 </section>
@@ -162,5 +244,18 @@ footer{background:var(--forest);padding:64px 48px}
     </div>
   </div>
 </footer>
+<script>
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>

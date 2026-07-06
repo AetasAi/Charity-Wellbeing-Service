@@ -85,7 +85,89 @@ footer{background:var(--forest);padding:64px 48px}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
 .footer-links a{color:rgba(255,255,255,0.45);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:color 0.3s}
 .footer-links a:hover{color:var(--gold-light)}
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[    {"@type":"Question","name":"What should charity treasurers consider for cash management?","acceptedAnswer":{"@type":"Answer","text":"Charity treasurers should review cash reserves policy, ensure appropriate diversification across banking providers, and consider whether cash is working appropriately in the current interest rate environment."}}
+    {"@type":"Question","name":"How much cash should a charity hold in reserve?","acceptedAnswer":{"@type":"Answer","text":"The Charity Commission recommends charities hold reserves sufficient to cover three to six months of operating costs. The exact level depends on income volatility and the nature of the charity's activities."}}
+    {"@type":"Question","name":"What is the role of the treasurer in a charity?","acceptedAnswer":{"@type":"Answer","text":"The treasurer is responsible for overseeing the financial health of the charity, presenting financial reports to the board, and ensuring that the charity's resources are managed responsibly in line with its objects."}}]}</script>
 </head>
 <body>
 <nav>
@@ -114,17 +196,17 @@ footer{background:var(--forest);padding:64px 48px}
 </section>
 <section class="article-body">
   <div class="container">
-    <p>Many charities hold a significant proportion of their reserves in current accounts or low-interest deposit facilities. This is often not the result of a deliberate decision &mdash; it is the result of no decision, or of an arrangement that was put in place years ago and never revisited. In an environment where interest rates have shifted significantly, this default position has become increasingly costly.</p>
+    <p>Many charities hold a significant proportion of their reserves in current accounts or low-interest deposit facilities. This is often not the result of a deliberate decision ,  it is the result of no decision, or of an arrangement that was put in place years ago and never revisited. In an environment where interest rates have shifted significantly, this default position has become increasingly costly.</p>
 <h2>The interest rate shift</h2>
 <p>The Bank of England base rate moved substantially over the period from 2022 to 2025, reaching levels not seen in over a decade. For charities holding cash reserves, this created both an opportunity and an accountability question: were your arrangements updated to capture the improved returns available, and if not, why not?</p>
-<p>Many charities, in practice, did not update their banking arrangements during this period. Operational bank accounts and legacy deposit facilities continued as before, while the interest rates available on accessible cash &mdash; through notice accounts, term deposits, and cash management platforms &mdash; increased materially. The difference between what these charities earned and what they could have earned represents a real cost to their beneficiaries.</p>
-<blockquote>&ldquo;Cash management is one of the simplest areas in which a charity can improve its financial position &mdash; and one of the most commonly overlooked. The improvements available rarely require any meaningful increase in risk.&rdquo;</blockquote>
+<p>Many charities, in practice, did not update their banking arrangements during this period. Operational bank accounts and legacy deposit facilities continued as before, while the interest rates available on accessible cash ,  through notice accounts, term deposits, and cash management platforms ,  increased materially. The difference between what these charities earned and what they could have earned represents a real cost to their beneficiaries.</p>
+<blockquote>&ldquo;Cash management is one of the simplest areas in which a charity can improve its financial position ,  and one of the most commonly overlooked. The improvements available rarely require any meaningful increase in risk.&rdquo;</blockquote>
 <h2>What a cash management review covers</h2>
-<p>A structured review of your charity&rsquo;s cash management looks at several things. First, the total cash position &mdash; how much is held, in which accounts, and on what terms. Second, the cashflow profile &mdash; how much needs to be accessible at short notice, how much could be placed on notice terms, and whether any portion could be committed to a longer-term deposit without creating operational difficulty. Third, the current rates being earned versus what is available in the market for equivalent risk and accessibility.</p>
-<p>For most charities, this analysis identifies a meaningful improvement &mdash; not through taking more risk, but through better matching the deployment of cash to its actual operational requirements.</p>
+<p>A structured review of your charity&rsquo;s cash management looks at several things. First, the total cash position ,  how much is held, in which accounts, and on what terms. Second, the cashflow profile ,  how much needs to be accessible at short notice, how much could be placed on notice terms, and whether any portion could be committed to a longer-term deposit without creating operational difficulty. Third, the current rates being earned versus what is available in the market for equivalent risk and accessibility.</p>
+<p>For most charities, this analysis identifies a meaningful improvement ,  not through taking more risk, but through better matching the deployment of cash to its actual operational requirements.</p>
 <h2>The governance dimension</h2>
-<p>Cash management is not only a financial issue &mdash; it is a governance one. Trustees have a duty to ensure that the charity&rsquo;s funds are invested prudently. Where significant cash is being held in low-interest accounts when better returns are available on equivalent terms, trustees may be failing to discharge this duty &mdash; not through any deliberate choice, but through the absence of a structured review process.</p>
-<p>Adena Street includes cash management review as part of its financial guidance service for charities. For organisations without an investment portfolio, it is often the starting point for an engagement &mdash; and frequently the area where the most immediate improvement can be delivered.</p>
+<p>Cash management is not only a financial issue ,  it is a governance one. Trustees have a duty to ensure that the charity&rsquo;s funds are invested prudently. Where significant cash is being held in low-interest accounts when better returns are available on equivalent terms, trustees may be failing to discharge this duty ,  not through any deliberate choice, but through the absence of a structured review process.</p>
+<p>Adena Street includes cash management review as part of its financial guidance service for charities. For organisations without an investment portfolio, it is often the starting point for an engagement ,  and frequently the area where the most immediate improvement can be delivered.</p>
     <div class="cta-box">
       <h3>Discuss this with the Charity Wellbeing Service</h3>
       <p>A no-cost discovery conversation with Matthew Steiner to explore whether and how we can help your organisation.</p>
@@ -143,8 +225,8 @@ footer{background:var(--forest);padding:64px 48px}
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/investment-fees-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">What Charities Are Really Paying in Investment Fees</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/ips-review-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Does Your Investment Policy Statement Still Reflect Your Charity?</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/legacy-giving-programme-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Legacy Giving: The Income Stream Most Charities Haven't Structured</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace — Aetas in the Workplace</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies — Aetas Wealth</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace ,  Aetas in the Workplace</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies ,  Aetas Wealth</a></li>
     </ul>
   </div>
 </section>
@@ -160,5 +242,18 @@ footer{background:var(--forest);padding:64px 48px}
     </div>
   </div>
 </footer>
+<script>
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>

@@ -85,7 +85,89 @@ footer{background:var(--forest);padding:64px 48px}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
 .footer-links a{color:rgba(255,255,255,0.45);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:color 0.3s}
 .footer-links a:hover{color:var(--gold-light)}
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[    {"@type":"Question","name":"What is a legacy giving programme for charities?","acceptedAnswer":{"@type":"Answer","text":"A legacy giving programme encourages supporters to leave a gift to the charity in their will. It is one of the most valuable long-term income streams available to charities of any size."}}
+    {"@type":"Question","name":"How do charities start a legacy programme?","acceptedAnswer":{"@type":"Answer","text":"Charities typically start by identifying existing supporters who might consider a legacy gift, developing appropriate communication materials, and ensuring the charity has the infrastructure to acknowledge and administer legacy gifts."}}
+    {"@type":"Question","name":"What types of legacy can supporters leave to charities?","acceptedAnswer":{"@type":"Answer","text":"The main types are pecuniary legacies (a specific sum), residuary legacies (a share of the estate after other bequests) and specific legacies (a particular asset). Residuary legacies are typically the most valuable to charities."}}]}</script>
 </head>
 <body>
 <nav>
@@ -114,16 +196,16 @@ footer{background:var(--forest);padding:64px 48px}
 </section>
 <section class="article-body">
   <div class="container">
-    <p>Gifts in wills are, by any measure, one of the most significant sources of charitable income in the United Kingdom. Research consistently finds that a meaningful proportion of supporters who would consider leaving a gift in their will to a charity they care about have never been asked, and have never been given the guidance that would make the process feel straightforward. Most charities are not in the habit of having this conversation &mdash; and most are therefore leaving a substantial income stream untapped.</p>
+    <p>Gifts in wills are, by any measure, one of the most significant sources of charitable income in the United Kingdom. Research consistently finds that a meaningful proportion of supporters who would consider leaving a gift in their will to a charity they care about have never been asked, and have never been given the guidance that would make the process feel straightforward. Most charities are not in the habit of having this conversation ,  and most are therefore leaving a substantial income stream untapped.</p>
 <h2>Why the conversation does not happen</h2>
-<p>Asking supporters about legacy giving feels, to many charity professionals, like an uncomfortable subject to raise. There is a sense that it is presumptuous, or that it requires a level of trust and relationship depth that takes years to establish. In practice, the evidence suggests the opposite: supporters are more likely to respond positively to the conversation than charities expect, and many report that they appreciate being told how to give in this way &mdash; because they had not known how.</p>
+<p>Asking supporters about legacy giving feels, to many charity professionals, like an uncomfortable subject to raise. There is a sense that it is presumptuous, or that it requires a level of trust and relationship depth that takes years to establish. In practice, the evidence suggests the opposite: supporters are more likely to respond positively to the conversation than charities expect, and many report that they appreciate being told how to give in this way ,  because they had not known how.</p>
 <p>The other barrier is structural. Legacy giving requires a level of programme design that many smaller charities have not had the resource to build. Who has the conversation? How is it initiated? What information does a supporter need? What happens next? Without a clear process, the conversation tends not to happen at all.</p>
-<blockquote>&ldquo;Most supporters who would consider a legacy gift have never been asked. The barrier is almost never reluctance on their part &mdash; it is the absence of a structured programme on ours.&rdquo;</blockquote>
+<blockquote>&ldquo;Most supporters who would consider a legacy gift have never been asked. The barrier is almost never reluctance on their part ,  it is the absence of a structured programme on ours.&rdquo;</blockquote>
 <h2>What a structured legacy giving programme involves</h2>
-<p>A well-designed legacy giving programme begins with identifying the right moments and channels for the conversation &mdash; which will vary by organisation and by supporter relationship. It provides supporters with the information they need: what a gift in a will involves, how it can be structured, what proportion of their estate they might consider, and what the practical steps are. It connects them, where appropriate, with the guidance of an independent financial planner who can help them think through the planning involved &mdash; not to sell them a product, but to ensure the process feels achievable.</p>
+<p>A well-designed legacy giving programme begins with identifying the right moments and channels for the conversation ,  which will vary by organisation and by supporter relationship. It provides supporters with the information they need: what a gift in a will involves, how it can be structured, what proportion of their estate they might consider, and what the practical steps are. It connects them, where appropriate, with the guidance of an independent financial planner who can help them think through the planning involved ,  not to sell them a product, but to ensure the process feels achievable.</p>
 <p>The Charity Wellbeing Service can help charities introduce a legacy giving programme within the context of its wider engagement framework. Where appropriate, Aetas in the Workplace&rsquo;s financial planning network can provide the one-to-one supporter guidance that makes a gift in wills feel concrete rather than abstract.</p>
 <h2>The income case</h2>
-<p>Legacy giving is not a short-term income strategy. The gifts realised in any given year reflect decisions made years or decades earlier. But the charities that have invested in structured legacy programmes over time consistently find that this income stream becomes one of their most reliable and significant. For a charity that depends on fundraising for its financial sustainability, building legacy giving into its income strategy is not an optional extra &mdash; it is a governance responsibility.</p>
+<p>Legacy giving is not a short-term income strategy. The gifts realised in any given year reflect decisions made years or decades earlier. But the charities that have invested in structured legacy programmes over time consistently find that this income stream becomes one of their most reliable and significant. For a charity that depends on fundraising for its financial sustainability, building legacy giving into its income strategy is not an optional extra ,  it is a governance responsibility.</p>
     <div class="cta-box">
       <h3>Discuss this with the Charity Wellbeing Service</h3>
       <p>A no-cost discovery conversation with Matthew Steiner to explore whether and how we can help your organisation.</p>
@@ -142,8 +224,8 @@ footer{background:var(--forest);padding:64px 48px}
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/financial-anxiety-staff-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The Hidden Cost of Financial Anxiety in Your Team</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/investment-fees-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">What Charities Are Really Paying in Investment Fees</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/ips-review-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Does Your Investment Policy Statement Still Reflect Your Charity?</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace — Aetas in the Workplace</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies — Aetas Wealth</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace ,  Aetas in the Workplace</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies ,  Aetas Wealth</a></li>
     </ul>
   </div>
 </section>
@@ -159,5 +241,18 @@ footer{background:var(--forest);padding:64px 48px}
     </div>
   </div>
 </footer>
+<script>
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>

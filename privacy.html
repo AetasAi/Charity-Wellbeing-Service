@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Privacy Policy — Charity Wellbeing Service</title>
+<title>Privacy Policy ,  Charity Wellbeing Service</title>
 <meta name="description" content="Privacy policy for the Charity Wellbeing Service. How we collect, use, and protect personal data in line with UK GDPR." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://charities.aetas-wealth.com/privacy" />
 <link rel="manifest" href="/manifest.webmanifest" />
 <meta property="og:locale" content="en_GB" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Privacy Policy — Charity Wellbeing Service" />
+<meta property="og:title" content="Privacy Policy ,  Charity Wellbeing Service" />
 <meta property="og:description" content="How the Charity Wellbeing Service collects, uses, and protects personal data in line with UK GDPR." />
 <meta property="og:url" content="https://charities.aetas-wealth.com/privacy" />
 <meta property="og:site_name" content="Charity Wellbeing Service" />
@@ -18,7 +18,7 @@
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Privacy Policy — Charity Wellbeing Service" />
+<meta name="twitter:title" content="Privacy Policy ,  Charity Wellbeing Service" />
 <meta name="twitter:description" content="How the Charity Wellbeing Service collects, uses, and protects personal data in line with UK GDPR." />
 <meta name="twitter:image" content="https://charities.aetas-wealth.com/og-image.png" />
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" as="style" crossorigin>
@@ -59,6 +59,85 @@ footer { background: var(--forest); padding: 64px 48px; }
 .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 .footer-links a { color: rgba(255,255,255,0.45); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: color 0.3s; }
 .footer-links a:hover { color: var(--gold-light); }
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -68,7 +147,7 @@ footer { background: var(--forest); padding: 64px 48px; }
       "@type": "WebPage",
       "@id": "https://charities.aetas-wealth.com/privacy#webpage",
       "url": "https://charities.aetas-wealth.com/privacy",
-      "name": "Privacy Policy — Charity Wellbeing Service",
+      "name": "Privacy Policy ,  Charity Wellbeing Service",
       "description": "Privacy policy for the Charity Wellbeing Service. How we collect, use, and protect personal data in line with UK GDPR.",
       "inLanguage": "en-GB",
       "isPartOf": {
@@ -120,13 +199,13 @@ footer { background: var(--forest); padding: 64px 48px; }
     <span style="font-size:0.68rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:18px;">Legal</span>
     <h1>Privacy Policy</h1>
     <div class="rule"></div>
-    <p>This privacy policy explains how the Charity Wellbeing Service — a partnership between Adena Street Limited and Aetas in the Workplace (a trading name of Insight Financial Associates Limited) — collects, uses, and protects your personal data in accordance with UK GDPR and the Data Protection Act 2018.</p>
+    <p>This privacy policy explains how the Charity Wellbeing Service ,  a partnership between Adena Street Limited and Aetas in the Workplace (a trading name of Insight Financial Associates Limited) ,  collects, uses, and protects your personal data in accordance with UK GDPR and the Data Protection Act 2018.</p>
     <p><strong>Last updated: May 2026</strong></p>
 
     <h2>Who we are</h2>
     <p>The Charity Wellbeing Service is delivered in partnership by:</p>
-    <p><strong>Aetas in the Workplace</strong> — a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Registered in England and Wales.</p>
-    <p><strong>Adena Street Limited</strong> — an independent advisory firm specialising in governance and financial guidance for charities. Registered in England and Wales.</p>
+    <p><strong>Aetas in the Workplace</strong> ,  a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421). Registered in England and Wales.</p>
+    <p><strong>Adena Street Limited</strong> ,  an independent advisory firm specialising in governance and financial guidance for charities. Registered in England and Wales.</p>
     <p>For data enquiries, contact: <a href="mailto:matthew.steiner@aetas-wealth.com">matthew.steiner@aetas-wealth.com</a></p>
 
     <h2>What data we collect</h2>
@@ -137,7 +216,7 @@ footer { background: var(--forest); padding: 64px 48px; }
     <p>We use the personal data you provide to respond to your enquiry and to arrange and conduct a discovery conversation. We do not use your data for unsolicited marketing. We do not share your data with third parties other than those necessary to deliver the services described (for example, the calendar booking platform used to schedule meetings).</p>
 
     <h2>Legal basis for processing</h2>
-    <p>Our lawful basis for processing your personal data is legitimate interests — specifically, the legitimate interest in responding to enquiries made about our services, and in delivering those services once engaged.</p>
+    <p>Our lawful basis for processing your personal data is legitimate interests ,  specifically, the legitimate interest in responding to enquiries made about our services, and in delivering those services once engaged.</p>
 
     <h2>Data retention</h2>
     <p>We retain contact information for as long as is reasonably necessary to manage the engagement. If no engagement proceeds, contact data is not retained beyond the period required to respond to the initial enquiry. You may request deletion of your data at any time by contacting us directly.</p>
@@ -180,5 +259,18 @@ footer { background: var(--forest); padding: 64px 48px; }
     </div>
   </div>
 </footer>
+<script>
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>

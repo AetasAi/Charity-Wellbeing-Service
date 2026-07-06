@@ -85,7 +85,89 @@ footer{background:var(--forest);padding:64px 48px}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
 .footer-links a{color:rgba(255,255,255,0.45);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:color 0.3s}
 .footer-links a:hover{color:var(--gold-light)}
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue, #00205B);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise, #00747E);
+  line-height: 1;
+}
+
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue, #00205B);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(0,32,91,0.7); padding: 0.4rem 0; font-size: 0.88rem; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+}
+
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[    {"@type":"Question","name":"What is the Charity Commission CC14 guidance?","acceptedAnswer":{"@type":"Answer","text":"CC14 is the Charity Commission's guidance on investment for charities. It sets out the legal framework for trustee investment decisions, including the duty to take advice and consider social investments."}}
+    {"@type":"Question","name":"Do charity trustees have a duty to invest?","acceptedAnswer":{"@type":"Answer","text":"Yes. Trustees have a duty to make any funds not immediately needed for the charity's purposes work appropriately. This includes reviewing cash held on deposit and considering whether an investment policy statement is needed."}}
+    {"@type":"Question","name":"What should a charity investment policy statement include?","acceptedAnswer":{"@type":"Answer","text":"An IPS should cover the charity's investment objectives, risk appetite, ethical considerations, asset allocation, performance benchmarks and review frequency."}}]}</script>
 </head>
 <body>
 <nav>
@@ -114,20 +196,20 @@ footer{background:var(--forest);padding:64px 48px}
 </section>
 <section class="article-body">
   <div class="container">
-    <p>CC14 &mdash; the Charity Commission&rsquo;s guidance on investment of charitable funds &mdash; sets out the framework within which charity trustees are expected to operate when managing investments. It is not optional guidance. It represents the Commission&rsquo;s view of what good trustee behaviour looks like, and departure from it creates governance risk.</p>
+    <p>CC14 ,  the Charity Commission&rsquo;s guidance on investment of charitable funds ,  sets out the framework within which charity trustees are expected to operate when managing investments. It is not optional guidance. It represents the Commission&rsquo;s view of what good trustee behaviour looks like, and departure from it creates governance risk.</p>
 <h2>The core duties CC14 establishes</h2>
-<p>CC14 identifies three primary duties for trustees with investment responsibilities. First, the duty to invest &mdash; to ensure that any funds not required for immediate use are invested appropriately. Second, the duty to act prudently &mdash; to invest in a way that is in the best interests of the charity, taking advice where the board lacks expertise. Third, the duty to act in accordance with the charity&rsquo;s governing document &mdash; including any restrictions on the type of investments the charity may hold.</p>
-<p>Taken together, these duties require trustees to have a genuine understanding of how their charity&rsquo;s assets are being invested, what they are costing, and whether the arrangement continues to serve the charity&rsquo;s interests. Delegating investment management to an external manager does not discharge this responsibility &mdash; it transfers day-to-day decision-making, not oversight.</p>
+<p>CC14 identifies three primary duties for trustees with investment responsibilities. First, the duty to invest ,  to ensure that any funds not required for immediate use are invested appropriately. Second, the duty to act prudently ,  to invest in a way that is in the best interests of the charity, taking advice where the board lacks expertise. Third, the duty to act in accordance with the charity&rsquo;s governing document ,  including any restrictions on the type of investments the charity may hold.</p>
+<p>Taken together, these duties require trustees to have a genuine understanding of how their charity&rsquo;s assets are being invested, what they are costing, and whether the arrangement continues to serve the charity&rsquo;s interests. Delegating investment management to an external manager does not discharge this responsibility ,  it transfers day-to-day decision-making, not oversight.</p>
 <h2>The Investment Policy Statement requirement</h2>
 <p>Where a charity has delegated discretionary investment management to an external manager, CC14 is clear that an Investment Policy Statement is required. This document must set out the investment objectives, risk parameters, ethical restrictions, and the basis on which performance will be assessed. It provides the framework within which the manager operates and the standards against which the board holds them accountable.</p>
-<p>Many charities hold an IPS that was drafted years ago and has not been reviewed since. This creates a gap between what the document says and how the charity is actually being run &mdash; a gap that would be significant in any regulatory scrutiny.</p>
-<blockquote>&ldquo;Trustees who have never benchmarked their manager&rsquo;s performance, or cannot confirm the fees they are paying, are exposed to reputational and regulatory risk &mdash; even where there has been no failing on their part. The gap is the absence of documented oversight.&rdquo;</blockquote>
+<p>Many charities hold an IPS that was drafted years ago and has not been reviewed since. This creates a gap between what the document says and how the charity is actually being run ,  a gap that would be significant in any regulatory scrutiny.</p>
+<blockquote>&ldquo;Trustees who have never benchmarked their manager&rsquo;s performance, or cannot confirm the fees they are paying, are exposed to reputational and regulatory risk ,  even where there has been no failing on their part. The gap is the absence of documented oversight.&rdquo;</blockquote>
 <h2>Performance and fees: the oversight gap</h2>
-<p>CC14 encourages trustees to challenge their investment manager, review performance against appropriate benchmarks, and understand the costs they are paying. The ARC Charity Indices provide a recognised benchmarking framework for this purpose &mdash; one that allows trustees to assess whether their manager is delivering performance in line with, or better than, peer charities at the same risk level.</p>
+<p>CC14 encourages trustees to challenge their investment manager, review performance against appropriate benchmarks, and understand the costs they are paying. The ARC Charity Indices provide a recognised benchmarking framework for this purpose ,  one that allows trustees to assess whether their manager is delivering performance in line with, or better than, peer charities at the same risk level.</p>
 <p>In practice, many trustees have never received a benchmarked performance report. Their manager provides returns data, but without a comparator, it is very difficult to form a view of whether those returns are good, average, or poor relative to the market. CC14 anticipates that trustees will have this framework in place.</p>
 <h2>Seeking independent advice</h2>
-<p>One of CC14&rsquo;s most important provisions is its active encouragement for trustees to seek independent advice when they lack the time, knowledge, or inclination to act alone. This is not an admission of failure &mdash; it is what responsible governance looks like. The Commission expects boards to recognise their limitations and to take steps to address them.</p>
-<p>Adena Street provides independent governance and financial guidance to charity trustees precisely within this framework. The starting point is always a review of what the charity currently has in place &mdash; IPS, performance reporting, fee structure &mdash; and what steps would bring the board into a well-documented, defensible governance position.</p>
+<p>One of CC14&rsquo;s most important provisions is its active encouragement for trustees to seek independent advice when they lack the time, knowledge, or inclination to act alone. This is not an admission of failure ,  it is what responsible governance looks like. The Commission expects boards to recognise their limitations and to take steps to address them.</p>
+<p>Adena Street provides independent governance and financial guidance to charity trustees precisely within this framework. The starting point is always a review of what the charity currently has in place ,  IPS, performance reporting, fee structure ,  and what steps would bring the board into a well-documented, defensible governance position.</p>
     <div class="cta-box">
       <h3>Discuss this with the Charity Wellbeing Service</h3>
       <p>A no-cost discovery conversation with Matthew Steiner to explore whether and how we can help your organisation.</p>
@@ -146,8 +228,8 @@ footer{background:var(--forest);padding:64px 48px}
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/investment-fees-charities" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">What Charities Are Really Paying in Investment Fees</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/ips-review-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Does Your Investment Policy Statement Still Reflect Your Charity?</a></li>
   <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://charities.aetas-wealth.com/insights/legacy-giving-programme-charity" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">Legacy Giving: The Income Stream Most Charities Haven't Structured</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace — Aetas in the Workplace</a></li>
-  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies — Aetas Wealth</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://workplace.aetas-wealth.com/guides/the-cost-of-financial-anxiety-in-the-workplace" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">The cost of financial anxiety in the workplace ,  Aetas in the Workplace</a></li>
+  <li style="border-bottom:1px solid var(--border);padding:0.5rem 0;"><a href="https://aetas-wealth.com/insights/posts/tax-efficient-giving" target="_blank" rel="noopener" style="color:var(--forest);text-decoration:none;font-size:0.95rem;">UK tax-efficient giving: Gift Aid, payroll and legacies ,  Aetas Wealth</a></li>
     </ul>
   </div>
 </section>
@@ -163,5 +245,18 @@ footer{background:var(--forest);padding:64px 48px}
     </div>
   </div>
 </footer>
+<script>
+  // Dropdown nav on mobile
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        var parent = btn.closest('.nav-dropdown');
+        parent.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', parent.classList.contains('is-open') ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>
