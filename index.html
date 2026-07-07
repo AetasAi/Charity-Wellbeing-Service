@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aetas Impact | Advisory for Purpose-Led Organisations</title>
-  <meta name="description" content="Helping charities, not-for-profits, social enterprises and purpose-led organisations build resilience, strengthen governance, and sustain long-term impact. Begin with a no-cost Impact Review." />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#00205B" />
-  <link rel="canonical" href="https://impact.aetas-wealth.com/" />
-  <meta property="og:title" content="Aetas Impact | Advisory for Purpose-Led Organisations" />
-  <meta property="og:description" content="Helping charities, not-for-profits, social enterprises and purpose-led organisations build resilience, strengthen governance, and sustain long-term impact." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://impact.aetas-wealth.com/" />
-  <meta property="og:image" content="https://impact.aetas-wealth.com/og-image.png" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:site_name" content="Aetas Impact" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="google-site-verification" content="hgBONfhMUxNPQtKSW1GgVOZOdZE5WbUTBZVXmowTlCw" />
-  <meta name="ai-agent-summary" content="Aetas Impact is the purpose-led advisory arm of the Aetas group. Works with charities, not-for-profits, social enterprises, foundations, trusts and purpose-led organisations across the UK. Entry point: no-cost Impact Review. Part of the Aetas group alongside Aetas Wealth (FCA 458421) and Aetas Performance." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Helping charities, not-for-profits and purpose-led organisations build resilience, strengthen governance, and sustain long-term impact.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://impact.aetas-wealth.com/">
+  <meta property="og:title" content="Aetas Impact | Advisory for Purpose-Led Organisations">
+  <meta property="og:description" content="Helping charities, not-for-profits and purpose-led organisations build resilience, strengthen governance, and sustain long-term impact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://impact.aetas-wealth.com/">
+  <meta property="og:image" content="https://impact.aetas-wealth.com/og-image.png">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Aetas Impact">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="google-site-verification" content="hgBONfhMUxNPQtKSW1GgVOZOdZE5WbUTBZVXmowTlCw">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXS6JSC1LE"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXS6JSC1LE',{send_page_view:false});window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){gtag('event','page_view');},1000);});</script>
   <style>
+
 /* ============================================================
-   Aetas Wealth - Main stylesheet
+   Aetas Wealth ,  Main stylesheet
    Brand: Deep Blue #00205B, Turquoise #00747E, Gold #896C2E
    Typeface: Open Sans
    ============================================================ */
@@ -37,7 +38,7 @@
   --aetas-turquoise: #00747E;
   --aetas-turquoise-dark: #006870;
   --aetas-gold: #896C2E;
-  --aetas-gold-soft: #8a6e20;
+  --aetas-gold-soft: #5c4510;
 
   /* Neutrals */
   --ink: #1a1f2e;
@@ -139,6 +140,7 @@ p { margin: 0 0 1.1em; color: var(--ink-soft); }
 .grid { display: grid; gap: 2rem; }
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid-5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
 .grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
 .text-center { text-align: center; }
@@ -183,14 +185,7 @@ p { margin: 0 0 1.1em; color: var(--ink-soft); }
   display: block;
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
-.brand-text span:last-child {
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--aetas-turquoise);
-  margin-top: 4px;
-}
+/* brand-text last-child removed - replaced by .brand-division */
 
 .nav-links {
   display: flex;
@@ -436,6 +431,35 @@ p { margin: 0 0 1.1em; color: var(--ink-soft); }
 .card-link::after { content: '→'; transition: transform 200ms var(--ease); }
 .card:hover .card-link::after { transform: translateX(3px); }
 
+/* How it works ,  subtitle and stage meta */
+.how-subtitle {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--aetas-gold);
+  margin: 0.4rem 0 0.9rem;
+  font-weight: 400;
+  display: block;
+}
+.stage-tagline {
+  font-style: italic;
+  font-size: 0.92rem !important;
+  color: var(--aetas-gold) !important;
+  margin: -0.2rem 0 1rem !important;
+  line-height: 1.45 !important;
+  font-weight: 500;
+}
+.stage-meta {
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--aetas-turquoise) !important;
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0 !important;
+  font-weight: 600;
+}
+
 /* ---------- 9. Process steps ---------- */
 .process {
   display: grid;
@@ -611,19 +635,18 @@ article.post blockquote {
   background: var(--aetas-blue-dark);
   color: rgba(255, 255, 255, 0.7);
   padding-block: 4rem 2rem;
+  position: relative;
 }
-/* Explicit override - prevents Lighthouse inheriting rgba(255,255,255,0.7) as text colour */
-.site-footer .footer-heading {
-  color: #ffffff;
-}
-.footer-rule {
+.site-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
   height: 3px;
   background: linear-gradient(90deg, var(--aetas-gold) 0%, var(--aetas-turquoise) 100%);
-  margin-bottom: 0;
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   margin-bottom: 3rem;
 }
@@ -633,8 +656,7 @@ article.post blockquote {
 @media (max-width: 480px) {
   .footer-grid { grid-template-columns: 1fr; }
 }
-.footer-grid h4,
-.site-footer .footer-heading {
+.footer-grid h4 {
   color: #fff;
   font-size: 0.78rem;
   letter-spacing: var(--tracking-eyebrow);
@@ -680,6 +702,7 @@ article.post blockquote {
   margin-bottom: 0.5rem;
 }
 .stat-num strong { color: var(--aetas-gold-soft); font-weight: 600; }
+.section-blue .stat-num strong { color: #d4a847; }
 .stat-label {
   font-size: 0.78rem;
   letter-spacing: var(--tracking-eyebrow);
@@ -770,112 +793,149 @@ article.post blockquote {
   .filter-pill { font-size: 0.78rem; padding: 0.38rem 0.8rem; }
 }
 
-/* ============================================================
-   AETAS IMPACT - supplemental classes
-   ============================================================ */
 
-/* Section utilities */
-.section { padding-block: clamp(4rem, 9vw, 7rem); }
-.section-light { background: #fafaf7; }
-.section-intro { font-size: 1.05rem; color: var(--ink-soft); max-width: 680px; margin-bottom: 2.5rem; line-height: 1.75; }
-.section-eyebrow { display: flex; align-items: center; gap: 0.85rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aetas-turquoise); margin-bottom: 1rem; }
-.section-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--aetas-gold); }
-.hero-trust { font-size: 0.82rem; color: var(--ink-muted); margin-top: 1.25rem; }
-
-/* Card grids */
-.stat-card { padding: 2rem; background: var(--aetas-blue-soft, #f4f6fb); border-radius: var(--radius); border-left: 3px solid var(--aetas-turquoise); }
-.stat-card .stat-num { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 700; color: var(--aetas-blue); line-height: 1; margin-bottom: 0.5rem; }
-.stat-label { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.5; }
-
-/* Pillar / Framework cards */
-.pillar-number, .framework-number, .process-number { display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; color: var(--aetas-turquoise); text-transform: uppercase; margin-bottom: 0.75rem; }
-
-/* Framework card top accent */
-.framework-card { position: relative; border-top: 3px solid var(--aetas-turquoise) !important; }
-.framework-outcome { background: var(--aetas-blue-soft, #f4f6fb); padding: 1rem; border-radius: 4px; font-size: 0.88rem; margin-top: 1rem; }
-
-/* Ecosystem cards */
-.ecosystem-card { display: block; text-decoration: none; color: inherit; transition: box-shadow 220ms, border-color 220ms; }
-.ecosystem-card:hover { box-shadow: var(--shadow-md); border-color: var(--aetas-turquoise) !important; }
-.ecosystem-label { font-size: 0.82rem; font-weight: 700; color: var(--aetas-blue); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
-.ecosystem-desc { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.6; margin-bottom: 0.75rem; }
-
-/* Feature list */
-.feature-list { list-style: none; padding: 0; margin: 1rem 0 1.5rem; }
-.feature-list li { padding: 0.4rem 0 0.4rem 1.25rem; position: relative; font-size: 0.92rem; }
-.feature-list li::before { content: ''; position: absolute; left: 0; top: 0.75rem; width: 6px; height: 6px; border-radius: 50%; background: var(--aetas-turquoise); }
-
-/* FAQ accordion */
-.faq-list { margin-top: 2rem; }
-details.faq-item { border-bottom: 1px solid var(--line); }
-details.faq-item summary { padding: 1.25rem 0; font-weight: 600; color: var(--aetas-blue); cursor: pointer; font-size: 1rem; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-details.faq-item summary::-webkit-details-marker { display: none; }
-details.faq-item summary::after { content: '+'; font-size: 1.25rem; color: var(--aetas-turquoise); font-weight: 300; }
-details.faq-item[open] summary::after { content: '-'; }
-details.faq-item > div { padding: 0 0 1.25rem; }
-details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.75; }
-
-/* Sticky CTA bar */
-.sticky-cta { background: var(--aetas-blue); padding: 1.75rem 0; }
-.sticky-cta-inner { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
-.sticky-cta-text { flex: 1; min-width: 200px; }
-.sticky-cta-title { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 0.2rem; }
-.sticky-cta-sub { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
-.sticky-cta-meta { display: flex; gap: 1.5rem; }
-.sticky-cta-meta span { font-size: 0.8rem; color: rgba(255,255,255,0.55); }
-
-/* Related links nav */
-.related-links { background: #f4f6fb; border-top: 1px solid var(--line); padding: 1.75rem 0; }
-.related-links ul { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; list-style: none; padding: 0; margin: 0; }
-.related-links a { font-size: 0.85rem; color: var(--aetas-turquoise); text-decoration: none; font-weight: 500; }
-.related-links a:hover { text-decoration: underline; }
-
-/* Breadcrumb */
-.breadcrumb { padding: 0.6rem 0; border-bottom: 1px solid var(--line); background: #fff; font-size: 0.8rem; color: var(--ink-muted); }
-.breadcrumb ol { display: flex; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
-.breadcrumb a { color: var(--aetas-turquoise); text-decoration: none; }
-.breadcrumb li + li::before { content: '/'; margin-right: 0.5rem; color: var(--line); }
-
-/* CTA section dark */
-.cta-section { background: var(--aetas-blue); }
-.cta-section h2 { color: #fff; }
-.cta-card-dark { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius); padding: 2.5rem; }
-.cta-card-dark h3 { color: #fff; margin-bottom: 0.75rem; }
-.cta-card-dark p { color: rgba(255,255,255,0.75); font-size: 0.92rem; line-height: 1.7; margin-bottom: 1.5rem; }
-.cta-card-label { font-size: 2.5rem; font-weight: 700; color: rgba(255,255,255,0.12); line-height: 1; margin-bottom: 1rem; }
-
-/* Booking page */
-@media (min-width: 900px) {
-  .booking-two-col { display: grid; grid-template-columns: 1fr 420px; gap: 4rem; align-items: start; padding: 4rem 0; }
+/* ---- Nav dropdown ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--aetas-blue);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
-.booking-widget iframe { width: 100%; border: none; display: block; min-height: 620px; }
-.booking-detail { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.9rem; color: var(--ink-soft); }
-.booking-detail strong { color: var(--aetas-blue); min-width: 80px; }
-
-@media (max-width: 640px) {
-  .sticky-cta-meta { display: none; }
-  .sticky-cta-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown-menu li a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown-menu:hover { display: block; }
+.nav-caret { font-size: 0.6rem; margin-left: 0.3rem; vertical-align: middle; }
+@media (max-width: 768px) {
+  .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: transparent; padding: 0 0 0 1rem; }
+  .nav-dropdown-menu li a { color: rgba(255,255,255,0.7); padding: 0.4rem 0; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
 }
 
+
+/* ---- Master brand hierarchy ---- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aetas-blue);
+  line-height: 1;
+}
+.brand-text .brand-division {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-transform: none;
+  color: var(--aetas-turquoise);
+  line-height: 1;
+}
+
+
+/* === AETAS IMPACT supplement === */
+.section{padding-block:clamp(4rem,9vw,7rem);}
+.section-light{background:#fafaf7;}
+.section-intro{font-size:1.05rem;color:var(--ink-soft);max-width:680px;margin-bottom:2.5rem;line-height:1.75;}
+.hero-trust{font-size:0.82rem;color:var(--ink-muted);margin-top:1.25rem;}
+.stat-card{padding:2rem;background:var(--aetas-blue-soft,#f4f6fb);border-radius:var(--radius);border-left:3px solid var(--aetas-turquoise);}
+.stat-label{font-size:0.88rem;color:var(--ink-soft);line-height:1.5;}
+.pillar-number,.framework-number,.process-number{display:block;font-size:0.75rem;font-weight:700;letter-spacing:0.15em;color:var(--aetas-turquoise);text-transform:uppercase;margin-bottom:0.75rem;}
+.framework-card{border-top:3px solid var(--aetas-turquoise) !important;}
+.framework-outcome{background:var(--aetas-blue-soft,#f4f6fb);padding:1rem;border-radius:4px;font-size:0.88rem;margin-top:1rem;}
+.ecosystem-card{display:block;text-decoration:none;color:inherit;transition:box-shadow 220ms,border-color 220ms;}
+.ecosystem-card:hover{box-shadow:var(--shadow-md);border-color:var(--aetas-turquoise) !important;}
+.ecosystem-label{font-size:0.82rem;font-weight:700;color:var(--aetas-blue);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;}
+.ecosystem-desc{font-size:0.9rem;color:var(--ink-soft);line-height:1.6;margin-bottom:0.75rem;}
+.feature-list{list-style:none;padding:0;margin:1rem 0 1.5rem;}
+.feature-list li{padding:0.4rem 0 0.4rem 1.25rem;position:relative;font-size:0.92rem;}
+.feature-list li::before{content:'';position:absolute;left:0;top:0.75rem;width:6px;height:6px;border-radius:50%;background:var(--aetas-turquoise);}
+.faq-list{margin-top:2rem;}
+details.faq-item{border-bottom:1px solid var(--line);}
+details.faq-item summary{padding:1.25rem 0;font-weight:600;color:var(--aetas-blue);cursor:pointer;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;}
+details.faq-item summary::-webkit-details-marker{display:none;}
+details.faq-item summary::after{content:'+';font-size:1.25rem;color:var(--aetas-turquoise);font-weight:300;}
+details.faq-item[open] summary::after{content:'-';}
+details.faq-item > div{padding:0 0 1.25rem;}
+details.faq-item > div p{font-size:0.95rem;color:var(--ink-soft);line-height:1.75;}
+.sticky-cta{background:var(--aetas-blue);padding:1.75rem 0;}
+.sticky-cta-inner{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}
+.sticky-cta-text{flex:1;min-width:200px;}
+.sticky-cta-title{font-size:1rem;font-weight:600;color:#fff;margin-bottom:0.2rem;}
+.sticky-cta-sub{font-size:0.85rem;color:rgba(255,255,255,0.7);}
+.sticky-cta-meta{display:flex;gap:1.5rem;}
+.sticky-cta-meta span{font-size:0.8rem;color:rgba(255,255,255,0.55);}
+.related-links{background:#f4f6fb;border-top:1px solid var(--line);padding:1.75rem 0;}
+.related-links ul{display:flex;flex-wrap:wrap;gap:0.6rem 2rem;list-style:none;padding:0;margin:0;}
+.related-links a{font-size:0.85rem;color:var(--aetas-turquoise);text-decoration:none;font-weight:500;}
+.related-links a:hover{text-decoration:underline;}
+.cta-card-dark{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius);padding:2.5rem;}
+.cta-card-dark h3{color:#fff;margin-bottom:0.75rem;}
+.cta-card-dark p{color:rgba(255,255,255,0.75);font-size:0.92rem;line-height:1.7;margin-bottom:1.5rem;}
+.cta-card-label{font-size:2.5rem;font-weight:700;color:rgba(255,255,255,0.12);line-height:1;margin-bottom:1rem;}
+.booking-detail{display:flex;gap:0.5rem;margin-bottom:0.75rem;font-size:0.9rem;color:var(--ink-soft);}
+.booking-detail strong{color:var(--aetas-blue);min-width:80px;}
+@media(max-width:900px){
+  .booking-two-col{display:block;}
+  .booking-two-col > div:last-child{margin-top:2rem;}
+}
+@media(min-width:900px){
+  .booking-two-col{display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:start;padding:4rem 0;}
+}
+.booking-widget iframe{width:100%;border:none;display:block;min-height:620px;}
+@media(max-width:640px){
+  .sticky-cta-meta{display:none;}
+  .sticky-cta-inner{flex-direction:column;align-items:flex-start;gap:1rem;}
+}
   </style>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXS6JSC1LE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MXS6JSC1LE', { send_page_view: false });
-    window.addEventListener('DOMContentLoaded', function() {
-      setTimeout(function() { gtag('event', 'page_view'); }, 1000);
-    });
-  </script>
-  <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wtmefby0kh");</script>
 </head>
 <body>
-
 <header class="site-header">
   <div class="container nav-inner">
     <a href="./" class="brand" aria-label="Aetas Impact home">
-      <span class="brand-mark"><img fetchpriority="high" src="aetas-mark.svg" alt="Aetas" width="52" height="52" /></span>
+      <span class="brand-mark"><img fetchpriority="high" src="/aetas-mark.svg" alt="Aetas" width="52" height="52"></span>
       <span class="brand-text">
         <span class="brand-name">AETAS</span>
         <span class="brand-division">Impact</span>
@@ -885,7 +945,7 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="">Home</a></li>
+      <li><a href="./">Home</a></li>
       <li class="nav-dropdown">
         <a href="#" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Framework <span class="nav-caret">&#9660;</span></a>
         <ul class="nav-dropdown-menu">
@@ -903,7 +963,6 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
     </ul>
   </div>
 </header>
-
 <main id="main-content">
 
 <section class="hero">
@@ -922,68 +981,98 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
       <div class="hero-aside">
         <h3>What is limiting your organisation&#8217;s impact?</h3>
         <p style="font-size:0.95rem;color:var(--ink-soft);margin-bottom:1.5rem;line-height:1.6;">A short diagnostic that identifies where your organisation is under pressure and what a proportionate response looks like.</p>
-        <a href="diagnostic" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;">Take the Impact Diagnostic</a>
-        <hr style="border:none;border-top:1px solid var(--line);margin:1.5rem 0;" />
+        <a href="diagnostic" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;display:flex;">Take the Impact Diagnostic</a>
+        <hr style="border:none;border-top:1px solid var(--line);margin:1.5rem 0;">
         <a href="book-a-meeting" style="font-size:0.9rem;color:var(--aetas-turquoise);text-decoration:none;font-weight:500;">Or book an Impact Review &rarr;</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" style="background:var(--aetas-blue);color:#fff;">
+<section class="section" style="background:var(--aetas-blue);">
   <div class="container">
-    <div class="section-head" style="color:#fff;">
+    <div class="section-head">
       <div class="eyebrow" style="color:var(--aetas-gold-soft);">The challenge</div>
-      <h2>The gap between purpose and performance</h2>
-      <p style="color:rgba(255,255,255,0.78);">Purpose-led organisations face pressures that commercial businesses do not. The organisations that sustain impact over the long term are not the ones with the most resources. They are the ones that have built the right foundations.</p>
+      <h2 style="color:#fff;">The gap between purpose and performance</h2>
+      <p style="color:rgba(255,255,255,0.78);max-width:640px;margin:0 auto;">Purpose-led organisations face pressures that commercial businesses do not. The organisations that sustain impact are not the ones with the most resources. They are the ones that have built the right foundations.</p>
     </div>
-    <div class="grid grid-4" style="gap:2rem;">
+    <div class="grid grid-4" style="gap:2rem;margin-top:3rem;">
       <div style="text-align:center;padding:1.5rem;">
-        <div class="stat-num"><strong>&pound;51bn</strong></div>
-        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0;">Lost in UK productivity each year linked to financial stress</p>
+        <div class="stat-num" style="color:var(--aetas-gold-soft);"><strong>&pound;51bn</strong></div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0.5rem 0 0;">Lost annually in UK productivity linked to financial stress</p>
       </div>
       <div style="text-align:center;padding:1.5rem;">
-        <div class="stat-num"><strong>&pound;6.2bn</strong></div>
-        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0;">Annual cost through absence and lost focus</p>
+        <div class="stat-num" style="color:var(--aetas-gold-soft);"><strong>&pound;6.2bn</strong></div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0.5rem 0 0;">Annual cost through absence and lost workforce focus</p>
       </div>
       <div style="text-align:center;padding:1.5rem;">
-        <div class="stat-num"><strong>50&ndash;200%</strong></div>
-        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0;">Typical cost of replacing a mission-critical employee</p>
+        <div class="stat-num" style="color:var(--aetas-gold-soft);"><strong>50&ndash;200%</strong></div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0.5rem 0 0;">Typical cost of replacing a mission-critical employee</p>
       </div>
       <div style="text-align:center;padding:1.5rem;">
-        <div class="stat-num"><strong>1 in 3</strong></div>
-        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0;">Purpose-led organisations cite financial resilience as primary strategic concern</p>
+        <div class="stat-num" style="color:var(--aetas-gold-soft);"><strong>1 in 3</strong></div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin:0.5rem 0 0;">Purpose-led organisations cite financial resilience as primary concern</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-light">
+<section class="section">
   <div class="container">
     <div class="section-head left">
       <div class="eyebrow">Why organisations struggle</div>
       <h2>The four pressures that limit impact</h2>
     </div>
     <div class="grid grid-2" style="gap:2rem;">
-      <div class="card" style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
+      <div style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
         <div class="pillar-number">01</div>
         <h3 style="font-size:1.05rem;color:var(--aetas-blue);margin-bottom:0.75rem;">People leave</h3>
         <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Purpose brings staff in. Financial pressure, undercompensated roles and inadequate support drive them out. The cost is rarely visible until a programme has already been set back.</p>
       </div>
-      <div class="card" style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
+      <div style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
         <div class="pillar-number">02</div>
         <h3 style="font-size:1.05rem;color:var(--aetas-blue);margin-bottom:0.75rem;">Governance falls behind</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Boards are under increasing scrutiny from funders, regulators and beneficiaries. Governance is no longer a formality. It is a credibility signal that affects funding and public trust.</p>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Boards face increasing scrutiny from funders, regulators and beneficiaries. Governance is no longer a formality. It is a credibility signal that affects funding and public trust.</p>
       </div>
-      <div class="card" style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
+      <div style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
         <div class="pillar-number">03</div>
         <h3 style="font-size:1.05rem;color:var(--aetas-blue);margin-bottom:0.75rem;">Income is harder to sustain</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Grant funding is competitive and shrinking in real terms. Diversified income requires a different kind of infrastructure than most charities have had the capacity to build.</p>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Grant funding is competitive and shrinking in real terms. Diversified income requires infrastructure most charities have not had the capacity to build.</p>
       </div>
-      <div class="card" style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
+      <div style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);">
         <div class="pillar-number">04</div>
         <h3 style="font-size:1.05rem;color:var(--aetas-blue);margin-bottom:0.75rem;">Strategy gets crowded out</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Leadership time is absorbed by operational firefighting. The strategic thinking that builds long-term resilience rarely gets the space it needs when delivery pressure is constant.</p>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Leadership time is absorbed by operational firefighting. Strategic thinking that builds long-term resilience rarely gets the space it needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fafaf7;">
+  <div class="container">
+    <div class="section-head left">
+      <div class="eyebrow">Our framework</div>
+      <h2>The Impact Framework</h2>
+      <p class="section-intro">A structured approach to organisational resilience, built around your mission.</p>
+    </div>
+    <div class="grid grid-3" style="gap:2rem;">
+      <div style="padding:2.5rem;border:1px solid var(--line);border-top:3px solid var(--aetas-turquoise);border-radius:var(--radius);background:#fff;">
+        <div class="framework-number">01</div>
+        <h3 style="color:var(--aetas-blue);margin-bottom:0.75rem;">People</h3>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Benefits and pension review, financial education, and regulated guidance for your team. Reduced pressure. Higher retention.</p>
+        <a href="financial-wellbeing" style="font-size:0.88rem;font-weight:600;color:var(--aetas-turquoise);text-decoration:none;">Explore People &rarr;</a>
+      </div>
+      <div style="padding:2.5rem;border:1px solid var(--line);border-top:3px solid var(--aetas-turquoise);border-radius:var(--radius);background:#fff;">
+        <div class="framework-number">02</div>
+        <h3 style="color:var(--aetas-blue);margin-bottom:0.75rem;">Governance</h3>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Structures, reporting and evidence needed to demonstrate a well-run, resilient organisation to funders, regulators and beneficiaries.</p>
+        <a href="charities" style="font-size:0.88rem;font-weight:600;color:var(--aetas-turquoise);text-decoration:none;">Explore Governance &rarr;</a>
+      </div>
+      <div style="padding:2.5rem;border:1px solid var(--line);border-top:3px solid var(--aetas-turquoise);border-radius:var(--radius);background:#fff;">
+        <div class="framework-number">03</div>
+        <h3 style="color:var(--aetas-blue);margin-bottom:0.75rem;">Capacity</h3>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Where leadership time, financial infrastructure, income diversity and strategic clarity are constrained and what a proportionate response looks like.</p>
+        <a href="roei" style="font-size:0.88rem;font-weight:600;color:var(--aetas-turquoise);text-decoration:none;">Explore Capacity &rarr;</a>
       </div>
     </div>
   </div>
@@ -992,64 +1081,32 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
 <section class="section">
   <div class="container">
     <div class="section-head left">
-      <div class="eyebrow">Our framework</div>
-      <h2>The Impact Framework</h2>
-      <p class="section-intro">A structured approach to organisational resilience, built around your mission. Three pillars, introduced in sequence, each earning its place before the next is considered.</p>
-    </div>
-    <div class="grid grid-3" style="gap:2rem;">
-      <div class="card framework-card" style="padding:2.5rem;border:1px solid var(--line);border-radius:var(--radius);">
-        <div class="framework-number">01</div>
-        <h3 style="color:var(--aetas-blue);margin-bottom:0.5rem;">People</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1rem;">Your workforce is your delivery mechanism. We help you build a financially resilient team through benefits and pension review, financial education, and one-to-one guidance from a regulated financial planner.</p>
-        <a href="financial-wellbeing" class="btn-link">Explore People &rarr;</a>
-      </div>
-      <div class="card framework-card" style="padding:2.5rem;border:1px solid var(--line);border-radius:var(--radius);">
-        <div class="framework-number">02</div>
-        <h3 style="color:var(--aetas-blue);margin-bottom:0.5rem;">Governance</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1rem;">Strong governance is the foundation of funder confidence and long-term credibility. We work with trustees and senior leadership on the structures and reporting needed to demonstrate a well-run, resilient organisation.</p>
-        <a href="charities" class="btn-link">Explore Governance &rarr;</a>
-      </div>
-      <div class="card framework-card" style="padding:2.5rem;border:1px solid var(--line);border-radius:var(--radius);">
-        <div class="framework-number">03</div>
-        <h3 style="color:var(--aetas-blue);margin-bottom:0.5rem;">Capacity</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1rem;">Organisational capacity determines whether purpose-led organisations can sustain their impact. We identify where leadership time, financial infrastructure, income diversity and strategic clarity are constrained.</p>
-        <a href="roei" class="btn-link">Explore Capacity &rarr;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-light">
-  <div class="container">
-    <div class="section-head left">
       <div class="eyebrow">The entry point</div>
       <h2>Begin with an Impact Review</h2>
-      <p class="section-intro">A structured no-cost conversation for purpose-led organisations. We identify where your organisation is under pressure and what a proportionate response would look like.</p>
+      <p class="section-intro">A structured no-cost conversation. We identify where your organisation is under pressure and what a proportionate response would look like.</p>
     </div>
     <div class="grid grid-3" style="gap:2rem;">
       <div style="padding:2rem;background:var(--aetas-blue-soft,#f4f6fb);border-radius:var(--radius);">
         <div class="process-step">01</div>
         <h3 style="font-size:1rem;color:var(--aetas-blue);margin-bottom:0.75rem;">A structured two-part conversation</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">A diagnostic of where your organisation may be under pressure. An honest assessment of your current arrangements. A written summary you can take to trustees or your senior team.</p>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">A diagnostic of where your organisation may be under pressure. An honest assessment. A written summary suitable for trustees.</p>
       </div>
       <div style="padding:2rem;background:var(--aetas-blue-soft,#f4f6fb);border-radius:var(--radius);">
         <div class="process-step">02</div>
         <h3 style="font-size:1rem;color:var(--aetas-blue);margin-bottom:0.75rem;">Clarity before any commitment</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">A clear view of whether this is an issue in your specific organisation. Proportionate next steps, whether action is needed or not. An understanding of what it may be costing you to leave it unaddressed.</p>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">A clear view of whether this is an issue in your specific organisation. Proportionate next steps whether action is needed or not.</p>
       </div>
       <div style="padding:2rem;background:var(--aetas-blue-soft,#f4f6fb);border-radius:var(--radius);">
         <div class="process-step">03</div>
-        <h3 style="font-size:1rem;color:var(--aetas-blue);margin-bottom:0.75rem;">No cost. No obligation. Nothing pitched.</h3>
-        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Two short conversations, designed around your time. Nothing is recommended without the Review completing first. You come away with a clearer picture than you had going in.</p>
+        <h3 style="font-size:1rem;color:var(--aetas-blue);margin-bottom:0.75rem;">No cost. No obligation.</h3>
+        <p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.7;">Two short conversations around your time. Nothing recommended without the Review completing first.</p>
       </div>
     </div>
-    <div style="margin-top:2.5rem;">
-      <a href="book-a-meeting" class="btn btn-primary">Book an Impact Review</a>
-    </div>
+    <div style="margin-top:2.5rem;"><a href="book-a-meeting" class="btn btn-primary">Book an Impact Review</a></div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" style="background:#fafaf7;">
   <div class="container">
     <div class="section-head left">
       <div class="eyebrow">Common questions</div>
@@ -1058,7 +1115,7 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
     <div class="faq-list">
       <details class="faq-item">
         <summary>What is an Impact Review?</summary>
-        <div><p>A structured, no-cost diagnostic process. It identifies where your organisation may be under pressure across people, governance and capacity, and produces a written assessment with proportionate next steps. Two short conversations, no obligation, useful on its own or as the first step in a broader engagement.</p></div>
+        <div><p>A structured, no-cost two-part diagnostic. It identifies where your organisation may be under pressure across people, governance and capacity, and produces a written assessment with proportionate next steps. No obligation, useful on its own or as the first step in a broader engagement.</p></div>
       </details>
       <details class="faq-item">
         <summary>Who is this for?</summary>
@@ -1066,49 +1123,25 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
       </details>
       <details class="faq-item">
         <summary>What does it cost?</summary>
-        <div><p>The Impact Review is always provided at no cost. Where a programme is recommended, fees are per-employee, agreed in writing, and presented alongside the savings the Review identifies so trustees see the net position before approving. Indicative full programme rates run from around &pound;140 to &pound;165 per employee per year.</p></div>
+        <div><p>The Impact Review is always at no cost. Where a programme is recommended, fees are per-employee, agreed in writing, presented alongside the savings identified so trustees see the net position before approving. Indicative full programme rates run from around &pound;140 to &pound;165 per employee per year.</p></div>
       </details>
       <details class="faq-item">
-        <summary>Is this appropriate for trustees to consider?</summary>
-        <div><p>Yes. This service is specifically designed to be governed and reported at board level. The Review produces a written summary suitable for trustee discussion. Ongoing reporting covers financial savings, workforce outcomes and engagement metrics in a format designed for board updates and major funder conversations.</p></div>
+        <summary>Is this appropriate for trustees?</summary>
+        <div><p>Yes. The Review produces a written summary suitable for trustee discussion. Ongoing reporting covers financial savings, workforce outcomes and engagement metrics in a format designed for board updates and major funder conversations.</p></div>
       </details>
     </div>
-    <div style="margin-top:2rem;">
-      <a href="faqs" class="btn btn-outline">See all FAQs</a>
-    </div>
+    <div style="margin-top:2rem;"><a href="faqs" class="btn btn-outline">See all FAQs</a></div>
   </div>
 </section>
 
-<section class="section section-light">
+<section class="section" style="background:var(--aetas-blue);">
   <div class="container">
-    <div class="section-head left">
-      <div class="eyebrow">Part of the Aetas Group</div>
-      <h2>A complete advisory ecosystem</h2>
-      <p class="section-intro">Aetas Impact is part of a broader advisory group built around three connected audiences. Where an engagement naturally opens a conversation in another area, we introduce the right support at the right time.</p>
-    </div>
-    <div class="grid grid-2" style="gap:2rem;">
-      <a href="https://aetas-wealth.com/" class="ecosystem-card card" style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);" rel="noopener">
-        <div class="ecosystem-label">Aetas Wealth</div>
-        <div class="ecosystem-desc">Independent financial planning for individuals, families and business owners. Relevant for trustees, executives and senior leaders managing personal wealth alongside their mission.</div>
-        <span style="font-size:0.88rem;font-weight:600;color:var(--aetas-turquoise);">Visit Aetas Wealth &rarr;</span>
-      </a>
-      <a href="https://performance.aetas-wealth.com/" class="ecosystem-card card" style="padding:2rem;border:1px solid var(--line);border-radius:var(--radius);" rel="noopener">
-        <div class="ecosystem-label">Aetas Performance</div>
-        <div class="ecosystem-desc">Business performance consultancy for SMEs. Where an Impact engagement surfaces needs in a commercial organisation, Aetas Performance provides the right framework.</div>
-        <span style="font-size:0.88rem;font-weight:600;color:var(--aetas-turquoise);">Visit Aetas Performance &rarr;</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section cta-section" style="background:var(--aetas-blue);">
-  <div class="container">
-    <div class="section-head" style="color:#fff;">
+    <div class="section-head">
       <div class="eyebrow" style="color:var(--aetas-gold-soft);">Get started</div>
-      <h2>Two ways to take the next step</h2>
+      <h2 style="color:#fff;">Two ways to take the next step</h2>
       <p style="color:rgba(255,255,255,0.75);">Both are provided at no cost and carry no obligation.</p>
     </div>
-    <div class="grid grid-2" style="gap:2rem;">
+    <div class="grid grid-2" style="gap:2rem;margin-top:3rem;">
       <div class="cta-card-dark">
         <div class="cta-card-label">A</div>
         <h3>Book an Impact Review</h3>
@@ -1118,134 +1151,127 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
       <div class="cta-card-dark">
         <div class="cta-card-label">B</div>
         <h3>Take the Impact Diagnostic</h3>
-        <p>A short self-assessment across four areas of organisational resilience. Takes around six minutes and produces a scored picture of where your gaps may be.</p>
+        <p>A short self-assessment across four areas of organisational resilience. Six minutes. Scored results with a personalised interpretation.</p>
         <a href="diagnostic" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">Start the Diagnostic</a>
       </div>
     </div>
   </div>
 </section>
-
 </main>
-
-<nav class="related-links" aria-label="Related pages">
-  <div class="container">
-    <ul>
-      <li><a href="impact-review">Impact Review: what to expect</a></li>
-      <li><a href="pricing">Transparent per-employee pricing</a></li>
-      <li><a href="diagnostic">How resilient is your organisation?</a></li>
-      <li><a href="faqs">Your questions, answered clearly</a></li>
-      <li><a href="roei">ROEI Framework for purpose-led organisations</a></li>
-      <li><a href="book-a-meeting">A no-cost conversation. No obligation beyond it.</a></li>
-      <li><a href="https://aetas-wealth.com/">Financial planning for trustees and executives</a></li>
-    </ul>
-  </div>
-</nav>
-
-<div class="sticky-cta">
-  <div class="container">
-    <div class="sticky-cta-inner">
-      <div class="sticky-cta-text">
-        <div class="sticky-cta-title">Book an Impact Review</div>
-        <div class="sticky-cta-sub">A focused conversation with Matthew Steiner. No cost. No obligation.</div>
-      </div>
-      <div class="sticky-cta-meta">
-        <span>30 minutes</span>
-        <span>No cost or obligation</span>
-        <span>Clear next steps</span>
-      </div>
-      <a href="book-a-meeting" class="btn btn-primary">Book an Impact Review</a>
-    </div>
-  </div>
-</div>
-
 <footer class="site-footer">
+  <div class="footer-rule"></div>
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand" style="margin-bottom:1rem;">
-          <span class="brand-mark" style="background:#fff;padding:4px;border-radius:4px;">
-            <img src="aetas-mark.svg" alt="Aetas" width="36" height="36" />
-          </span>
-          <span class="brand-text">
-            <span class="brand-name" style="color:#fff;">AETAS</span>
-            <span class="brand-division" style="color:var(--aetas-turquoise);">Impact</span>
-          </span>
-        </div>
-        <p style="color:#c8d0e0;font-size:0.9rem;">Advisory for purpose-led organisations. Helping charities, not-for-profits, social enterprises, foundations and trusts build resilience, strengthen governance, and sustain long-term impact.</p>
-        <p style="margin-top:0.75rem;font-size:0.88rem;"><a href="mailto:matthew.steiner@aetas-wealth.com" style="color:rgba(255,255,255,0.7);">matthew.steiner@aetas-wealth.com</a></p>
-      </div>
       <div>
-        <h4>Navigate</h4>
+        <p class="footer-heading" style="color:#ffffff">Business Journey</p>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="impact-review">Impact Review</a></li>
-          <li><a href="charities">How We Help</a></li>
-          <li><a href="financial-wellbeing">People and Wellbeing</a></li>
-          <li><a href="roei">ROEI Framework</a></li>
-          <li><a href="pricing">Pricing</a></li>
-          <li><a href="faqs">FAQs</a></li>
-          <li><a href="insights">Insights</a></li>
+          <li><a href="/business-journey/">Overview</a></li>
+          <li><a href="/business-journey/starting-your-business/">Starting Your Business</a></li>
+          <li><a href="/business-journey/growing-your-business/">Growing Your Business</a></li>
+          <li><a href="/business-journey/scaling-your-business/">Scaling Your Business</a></li>
+          <li><a href="/business-journey/planning-your-exit/">Planning Your Exit</a></li>
         </ul>
       </div>
       <div>
-        <h4>Tools</h4>
+        <p class="footer-heading" style="color:#ffffff">Services</p>
         <ul>
-          <li><a href="diagnostic">Impact Diagnostic</a></li>
-          <li><a href="calculator">ROEI Calculator</a></li>
+          <li><a href="/limited-companies">Leadership &amp; People</a></li>
+          <li><a href="/llps">Employee Wellbeing</a></li>
+          <li><a href="/limited-companies#benefits">Employee Benefits</a></li>
+          <li><a href="/roei">Business Performance</a></li>
+          <li><a href="/investment">Pricing</a></li>
         </ul>
-        <h4 style="margin-top:1.5rem;">Also part of Aetas</h4>
+        <p style="margin: 1rem 0 0.4rem 0; font-weight: 600; color: #fff;">Tools &amp; Resources</p>
+        <ul>
+          <li><a href="/diagnostic">Performance Diagnostic</a></li>
+          <li><a href="/calculator">ROEI Calculator</a></li>
+          <li><a href="/insights">Insights</a></li>
+          <li><a href="/faqs">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading" style="color:#ffffff">The Aetas Group</p>
         <ul>
           <li><a href="https://aetas-wealth.com/" target="_blank" rel="noopener">Aetas Wealth</a></li>
-          <li><a href="https://performance.aetas-wealth.com/" target="_blank" rel="noopener">Aetas Performance</a></li>
+          <li><a href="https://charities.aetas-wealth.com/" target="_blank" rel="noopener">Aetas Impact</a></li>
+          <li><a href="/">Aetas Impact</a></li>
         </ul>
+        <p style="margin:1.5rem 0 0.75rem;font-size:0.9rem;color:rgba(255,255,255,0.78);">Aetas Wealth is a trading name of Insight Financial Associates Ltd, authorised and regulated by the FCA (FRN 458421).</p>
+        <p style="margin:0;font-size:0.9rem;color:rgba(255,255,255,0.78);">13 Hanover Square, Mayfair, London W1S 1HN</p>
       </div>
       <div>
-        <h4>Offices</h4>
-        <p style="font-weight:600;color:#fff;margin:0 0 0.3rem;">London</p>
-        <ul style="margin-bottom:1.25rem;">
-          <li>13 Hanover Square</li><li>Mayfair, London</li><li>W1S 1HN</li>
+        <p class="footer-heading" style="color:#ffffff">Offices</p>
+        <p style="margin: 0 0 0.4rem 0; font-weight: 600; color: #fff;">London</p>
+        <ul style="margin-bottom: 1.25rem;">
+          <li>13 Hanover Square</li>
+          <li>Mayfair, London</li>
+          <li>W1S 1HN</li>
         </ul>
-        <p style="font-weight:600;color:#fff;margin:0 0 0.3rem;">Norwich</p>
+        <p style="margin: 0 0 0.4rem 0; font-weight: 600; color: #fff;">Norwich</p>
         <ul>
-          <li>Insight House</li><li>7a Alkmaar Way</li><li>Norwich NR6 6BF</li>
+          <li>Insight House</li>
+          <li>7a Alkmaar Way</li>
+          <li>Norwich International Business Park</li>
+          <li>NR6 6BF</li>
         </ul>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <p style="font-size:0.82rem;color:rgba(255,255,255,0.6);">Aetas Impact is the purpose-led advisory arm of the Aetas group. Where regulated financial advice is required, this is provided by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (FCA registration: 458421).</p>
-      <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.5rem;">&copy; 2026 Aetas Impact. All rights reserved. <a href="privacy" style="color:rgba(255,255,255,0.5);">Privacy Policy</a></p>
+      <p>Aetas Impact provides business performance consultancy, employee wellbeing, financial education and employee benefits services to employers. These services support organisational performance, financial understanding, engagement and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by <strong>Aetas Wealth</strong>, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration number 458421).</p>
+      <p>&#169; <span data-year>2026</span> Aetas Impact. All rights reserved. <a href="privacy" style="text-decoration:underline;">Privacy Policy</a></p>
     </div>
   </div>
 </footer>
-
-<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:var(--aetas-blue);color:rgba(255,255,255,0.85);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;z-index:999;font-size:0.88rem;">
-  <p style="margin:0;">This site uses Google Analytics to understand how it is used, with IP addresses anonymised. No personal data is collected through analytics. <a href="privacy" style="color:var(--aetas-turquoise);">Privacy Policy</a></p>
-  <div style="display:flex;gap:0.75rem;flex-shrink:0;">
-    <button id="cookie-accept" style="background:var(--aetas-turquoise);color:#fff;border:none;padding:0.5rem 1.25rem;border-radius:2px;cursor:pointer;font-size:0.88rem;">Accept</button>
-    <button id="cookie-decline" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.3);padding:0.5rem 1.25rem;border-radius:2px;cursor:pointer;font-size:0.88rem;">Decline</button>
+<!-- Cookie notice -->
+<div id="cookie-notice" role="dialog" aria-label="Cookie notice" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#00205B;color:#fff;padding:1rem 1.5rem;font-size:0.85rem;line-height:1.6;box-shadow:0 -2px 12px rgba(0,0,0,0.2);">
+  <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+    <p style="margin:0;flex:1;min-width:200px;">This site uses Google Analytics to understand how it is used, with IP addresses anonymised. No personal data is collected through analytics. <a href="/privacy" style="color:#00c4c4;text-decoration:underline;">Privacy Policy</a></p>
+    <div style="display:flex;gap:0.75rem;flex-shrink:0;">
+      <button id="cookie-accept" style="background:#00747E;color:#fff;border:none;padding:0.5rem 1.25rem;border-radius:4px;cursor:pointer;font-size:0.85rem;font-weight:600;">Accept</button>
+      <button id="cookie-decline" style="background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.3);padding:0.5rem 1.25rem;border-radius:4px;cursor:pointer;font-size:0.85rem;">Decline</button>
+    </div>
   </div>
 </div>
-
 <script>
-/* Aetas Impact - Site interactions */
+(function(){
+  var notice = document.getElementById('cookie-notice');
+  if (!notice) return;
+  var consent = localStorage.getItem('aetas-cookie-consent');
+  if (!consent) {
+    notice.style.display = 'block';
+  }
+  document.getElementById('cookie-accept').addEventListener('click', function(){
+    localStorage.setItem('aetas-cookie-consent', 'accepted');
+    notice.style.display = 'none';
+    // Fire analytics immediately on accept (don't wait for next interaction)
+    if (window.gtag) return;
+    var GA4_ID = 'G-HNH05BKNFX';
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA4_ID, { anonymize_ip: true });
+  });
+  document.getElementById('cookie-decline').addEventListener('click', function(){
+    localStorage.setItem('aetas-cookie-consent', 'declined');
+    notice.style.display = 'none';
+  });
+})();
+</script>
+<!-- /Cookie notice -->
+<script>
+/* ============================================================
+   Aetas Wealth ,  Site interactions
+   Mobile nav toggle, active link, scroll reveal
+   ============================================================ */
+
 (function () {
   'use strict';
-
-  // Cookie banner
-  if(localStorage.getItem('aetas-cookie-consent')) {
-    var b = document.getElementById('cookie-banner');
-    if(b) b.style.display='none';
-  }
-  var ca = document.getElementById('cookie-accept');
-  if(ca) ca.addEventListener('click', function(){
-    localStorage.setItem('aetas-cookie-consent','accepted');
-    document.getElementById('cookie-banner').style.display='none';
-  });
-  var cd = document.getElementById('cookie-decline');
-  if(cd) cd.addEventListener('click', function(){
-    localStorage.setItem('aetas-cookie-consent','declined');
-    document.getElementById('cookie-banner').style.display='none';
-  });
 
   // Dropdown nav toggle on mobile
   document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
@@ -1259,7 +1285,8 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
     });
   });
 
-  // Mobile nav toggle
+
+  // ---------- Mobile nav toggle ----------
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
   if (toggle && links) {
@@ -1270,7 +1297,7 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
     });
   }
 
-  // Highlight active nav link
+  // ---------- Highlight active nav link ----------
   const path = window.location.pathname.replace(/\/$/, '');
   document.querySelectorAll('.nav-links a').forEach(function (a) {
     const href = a.getAttribute('href') || '';
@@ -1283,19 +1310,27 @@ details.faq-item > div p { font-size: 0.95rem; color: var(--ink-soft); line-heig
     }
   });
 
-  // Scroll reveal
+  // ---------- Scroll reveal ----------
   if ('IntersectionObserver' in window) {
     const obs = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); obs.unobserve(entry.target); }
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
     document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
   } else {
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
   }
-})();
-</script>
 
+  // ---------- Year in footer ----------
+  const yr = document.querySelector('[data-year]');
+  if (yr) yr.textContent = new Date().getFullYear();
+})();
+
+</script>
 </body>
 </html>
