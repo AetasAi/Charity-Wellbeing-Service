@@ -1,0 +1,35 @@
+<svg viewBox="0 0 720 710" xmlns="http://www.w3.org/2000/svg" font-family="Open Sans, Arial, sans-serif" role="img" aria-label="The Aetas Impact System operating model">
+<rect x="0" y="0" width="720" height="710" fill="#ffffff"/>
+<defs><radialGradient id="hubg" cx="50%" cy="42%" r="70%"><stop offset="0%" stop-color="#0a2f73"/><stop offset="100%" stop-color="#001640"/></radialGradient></defs>
+<circle cx="360" cy="330" r="236" fill="none" stroke="#e6e8ee" stroke-width="28"/>
+<line x1="360.0" y1="108.0" x2="360.0" y2="80.0" stroke="#d9dde6" stroke-width="2"/>
+<line x1="582.0" y1="330.0" x2="610.0" y2="330.0" stroke="#d9dde6" stroke-width="2"/>
+<line x1="360.0" y1="552.0" x2="360.0" y2="580.0" stroke="#d9dde6" stroke-width="2"/>
+<line x1="138.0" y1="330.0" x2="110.0" y2="330.0" stroke="#d9dde6" stroke-width="2"/>
+<path d="M 222.44 166.07 A 214 214 0 0 1 497.56 166.07 L 426.85 250.33 A 104 104 0 0 0 293.15 250.33 Z" fill="#00205B"/>
+<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="360.0" y="175.0">Governance</tspan></text>
+<path d="M 523.93 192.44 A 214 214 0 0 1 523.93 467.56 L 439.67 396.85 A 104 104 0 0 0 439.67 263.15 Z" fill="#00747E"/>
+<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="519.0" y="323.0">Financial</tspan><tspan x="519.0" y="345.0">Resilience</tspan></text>
+<path d="M 497.56 493.93 A 214 214 0 0 1 222.44 493.93 L 293.15 409.67 A 104 104 0 0 0 426.85 409.67 Z" fill="#896C2E"/>
+<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="360.0" y="482.0">People &amp;</tspan><tspan x="360.0" y="504.0">Wellbeing</tspan></text>
+<path d="M 196.07 467.56 A 214 214 0 0 1 196.07 192.44 L 280.33 263.15 A 104 104 0 0 0 280.33 396.85 Z" fill="#3f5170"/>
+<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="201.0" y="323.0">Strategy &amp;</tspan><tspan x="201.0" y="345.0">Growth</tspan></text>
+<circle cx="360" cy="330" r="96" fill="url(#hubg)"/>
+<circle cx="360" cy="330" r="96" fill="none" stroke="#896C2E" stroke-width="2.5"/>
+<text x="360" y="300" text-anchor="middle" font-size="12.5" font-weight="700" fill="#d4a847" letter-spacing="2">MISSION</text>
+<text x="360" y="319" text-anchor="middle" font-size="12.5" font-weight="700" fill="#d4a847" letter-spacing="2">RESILIENCE INDEX</text>
+<line x1="314" y1="332" x2="406" y2="332" stroke="rgba(255,255,255,0.28)" stroke-width="1"/>
+<text x="360" y="354" text-anchor="middle" font-size="15" font-weight="300" fill="#fff">greater</text>
+<text x="360" y="374" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">mission impact</text>
+<text x="360" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#00205B" letter-spacing="3">THE AETAS IMPACT SYSTEM</text>
+<rect x="52" y="656" width="196" height="40" rx="20" fill="#00205B"/>
+<text x="150" y="681" text-anchor="middle" font-size="14.5" font-weight="600" fill="#fff">1   Measure the risk</text>
+<rect x="262" y="656" width="196" height="40" rx="20" fill="#00747E"/>
+<text x="360" y="681" text-anchor="middle" font-size="14.5" font-weight="600" fill="#fff">2   Build resilience</text>
+<rect x="472" y="656" width="196" height="40" rx="20" fill="#896C2E"/>
+<text x="570" y="681" text-anchor="middle" font-size="14.5" font-weight="600" fill="#fff">3   Prove the impact</text>
+<text x="187.5" y="161.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#4a5269" letter-spacing="1.2">STABILISE</text>
+<text x="532.5" y="161.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#4a5269" letter-spacing="1.2">STRENGTHEN</text>
+<text x="532.5" y="506.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#4a5269" letter-spacing="1.2">SCALE</text>
+<text x="187.5" y="506.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#4a5269" letter-spacing="1.2">SUSTAIN</text>
+</svg>
