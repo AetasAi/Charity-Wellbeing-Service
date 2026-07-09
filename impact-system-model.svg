@@ -7,13 +7,13 @@
 <line x1="360.0" y1="552.0" x2="360.0" y2="580.0" stroke="#d9dde6" stroke-width="2"/>
 <line x1="138.0" y1="330.0" x2="110.0" y2="330.0" stroke="#d9dde6" stroke-width="2"/>
 <path d="M 222.44 166.07 A 214 214 0 0 1 497.56 166.07 L 426.85 250.33 A 104 104 0 0 0 293.15 250.33 Z" fill="#00205B"/>
-<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="360.0" y="175.0">Governance</tspan></text>
+<text text-anchor="middle" font-size="17.5" font-weight="700" fill="#fff"><tspan x="360.0" y="156.0">Financial</tspan><tspan x="360.0" y="178.0">Resilience</tspan></text>
 <path d="M 523.93 192.44 A 214 214 0 0 1 523.93 467.56 L 439.67 396.85 A 104 104 0 0 0 439.67 263.15 Z" fill="#00747E"/>
-<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="519.0" y="323.0">Financial</tspan><tspan x="519.0" y="345.0">Resilience</tspan></text>
+<text text-anchor="middle" font-size="17.5" font-weight="700" fill="#fff"><tspan x="527.0" y="323.0">Financial</tspan><tspan x="527.0" y="345.0">Education</tspan></text>
 <path d="M 497.56 493.93 A 214 214 0 0 1 222.44 493.93 L 293.15 409.67 A 104 104 0 0 0 426.85 409.67 Z" fill="#896C2E"/>
-<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="360.0" y="482.0">People &amp;</tspan><tspan x="360.0" y="504.0">Wellbeing</tspan></text>
+<text text-anchor="middle" font-size="17.5" font-weight="700" fill="#fff"><tspan x="360.0" y="490.0">People &amp;</tspan><tspan x="360.0" y="512.0">Wellbeing</tspan></text>
 <path d="M 196.07 467.56 A 214 214 0 0 1 196.07 192.44 L 280.33 263.15 A 104 104 0 0 0 280.33 396.85 Z" fill="#3f5170"/>
-<text text-anchor="middle" font-size="19" font-weight="700" fill="#fff"><tspan x="201.0" y="323.0">Strategy &amp;</tspan><tspan x="201.0" y="345.0">Growth</tspan></text>
+<text text-anchor="middle" font-size="17.5" font-weight="700" fill="#fff"><tspan x="193.0" y="323.0">Organisational</tspan><tspan x="193.0" y="345.0">Capability</tspan></text>
 <circle cx="360" cy="330" r="96" fill="url(#hubg)"/>
 <circle cx="360" cy="330" r="96" fill="none" stroke="#896C2E" stroke-width="2.5"/>
 <text x="360" y="310" text-anchor="middle" font-size="36" font-weight="700" fill="#d4a847" letter-spacing="2">ORI</text>
