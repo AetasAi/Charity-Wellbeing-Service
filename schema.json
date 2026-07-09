@@ -1,182 +1,166 @@
 {
-  "_instructions": "Add the relevant schema block to the <head> of each HTML page as a <script type='application/ld+json'> tag. Each page has its own block below.",
-
-  "home_index": {
-    "_page": "index.html",
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Aetas Performance — For Charities and Not-for-Profits",
-    "url": "https://impact.aetas-wealth.com/",
-    "description": "Specialist governance, financial guidance, and staff financial wellbeing services for charities and not-for-profit organisations. Delivered by Aetas Impact, a service of Aetas Wealth.",
-    "provider": {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Organization",
-      "name": "Aetas Performance",
-      "url": "https://impact.aetas-wealth.com",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "matthew.steiner@aetas-partners.com",
-        "telephone": "+442036330579",
-        "contactType": "Customer Service"
-      }
-    },
-    "about": [
-      { "@type": "Thing", "name": "Charity governance" },
-      { "@type": "Thing", "name": "Investment Policy Statement" },
-      { "@type": "Thing", "name": "Financial wellbeing" },
-      { "@type": "Thing", "name": "Not-for-profit financial guidance" },
-      { "@type": "Thing", "name": "Trustee training" }
-    ]
-  },
-
-  "governance": {
-    "_page": "governance.html",
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Governance for Charities",
-    "url": "https://impact.aetas-wealth.com/governance",
-    "description": "Independent governance support for charity trustees and boards. Covers Investment Policy Statements, ethical investment frameworks, trustee training, and Charity Commission compliance. Offered by Aetas Impact.",
-    "provider": {
-      "@type": "Organization",
+      "@id": "https://impact.aetas-wealth.com/#organization",
       "name": "Aetas Impact",
-      "description": "Independent advisory firm specialising in governance and financial guidance for charities and philanthropic organisations."
-    },
-    "serviceType": "Charity Governance Advisory",
-    "areaServed": "GB",
-    "audience": {
-      "@type": "Audience",
-      "audienceType": "Charity trustees and boards, not-for-profit organisations"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Governance Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment Policy Statement drafting and review" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Independent investment manager oversight" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ethical investment framework development" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trustee training and board education" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Charity Commission compliance support" } }
-      ]
-    }
-  },
-
-  "financial_guidance": {
-    "_page": "financial-guidance.html",
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Financial Guidance for Charities",
-    "url": "https://impact.aetas-wealth.com/financial-guidance",
-    "description": "Independent financial guidance for charities covering investment performance benchmarking, fee transparency including OCF analysis, cash management strategy, and investment manager search and review. Offered by Aetas Impact.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Aetas Impact"
-    },
-    "serviceType": "Charity Financial Advisory",
-    "areaServed": "GB",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Financial Guidance Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment performance benchmarking against ARC Charity Indices" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fee transparency and OCF analysis" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cash management strategy" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment manager search and tender support" } }
-      ]
-    }
-  },
-
-  "financial_wellbeing": {
-    "_page": "financial-wellbeing.html",
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Financial Wellbeing for Charity Staff",
-    "url": "https://impact.aetas-wealth.com/financial-wellbeing",
-    "description": "Consultancy-led financial wellbeing programme for charity and not-for-profit employees. Covers employee benefits consultancy, financial resilience workshops, confidential one-to-one guidance, and wellbeing initiatives. Powered by Aetas Performance.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Aetas Performance",
-      "url": "https://impact.aetas-wealth.com"
-    },
-    "serviceType": "Workplace Financial Wellbeing",
-    "areaServed": "GB",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Financial Wellbeing Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Employee benefits consultancy" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Financial resilience workshops" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-to-one financial guidance" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wellbeing and incentive initiatives" } }
-      ]
-    }
-  },
-
-  "faqs": {
-    "_page": "faqs.html",
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "name": "FAQs — Aetas Performance for Charities",
-    "url": "https://impact.aetas-wealth.com/faqs",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is an Investment Policy Statement and do we legally need one?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An Investment Policy Statement (IPS) is a formal document setting out your charity's investment objectives, risk appetite, ethical restrictions, and governance framework. If your charity has delegated discretionary investment management to an external manager, an IPS is a legal requirement under Charity Commission guidance."
-        }
+      "url": "https://impact.aetas-wealth.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://impact.aetas-wealth.com/aetas-mark.svg"
       },
-      {
-        "@type": "Question",
-        "name": "What is an OCF and why does it matter?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An Ongoing Charges Figure (OCF) is a fee embedded within investment funds, deducted directly from fund assets. It does not appear as a visible line on a statement and is frequently not raised in trustee meetings. Over time, OCF charges can represent a material drag on net returns."
-        }
+      "description": "Aetas Impact helps charities, not-for-profits and purpose-led organisations build organisational and financial resilience — across financial resilience, financial education, people and wellbeing, and organisational capability — so they can sustain their mission for the long term.",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Aetas Wealth",
+        "url": "https://aetas-wealth.com"
       },
-      {
-        "@type": "Question",
-        "name": "Is this affordable for a not-for-profit?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The initial discovery conversation is provided at no cost. If further work is recommended, fees are transparent and agreed in advance. In many cases, improvements identified through a benefits and investment review generate savings that offset the cost of the engagement."
-        }
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
       },
-      {
-        "@type": "Question",
-        "name": "We already have an Employee Assistance Programme. Does that cover financial wellbeing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An EAP typically provides reactive, crisis-focused support. It does not review your benefits structure, run financial resilience workshops, or provide one-to-one guidance from a regulated financial planner. Aetas ITW sits alongside an EAP, addressing proactive financial capability building."
-        }
+      "knowsAbout": [
+        "Charity governance",
+        "Charity Governance Code",
+        "Trustee responsibilities",
+        "Organisational resilience",
+        "Charity financial wellbeing",
+        "Not-for-profit advisory",
+        "Purpose-led organisation strategy",
+        "Pension governance for charities",
+        "Impact measurement",
+        "Capacity building"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/aetas-wealth/",
+        "https://aetas-wealth.com"
+      ],
+      "telephone": "+44 20 7183 8485",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "13 Hanover Square",
+        "addressLocality": "London",
+        "postalCode": "W1S 1HN",
+        "addressCountry": "GB"
       }
-    ]
-  },
-
-  "organisation": {
-    "_page": "All pages — add to every page",
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Aetas Performance",
-    "alternateName": "Aetas ITW",
-    "url": "https://impact.aetas-wealth.com",
-    "description": "Consultancy-led financial wellbeing and governance service for charities and not-for-profit organisations.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+442036330579",
-      "email": "matthew.steiner@aetas-partners.com",
-      "contactType": "Sales",
-      "areaServed": "GB",
-      "availableLanguage": "English"
     },
-    "founder": {
+    {
+      "@type": "WebSite",
+      "@id": "https://impact.aetas-wealth.com/#website",
+      "url": "https://impact.aetas-wealth.com/",
+      "name": "Aetas Impact",
+      "publisher": {
+        "@id": "https://impact.aetas-wealth.com/#organization"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://impact.aetas-wealth.com/#webpage",
+      "url": "https://impact.aetas-wealth.com/",
+      "name": "Aetas Impact | Advisory for Purpose-Led Organisations",
+      "description": "Aetas Impact helps charities, not-for-profits and purpose-led organisations build organisational and financial resilience so they can sustain and grow their mission. Start with a free Impact Review.",
+      "isPartOf": {
+        "@id": "https://impact.aetas-wealth.com/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://impact.aetas-wealth.com/#service",
+      "name": "Aetas Impact",
+      "url": "https://impact.aetas-wealth.com/",
+      "description": "Organisational and financial resilience advisory for charities, not-for-profits, social enterprises and purpose-led organisations across the UK.",
+      "provider": {
+        "@id": "https://impact.aetas-wealth.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Charities, not-for-profits, social enterprises and purpose-led organisations"
+      },
+      "serviceType": "Charity Organisational and Financial Resilience Advisory",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Aetas Impact Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Impact Review",
+              "description": "A structured two-part diagnostic at no cost identifying pressure across financial resilience, people and wellbeing, financial education and organisational capability."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "People and Wellbeing",
+              "description": "Pension, benefits and financial support review for charity staff."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Financial Education",
+              "description": "Financial education and guidance for trustees, leaders, employees and volunteers to support confident financial decisions."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Organisational Capability",
+              "description": "Strengthening structures, planning, partnerships and operational effectiveness for sustainable mission delivery."
+            }
+          }
+        ]
+      }
+    },
+    {
       "@type": "Person",
+      "@id": "https://impact.aetas-wealth.com/#person-matthew-steiner",
       "name": "Matthew Steiner",
-      "jobTitle": "Founder and Lead Consultant"
+      "jobTitle": "Founding Director",
+      "description": "Matthew Steiner leads every Aetas Impact engagement directly. He has over 20 years of experience in financial services and advisory.",
+      "url": "https://aetas-wealth.com/team/matthew-steiner",
+      "worksFor": {
+        "@id": "https://impact.aetas-wealth.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/matthewsteiner/"
+      ]
     },
-    "sameAs": [
-      "https://aetas-partners.com",
-      "https://aetas-wealth.com",
-      "https://itw.aetaspartners.com"
-    ]
-  }
+    {
+      "@type": "Service",
+      "@id": "https://impact.aetas-wealth.com/impact-system#system",
+      "name": "The Aetas Impact System",
+      "url": "https://impact.aetas-wealth.com/impact-system",
+      "description": "One operating model for building organisational and financial resilience in purpose-led organisations: measure the risk, build resilience, sustain the mission — across four drivers and measured by the Mission Resilience Index.",
+      "provider": {
+        "@id": "https://impact.aetas-wealth.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://impact.aetas-wealth.com/impact-system#term-mri",
+      "name": "Mission Resilience Index (MRI)",
+      "description": "A single benchmarked score, from 0 to 100, measuring a purpose-led organisation's resilience across the four drivers of the Aetas Impact System: Financial Resilience, Financial Education, People & Wellbeing and Organisational Capability. Established at the Impact Review and tracked over time.",
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "@id": "https://impact.aetas-wealth.com/impact-system#system",
+        "name": "The Aetas Impact System"
+      }
+    }
+  ]
 }
