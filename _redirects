@@ -10,3 +10,6 @@
 # Note: Cloudflare Pages processes rules top-to-bottom, first match wins.
 # The splat below handles all remaining .html -> clean URL redirects.
 /*.html /:splat 301
+
+# Manifesto replaced by shared Approach page
+/manifesto /approach 301
