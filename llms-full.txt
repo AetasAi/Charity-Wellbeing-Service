@@ -1,133 +1,118 @@
-# Aetas in the Workplace — Full Content Reference for AI Agents
+# Aetas Impact — Full Content Reference for AI Agents
 
-> Complete content summary of charities.aetas-wealth.com for use by AI language models, agents, and search tools. Last updated: April 2026.
+> Complete content summary of impact.aetas-wealth.com for use by AI language models, agents, and search tools. Last updated: July 2026.
 
 ---
 
 ## Organisation
 
-**Aetas in the Workplace (Aetas ITW)** is a consultancy-led financial wellbeing service for employers, with a specialist offer for charities and not-for-profit organisations. It operates under the Aetas Wealth brand, a trading style of Insight Financial Associates Limited (FCA registration number 458421).
+**Aetas Impact** is the purpose-led advisory arm of the Aetas group. It helps charities, not-for-profits, social enterprises, community interest companies (CICs), foundations, trusts, educational organisations and faith organisations across the UK build organisational and financial resilience, strengthen governance, and sustain long-term mission delivery.
 
-The charity-specific offering brings together three service areas delivered in partnership:
-- Governance and Financial Guidance: provided by **Adena Street Limited**, an independent advisory firm specialising in governance and financial guidance for charities and philanthropic organisations.
-- Financial Wellbeing: powered by **Aetas in the Workplace**.
+Aetas Impact is delivered by **Matthew Steiner** (Managing Director). Where regulated financial advice is required, it is provided separately by **Aetas Wealth**, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (FCA registration number 458421). The advisory, education and consultancy services provided by Aetas Impact do not themselves constitute regulated financial advice.
 
-The lead contact is **Matthew Steiner**, Founder and Lead Consultant at Aetas in the Workplace. Co-presenter at events: **Daniel Cottam**.
+Office: 13 Hanover Square, Mayfair, London W1S 1HN. Contact: matthew.steiner@aetas-wealth.com.
 
 ---
 
-## Service 01: Governance (offered by Adena Street)
+## Philosophy
 
-Independent governance support for trustees and boards. Designed for the not-for-profit environment.
+One philosophy, three systems. Aetas believes that **better decisions create better futures**. That belief is expressed through three specialist systems:
 
-**What is covered:**
-- Governance structures and frameworks: review of board structures, committee arrangements, terms of reference, delegated authority frameworks, and alignment with Charity Commission guidance.
-- Board challenges and risk oversight: independent input at trustee meetings, governance risk identification, conflict of interest management, support during transitions.
-- Investment Policy Statement (IPS): drafting and review of IPS documents, ethical investment restrictions, ESG framework integration, annual review.
-- Trustee training: structured sessions on investment responsibilities, legal duties, understanding performance reports and fees.
+- **Life Stage Planning** at Aetas Wealth (independent financial planning for individuals and families).
+- **The Aetas Performance System** at Aetas Performance, measured by **Return on Employee Investment (ROEI)**.
+- **The Aetas Impact System** at Aetas Impact, measured by the **Mission Resilience Index (MRI)**.
 
-**Key facts:**
-- An IPS is a legal requirement for any charity that has delegated discretionary investment management to an external manager.
-- The Charity Commission actively encourages trustees to seek independent advice (CC14).
-- Adena Street is fully independent — no commercial relationships with investment managers or product providers.
+The estate shares one method — measure before you recommend, solve the cause rather than the symptom, and prove the return — applied through distinct measures for each audience.
 
 ---
 
-## Service 02: Financial Guidance (offered by Adena Street)
+## The Aetas Impact System
 
-Independent financial guidance to help charities manage and optimise their financial position.
+The Aetas Impact System is one operating model for building organisational and financial resilience in purpose-led organisations. Resilience is what turns purpose into lasting impact, and the system makes it measurable.
 
-**What is covered:**
-- Asset returns: cash management strategy, short/medium/long-term asset allocation, review of banking and deposit arrangements.
-- Investment performance review: benchmarking against ARC Charity Indices, portfolio composition review, independent reporting to trustees.
-- Fee transparency: full cost breakdown including OCF (Ongoing Charges Figure), fee negotiation support, ongoing cost monitoring.
-- Investment manager search: structured tender process, evaluation against agreed criteria, independent recommendation, transition support.
+### Three stages, one repeatable method
 
-**Key facts:**
-- OCF (Ongoing Charges Figure) is a fee embedded within investment funds, deducted directly from assets. Frequently undisclosed in trustee reporting.
-- ARC Charity Indices: sterling-denominated, risk-based benchmarks for charity investment performance. If a manager is below the mean for their risk category, they are in the bottom half of their peer group.
-- Many charities pay significantly more than they realise once all charges are included.
-- A structured review often generates savings that more than offset the cost of the engagement.
+1. **Measure the risk** — establish a baseline across the four drivers of resilience and produce the Mission Resilience Index.
+2. **Build resilience** — deploy only the drivers the diagnosis calls for, solving causes rather than symptoms.
+3. **Sustain the mission** — re-measure, embed resilience as a habit, and report it in a format built for boards and funders.
 
----
+### The four drivers of resilience
 
-## Service 03: Financial Wellbeing (powered by Aetas in the Workplace)
+- **Financial Resilience** — the financial foundations that let an organisation endure and plan with confidence.
+- **Financial Education** — the knowledge and confidence of the people who run and are supported by the organisation.
+- **People & Wellbeing** — the engagement, retention and wellbeing of staff and volunteers. Return on Employee Investment (ROEI) is one specialist diagnostic nested inside this driver.
+- **Organisational Capability** — governance, leadership focus and the capacity to deliver the mission.
 
-A consultancy-led financial wellbeing programme for charity staff. Bespoke to each organisation, never templated.
+### The Mission Resilience Index (MRI)
 
-**What is covered:**
-- Employee benefits consultancy: pension scheme review, benefits audit, recommendations for improvement, implementation managed on employer's behalf.
-- Financial resilience workshops: day-to-day money management, understanding workplace benefits, mid-career planning, retirement planning. Topics tailored to workforce profile.
-- One-to-one financial guidance: confidential sessions with a regulated financial planner, available to all employees at no charge to the individual or the employer.
-- Wellbeing and incentive initiatives: access to the Aetas Collective network of wellbeing specialists, proportionate to organisation size.
+The Mission Resilience Index is the proprietary measure of Aetas Impact: a single, benchmarked score from 0 to 100 across the four drivers. It is baselined at the Impact Review, benchmarked against comparable organisations, tracked over time, and reported in a board-ready format. The MRI makes resilience visible, comparable and reportable, and is the foundation of a long-term data moat — the basis for annual reviews, sector benchmarking and, in time, an Aetas resilience accreditation.
 
-**Key positioning:**
-- Financial anxiety is driven by uncertainty, not a lack of benefits. Staff often don't know what support exists or where to turn.
-- Purpose brings people in; financial security keeps them. Retention in the not-for-profit sector is increasingly linked to financial wellbeing.
-- Not an EAP: an EAP is reactive crisis support. Aetas ITW is proactive financial capability building.
-- Every engagement begins with a structured diagnostic before anything is introduced.
+### The resilience journey
 
----
+Organisations travel a journey as they grow stronger: **Stabilise -> Strengthen -> Scale -> Sustain**.
 
-## The Challenge — Why Charities Need This
+### Five principles
 
-- UK productivity losses linked to financial stress: £51bn per year.
-- Cost of financial stress through absenteeism and presenteeism: £6.2bn per year.
-- Average sickness absence: 9.4 days per employee (record high).
-- Cost of replacing a mid-level employee: 50–200% of annual salary.
-- 77% of employees say financial worries affect their performance at work.
-
-Specific charity pressures:
-- Competition with private sector for skilled staff without matching salaries.
-- Trustees carrying significant legal obligations often without specialist support.
-- Investment assets frequently underperforming or subject to hidden charges.
-- Staff motivated by purpose but vulnerable to financial anxiety.
+1. Everything is measurable.
+2. Every intervention strengthens resilience.
+3. Solve the cause, not the symptom.
+4. Resilience is proven, not assumed.
+5. Resilience serves the mission.
 
 ---
 
-## Additional Opportunities (charities only)
+## What we do
 
-**Legacy giving programmes:** Gifts in wills are one of the most significant and consistent sources of charitable income. Aetas helps charities introduce structured legacy giving programmes.
-
-**Corporate donation schemes:** Structured corporate giving propositions including payroll giving, matched donation schemes, and employee volunteering frameworks.
-
----
-
-## How an Engagement Works
-
-1. **Discovery conversation** — no cost, no obligation. 45 minutes. Led by Matthew Steiner.
-2. **Diagnostic and planning** — structured assessment before anything is recommended.
-3. **Managed delivery and review** — Aetas coordinates delivery, manages communications, reviews impact.
-
-Light on leadership time. Most leaders find the process considerably lighter than anticipated.
+- **Impact Review** — a structured, no-cost two-part diagnostic for purpose-led organisations, identifying where pressure exists across people, governance and capacity, and what a proportionate response looks like. It produces the baseline Mission Resilience Index and a written summary suitable for trustees.
+- **People** — benefits and pension review, financial education, and one-to-one regulated guidance for employees. Typically identifies annual savings exceeding the programme cost in year one.
+- **Governance** — trustee support, governance reporting, funder credibility, and alignment with the Charity Governance Code.
+- **Capacity** — organisational resilience, income diversification, leadership focus and strategic clarity.
+- **Impact Diagnostic** — a fifteen-question self-assessment across four areas of organisational resilience, with scored results and personalised interpretation. No data is stored. It is a first read on resilience; the full four-driver Mission Resilience Index is produced at the Impact Review.
 
 ---
 
-## Regulatory and Partnership Information
+## Who we work with
 
-- Financial wellbeing education and consultancy: Aetas in the Workplace (not regulated financial advice).
-- Regulated financial advice where required: Aetas Wealth, trading style of Insight Financial Associates Limited, FCA registration 458421.
-- Governance and financial guidance: Adena Street Limited (independent, not a regulated financial adviser in the retail sense — organisational-level advisory).
+Charities, not-for-profits, social enterprises, community interest companies (CICs), foundations, trusts, educational organisations, faith organisations, and any organisation where purpose is the primary organising principle.
 
 ---
 
-## Site Pages
+## The Impact Review (entry point)
 
-| Page | URL | Purpose |
-|------|-----|---------|
-| Home | https://charities.aetas-wealth.com/ | Charities overview |
-| Governance | https://charities.aetas-wealth.com/governance | Service 01 detail |
-| Financial Guidance | https://charities.aetas-wealth.com/financial-guidance | Service 02 detail |
-| Financial Wellbeing | https://charities.aetas-wealth.com/financial-wellbeing | Service 03 detail |
-| FAQs | https://charities.aetas-wealth.com/faqs | Questions by service area |
-| Insights | https://charities.aetas-wealth.com/insights | Thought leadership articles |
-| Diagnostic | https://charities.aetas-wealth.com/diagnostic | 12-question self-assessment |
-| Book a Meeting | https://charities.aetas-wealth.com/book-a-meeting | Discovery conversation booking |
+Every engagement begins with the Impact Review — a structured, no-cost, no-obligation diagnostic across all four drivers. It produces the organisation's baseline Mission Resilience Index and a written summary that trustees can act on. Book at: https://impact.aetas-wealth.com/book-a-meeting
+
+---
+
+## Fees
+
+The Impact Review is free. Where a programme is recommended, fees are per employee, agreed in writing before delivery begins, and presented alongside the savings identified so trustees see the net position before approving. Indicative full-programme rates are approximately GBP 140 to 165 per employee per year.
+
+---
+
+## The Aetas group
+
+- **Aetas Wealth** (https://aetas-wealth.com) — independent financial planning for individuals, families and business owners. Relevant for trustees, executives and senior leaders managing personal wealth alongside their mission.
+- **Aetas Performance** (https://performance.aetas-wealth.com) — workplace financial wellbeing and business performance for commercial employers, measured by ROEI.
+- **Aetas Impact** (https://impact.aetas-wealth.com) — advisory for purpose-led organisations, measured by the MRI.
+
+---
+
+## Key pages
+
+- Homepage: https://impact.aetas-wealth.com/
+- How We Help: https://impact.aetas-wealth.com/charities
+- The Aetas Impact System: https://impact.aetas-wealth.com/impact-system
+- Impact Diagnostic: https://impact.aetas-wealth.com/diagnostic
+- ROEI Framework: https://impact.aetas-wealth.com/roei
+- Pricing: https://impact.aetas-wealth.com/pricing
+- FAQs: https://impact.aetas-wealth.com/faqs
+- Insights: https://impact.aetas-wealth.com/insights
+- Book an Impact Review: https://impact.aetas-wealth.com/book-a-meeting
 
 ---
 
 ## Contact
 
-- Matthew Steiner — matthew.steiner@aetas-partners.com — 020 3633 0579
-- Book a discovery conversation: https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty
-- Events: https://aetas-partners.com/business-events/
+Matthew Steiner, Managing Director
+matthew.steiner@aetas-wealth.com
+13 Hanover Square, Mayfair, London W1S 1HN
