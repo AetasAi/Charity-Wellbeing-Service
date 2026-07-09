@@ -1,7 +1,7 @@
 {
-  "name": "Charity Wellbeing Service",
-  "short_name": "CWS",
-  "description": "Governance, financial guidance, and staff financial wellbeing for charities and not-for-profits. A partnership between Adena Street and Aetas in the Workplace.",
+  "name": "Aetas Impact",
+  "short_name": "Aetas Impact",
+  "description": "Organisational and financial resilience for charities and purpose-led organisations. Aetas Impact is a service of Aetas Wealth.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#1e3d2f",

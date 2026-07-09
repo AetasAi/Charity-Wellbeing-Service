@@ -1,74 +1,78 @@
-# Charity Wellbeing Service
+# Aetas Impact
 
-A static website for the Charity Wellbeing Service — a joint proposition between **Adena Street** and **Aetas in the Workplace**, built specifically for charities and not-for-profit organisations.
+A static website for **Aetas Impact** — the purpose-led advisory arm of the Aetas group, helping charities, not-for-profits, social enterprises and purpose-led organisations build organisational and financial resilience.
 
-**Live site:** https://charities.aetas-wealth.com
+Aetas Impact is a service provided by **Aetas Wealth**, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (registration 458421). It is not a separate company.
+
+**Live site:** https://impact.aetas-wealth.com
 
 ---
 
 ## What the site covers
 
-The Charity Wellbeing Service brings together three areas of structured support:
+Aetas Impact works with purpose-led organisations through the **Aetas Impact System** — one operating model for building resilience: *measure the risk, build resilience, sustain the mission.* It works across four drivers (Financial Resilience, Financial Education, People & Wellbeing, Organisational Capability) and is measured by the **Mission Resilience Index (MRI)**, a benchmarked 0-100 score established at the Impact Review and tracked over time.
 
-1. **Governance** — offered by Adena Street. Independent governance support for trustees and boards, including Investment Policy Statements, trustee training, and Charity Commission compliance.
-2. **Financial Guidance** — offered by Adena Street. Independent review of investment performance, fee transparency, cash management, and investment manager search.
-3. **Financial Wellbeing** — powered by Aetas in the Workplace. Consultancy-led financial wellbeing for charity staff, covering benefits consultancy, resilience workshops, one-to-one guidance, and wellbeing initiatives.
+Service areas: the **Impact Review** (a free, no-obligation diagnostic entry point), **People** (benefits and pension review, financial education, employee guidance), **Governance** (trustee support, governance reporting, Charity Governance Code alignment), and **Capacity** (organisational resilience, income diversification, strategic clarity).
 
 ---
 
 ## Site structure
 
-All pages are static HTML files deployed via GitHub Pages.
+All pages are static HTML files deployed via Cloudflare Pages / GitHub.
 
 | File | Description |
 |------|-------------|
-| `index.html` | Homepage — overview of the full service |
-| `governance.html` | Governance service detail page |
-| `financial-guidance.html` | Financial Guidance service detail page |
-| `financial-wellbeing.html` | Financial Wellbeing service detail page |
-| `insights.html` | Insights and articles |
+| `index.html` | Homepage |
+| `approach.html` | Shared Aetas philosophy ("better decisions create better futures") |
+| `impact-system.html` | The Aetas Impact System - stages, four drivers, MRI, journey |
+| `charities.html` | How we help |
+| `roei.html` | ROEI in a charity context (nested within People & Wellbeing) |
+| `diagnostic.html` | Impact Diagnostic self-assessment |
+| `pricing.html` | Pricing |
+| `insights.html` / `insights/` | Insights and articles |
 | `faqs.html` | Frequently asked questions |
-| `diagnostic.html` | 12-question self-assessment diagnostic tool |
-| `book-a-meeting.html` | Discovery conversation booking page |
-| `CNAME` | Custom domain configuration (`charities.aetas-wealth.com`) |
+| `book-a-meeting.html` | Impact Review booking page |
+| `financial-wellbeing.html` | Staff financial wellbeing |
+| `manifesto.html` | Manifesto |
+| `privacy.html` | Privacy policy |
+| `CNAME` | Custom domain (`impact.aetas-wealth.com`) |
 | `manifest.webmanifest` | PWA manifest |
 | `robots.txt` | Search engine crawl instructions |
-| `schema.json` | Structured data for search engines |
+| `schema.json` | Structured data reference |
+| `sitemap.xml` / `image-sitemap.xml` | Sitemaps |
 | `llms.txt` / `llms-full.txt` | AI crawler guidance |
 
 ---
 
 ## Design and technology
 
-- Pure static HTML, CSS, and vanilla JavaScript — no build tools or frameworks
-- Custom design system using CSS variables (`--forest`, `--gold`, `--cream`, etc.)
-- Typography: Cormorant Garamond (headings) and Jost (body), loaded via Google Fonts
-- Fully responsive; mobile nav collapses at 960px
-- Deployed automatically via GitHub Pages on every push to `main`
+- Pure static HTML, CSS, and vanilla JavaScript - no build tools or frameworks
+- Custom design system using CSS variables
+- Fully responsive
+- Deployed automatically on every push to `main`
 
 ---
 
 ## Updating the site
 
-**To edit a page:** open the relevant `.html` file in this repository, make your changes, and commit directly to `main`. GitHub Pages will redeploy automatically within about a minute.
+**To edit a page:** open the relevant `.html` file, make your changes, and commit to `main`. Deployment happens automatically within about a minute.
 
-**To add a new page:** create a new `.html` file, copy the nav and footer from an existing page, and update the `class="active"` attribute on the relevant nav link.
-
-**Nav consistency:** every page uses the same nav block. If nav links need to change, update all `.html` files. The nav brand links to `index.html` (relative) and all nav links are relative paths within the site.
+**Nav and footer consistency:** every page shares the same nav and footer blocks and the standard "The Aetas Group" footer linking to Aetas Wealth, Aetas Performance and Aetas Impact. If these change, update them across all pages.
 
 ---
 
-## Partnership
+## The Aetas group
 
-| Partner | Role | Contact |
-|---------|------|---------|
-| **Adena Street** | Governance and Financial Guidance | adenastreet.co.uk |
-| **Aetas in the Workplace** | Staff Financial Wellbeing | aetas-partners.com |
+Aetas Impact is one of three specialist services under Aetas Wealth:
 
-Financial wellbeing education and consultancy services do not constitute regulated financial advice. Where regulated advice is required, this is provided by Aetas Wealth, a trading style of Insight Financial Associates Limited, authorised and regulated by the FCA (registration 458421).
+- **Aetas Wealth** (https://aetas-wealth.com) - independent financial planning for individuals, families and business owners
+- **Aetas Performance** (https://performance.aetas-wealth.com) - workplace financial wellbeing and business performance (measured by ROEI)
+- **Aetas Impact** (https://impact.aetas-wealth.com) - advisory for purpose-led organisations (measured by the MRI)
+
+Financial wellbeing education and consultancy services do not in themselves constitute regulated financial advice. Where regulated advice is required, it is provided by Aetas Wealth.
 
 ---
 
 ## Contact
 
-Matthew Steiner — matthew.steiner@aetas-partners.com · 020 3633 0579
+Matthew Steiner - matthew.steiner@aetas-wealth.com
