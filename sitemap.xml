@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://charities.aetas-wealth.com/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/roei</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/charities</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/pricing</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/faqs</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/insights</loc><lastmod>2026-05-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/insights/ips-review-charity</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/insights/investment-fees-charities</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/insights/charity-commission-cc14-trustees</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/insights/financial-anxiety-staff-charities</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/insights/legacy-giving-programme-charity</loc><lastmod>2026-01-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/insights/cash-management-charity-treasurers</loc><lastmod>2026-01-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/diagnostic</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/book-a-meeting</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://charities.aetas-wealth.com/privacy</loc><lastmod>2026-05-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/roei</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/charities</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/pricing</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/faqs</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/insights</loc><lastmod>2026-05-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/insights/financial-anxiety-staff-charities</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/insights/legacy-giving-programme-charity</loc><lastmod>2026-01-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/insights/cash-management-charity-treasurers</loc><lastmod>2026-01-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/diagnostic</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/book-a-meeting</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://impact.aetas-wealth.com/privacy</loc><lastmod>2026-05-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
