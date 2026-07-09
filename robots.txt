@@ -1,5 +1,5 @@
 # Aetas Impact — robots.txt
-# https://charities.aetas-wealth.com
+# https://impact.aetas-wealth.com
 
 # ─────────────────────────────────────────────
 # Standard search engine bots
@@ -68,5 +68,5 @@ Allow: /
 # Sitemaps and structured content
 # ─────────────────────────────────────────────
 
-Sitemap: https://charities.aetas-wealth.com/sitemap.xml
-Sitemap: https://charities.aetas-wealth.com/image-sitemap.xml
+Sitemap: https://impact.aetas-wealth.com/sitemap.xml
+Sitemap: https://impact.aetas-wealth.com/image-sitemap.xml

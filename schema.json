@@ -5,13 +5,13 @@
     "_page": "index.html",
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Aetas in the Workplace — For Charities and Not-for-Profits",
-    "url": "https://charities.aetas-wealth.com/",
-    "description": "Specialist governance, financial guidance, and staff financial wellbeing services for charities and not-for-profit organisations. Delivered by Adena Street and Aetas in the Workplace.",
+    "name": "Aetas Performance — For Charities and Not-for-Profits",
+    "url": "https://impact.aetas-wealth.com/",
+    "description": "Specialist governance, financial guidance, and staff financial wellbeing services for charities and not-for-profit organisations. Delivered by Aetas Impact, a service of Aetas Wealth.",
     "provider": {
       "@type": "Organization",
-      "name": "Aetas in the Workplace",
-      "url": "https://charities.aetas-wealth.com",
+      "name": "Aetas Performance",
+      "url": "https://impact.aetas-wealth.com",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "matthew.steiner@aetas-partners.com",
@@ -33,11 +33,11 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Governance for Charities",
-    "url": "https://charities.aetas-wealth.com/governance",
-    "description": "Independent governance support for charity trustees and boards. Covers Investment Policy Statements, ethical investment frameworks, trustee training, and Charity Commission compliance. Offered by Adena Street Limited.",
+    "url": "https://impact.aetas-wealth.com/governance",
+    "description": "Independent governance support for charity trustees and boards. Covers Investment Policy Statements, ethical investment frameworks, trustee training, and Charity Commission compliance. Offered by Aetas Impact.",
     "provider": {
       "@type": "Organization",
-      "name": "Adena Street Limited",
+      "name": "Aetas Impact",
       "description": "Independent advisory firm specialising in governance and financial guidance for charities and philanthropic organisations."
     },
     "serviceType": "Charity Governance Advisory",
@@ -64,11 +64,11 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Financial Guidance for Charities",
-    "url": "https://charities.aetas-wealth.com/financial-guidance",
-    "description": "Independent financial guidance for charities covering investment performance benchmarking, fee transparency including OCF analysis, cash management strategy, and investment manager search and review. Offered by Adena Street Limited.",
+    "url": "https://impact.aetas-wealth.com/financial-guidance",
+    "description": "Independent financial guidance for charities covering investment performance benchmarking, fee transparency including OCF analysis, cash management strategy, and investment manager search and review. Offered by Aetas Impact.",
     "provider": {
       "@type": "Organization",
-      "name": "Adena Street Limited"
+      "name": "Aetas Impact"
     },
     "serviceType": "Charity Financial Advisory",
     "areaServed": "GB",
@@ -89,12 +89,12 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Financial Wellbeing for Charity Staff",
-    "url": "https://charities.aetas-wealth.com/financial-wellbeing",
-    "description": "Consultancy-led financial wellbeing programme for charity and not-for-profit employees. Covers employee benefits consultancy, financial resilience workshops, confidential one-to-one guidance, and wellbeing initiatives. Powered by Aetas in the Workplace.",
+    "url": "https://impact.aetas-wealth.com/financial-wellbeing",
+    "description": "Consultancy-led financial wellbeing programme for charity and not-for-profit employees. Covers employee benefits consultancy, financial resilience workshops, confidential one-to-one guidance, and wellbeing initiatives. Powered by Aetas Performance.",
     "provider": {
       "@type": "Organization",
-      "name": "Aetas in the Workplace",
-      "url": "https://charities.aetas-wealth.com"
+      "name": "Aetas Performance",
+      "url": "https://impact.aetas-wealth.com"
     },
     "serviceType": "Workplace Financial Wellbeing",
     "areaServed": "GB",
@@ -114,8 +114,8 @@
     "_page": "faqs.html",
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "name": "FAQs — Aetas in the Workplace for Charities",
-    "url": "https://charities.aetas-wealth.com/faqs",
+    "name": "FAQs — Aetas Performance for Charities",
+    "url": "https://impact.aetas-wealth.com/faqs",
     "mainEntity": [
       {
         "@type": "Question",
@@ -156,9 +156,9 @@
     "_page": "All pages — add to every page",
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Aetas in the Workplace",
+    "name": "Aetas Performance",
     "alternateName": "Aetas ITW",
-    "url": "https://charities.aetas-wealth.com",
+    "url": "https://impact.aetas-wealth.com",
     "description": "Consultancy-led financial wellbeing and governance service for charities and not-for-profit organisations.",
     "contactPoint": {
       "@type": "ContactPoint",
