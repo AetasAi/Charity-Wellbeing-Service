@@ -1,4 +1,4 @@
-# Aetas for Charities — robots.txt
+# Aetas Impact — robots.txt
 # https://charities.aetas-wealth.com
 
 # ─────────────────────────────────────────────
